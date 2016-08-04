@@ -1,0 +1,67 @@
+/* 清除内外边距 */
+html, body,
+h1, h2, h3, h4, h5, h6,
+div,
+ul, ol, li, dl, dt, dd,
+form, textarea, input, button, lengend, fieldset,
+hr, p, blockquote, pre,
+th, td{ margin: 0; padding: 0;}
+
+/* 设置默认字体 */
+body, button, input, select, textarea{ /* for ie */
+    /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+    font: 12px/1 "Microsoft YaHei", "\5b8b\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+}
+
+/* 设置标题字号 */
+h1{ font-size: 18px; /* 18px / 12px = 1.5 */ }
+h2{ font-size: 16px;}
+h3{ font-size: 14px;}
+h4,h5,h6{ font-size: 100%;}
+h1,h2,h3,h4,h5,h6{ font-weight: normal;}
+
+/* 重置斜体为正 */
+address, cite, dfn, em, i, var { font-style: normal;}
+
+/* 重置列表样式 */
+ul, ol, li{ list-style: none;}
+
+/* 重置链接默认 */
+a{ text-decoration: none; blr:expression(this.onFocus=this.blur()); outline: none;}
+a:hover { text-decoration: underline;}
+a:focus { outline: none;}
+
+/* 重置图片默认样式 */
+img{ vertical-align:top; border:0; *margin-bottom:-5px;}
+
+/* 对齐方式 */
+.text-center{ text-align: center;}
+.text-right{ text-align: right;}
+
+/* 圆角*/
+.border-radius{ border-radius: 0 0 3px 3px;}
+.border-circle{ border-radius: 50%;}
+
+/* ul左浮动 */
+.ul-ver li{ display: block; float: left;}
+.ul-ver li a{ display: block; float: left;}
+
+/* dl左浮动 */
+.dl-ver dl{ display: block; float: left; text-align: center;}
+
+/* dt/dd图文混排 */
+.gird-ver dt{ display: table-cell;}
+.gird-ver dd{ display: table-cell;}
+
+/* 浮动 */
+.l{ display: block; float: left;}
+.c{ display: block; float: left;}
+.r{ display: block; float: right;}
+.left{ display: block; float: left;}
+.center{ display: block; float: left;}
+.right{ display: block; float: right;}
+
+/* 清楚浮动 */
+.clearfix { *zoom: 1;}
+.clearfix:before,.clearfix:after{ display: table; height:0; line-height: 0; content: "";}
+.clearfix:after{ clear: both;}
