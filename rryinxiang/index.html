@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>约拍网</title>
+<link rel="stylesheet" href="css/lean.css">
+<link rel="stylesheet" href="css/yuepai.css">
+<link rel="stylesheet" href="css/fontello.css">
+<script src="js/jquery-2.0.0.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/yuepai.js"></script>
+</head>
+
+<body>
+    
+<!-- head -->
+<div class="head">
+    <div class="container clearfix">
+        <div class="logo l"><a href="#"><img src="images/a.png" alt=""></a></div>
+        <ul class="l list-ver nav">
+            <li><a href="index.html">网站首页</a></li>
+            <li><a href="print.html">照片冲印</a></li>
+            <li><a href="list.html">相册制作</a></li>
+            <li><a href="postcard.html">相框摆台</a></li>
+            <li><a href="userCenter.html">关于我们</a></li>
+        </ul>
+        <div class="r login"><a href="login.html">登录</a><a href="register.html">注册</a></div>
+    </div>
+</div>
+<!-- head -->
+
+<!--banner-->
+<div class="banner">
+    <div class="focus">
+        <div id="focusPic" class="sliderwrapper">
+            <div class="contentdiv" style="display:block;">
+                <div class="f_pic focus_1"></div>
+            </div>
+            <div class="contentdiv">
+                <div class="f_pic focus_2"></div>
+            </div>
+            <div class="contentdiv">
+                <div class="f_pic focus_3"></div>
+            </div>
+        </div>
+        <div id="paginate-focusPic" class="pagination">
+            <i class="toc"></i><i class="toc"></i><i class="toc"></i><i class="toc"></i>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+featuredcontentslider.init({
+    id: "focusPic",
+    contentsource: ["inline", ""],
+    toc: "#increment",
+    nextprev: ["", ""], 
+    revealtype: "mouseover", 
+    enablefade: [true, 0.15], 
+    autorotate: [true, 3000], 
+    delay: 150,
+    onChange: function(previndex, curindex){
+
+    }
+});
+</script>
+<!--/banner-->
+
+<!-- guide -->
+<div class="guide container clearfix">
+	<dl>
+		<dt><i class="icon-params"></i></dt>
+		<dd>
+			<i>多样化选择</i>
+			<span>相片冲印、相册、照片书自主定制</span>
+		</dd>
+	</dl>
+	<dl>
+		<dt><i class="icon-heart"></i></dt>
+		<dd>
+			<i>信赖的服务平台</i>
+			<span>满50包邮，照片冲印0.35元起，全国价格最低</span>
+		</dd>
+	</dl>
+	<dl>
+		<dt><i class="icon-location-1"></i></dt>
+		<dd>
+			<i>超高速配送</i>
+			<span>全国送货上门，30天质量问题免费退换</span>
+		</dd>
+	</dl>
+</div>
+<!-- guide -->
+
+<!-- copyright -->
+<div class="copyright container">
+    <p>Copyright © 2015 woyuepai.com All Rights Reserved</p>
+    <p>版权所有：我约拍文化传媒</p>
+</div>
+<!-- copyright -->
+
+</body>
+</html>
