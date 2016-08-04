@@ -1,0 +1,161 @@
+/********** reset **********/
+*,*:after,*:before{ -webkit-box-sizing: border-box;	-moz-box-sizing: border-box; box-sizing: border-box;}
+html,body,div,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,table,tr,th,td,strong,b,i,em,span{ margin: 0; padding: 0;}
+body,button,input,select,textarea{ font-size: 12px; line-height: 18px; font-family:"Microsoft YaHei";}
+h1{ font-size:36px;}
+h2{ font-size:30px;}
+h3{ font-size:24px;}
+h4{ font-size:18px;}
+h5{ font-size:14px;}
+h6{ font-size:12px;}
+ul li,li{ list-style:none;}
+a{ text-decoration:none; outline: none; color: #333;}
+a:hover{ text-decoration:underline; color: #d44950;}
+i,em{ font-style: normal;}
+input,textarea,select,a:focus{ outline: none;}
+input{ -webkit-appearance: none;}
+img{ vertical-align:top; border:0; *margin-bottom:-5px;}
+
+/******************** lean.css ********************/
+/* 简介 */
+
+/* 栅格布局 */
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-2-2,.col-3-3,.col-4-4,.col-5-5{ display: block; float: left;}
+/*不等分栅格*/
+.col{ width: 100%;}
+.col-1{ width: 10%;}
+.col-2{ width: 20%;}
+.col-3{ width: 30%;}
+.col-4{ width: 40%;}
+.col-5{ width: 50%;}
+.col-6{ width: 60%;}
+.col-7{ width: 70%;}
+.col-8{ width: 80%;}
+.col-9{ width: 90%;}
+/* 等分栅格 */
+.col-2-2{ width: 50%;}
+.col-3-3{ width: 33.333333%;}
+.col-4-4{ width: 25%;}
+.col-5-5{ width: 20%;}
+
+/* 小屏幕（小于等于768px） */
+@media screen and (min-width: 768px) {
+	.col-sm,.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-2-2,.col-sm-3-3,.col-sm-4-4,.col-sm-5-5{ float: left;}
+	/*不等分栅格*/
+	.col-sm{ width: 100%;}
+	.col-sm-1{ width: 10%;}
+	.col-sm-2{ width: 20%;}
+	.col-sm-3{ width: 30%;}
+	.col-sm-4{ width: 40%;}
+	.col-sm-5{ width: 50%;}
+	.col-sm-6{ width: 60%;}
+	.col-sm-7{ width: 70%;}
+	.col-sm-8{ width: 80%;}
+	.col-sm-9{ width: 90%;}
+	/* 等分栅格 */
+	.col-sm-2-2{ width: 50%;}
+	.col-sm-3-3{ width: 33.333333%;}
+	.col-sm-4-4{ width: 25%;}
+	.col-sm-5-5{ width: 20%;}
+}
+
+/* 中等屏幕（大于等于 992px 小于1200） */
+@media screen and (min-width: 992px) {
+	/* 栅格布局 */
+	.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-2-2,.col-md-3-3,.col-md-4-4,.col-md-5-5{ display: block; float: left;}
+	/*不等分栅格*/
+	.col-md{ width: 100%;}
+	.col-md-1{ width: 10%;}
+	.col-md-2{ width: 20%;}
+	.col-md-3{ width: 30%;}
+	.col-md-4{ width: 40%;}
+	.col-md-5{ width: 50%;}
+	.col-md-6{ width: 60%;}
+	.col-md-7{ width: 70%;}
+	.col-md-8{ width: 80%;}
+	.col-md-9{ width: 90%;}
+	/* 等分栅格 */
+	.col-md-2-2{ width: 50%;}
+	.col-md-3-3{ width: 33.333333%;}
+	.col-md-4-4{ width: 25%;}
+	.col-md-5-5{ width: 20%;}
+}
+
+/* 大屏幕（大于等于 1200px） */
+@media screen and (min-width: 1200px) {
+	/* 栅格布局 */
+	.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-2-2,.col-3-3,.col-4-4,.col-5-5{ display: block; float: left;}
+	/*不等分栅格*/
+	.col{ width: 100%;}
+	.col-1{ width: 10%;}
+	.col-2{ width: 20%;}
+	.col-3{ width: 30%;}
+	.col-4{ width: 40%;}
+	.col-5{ width: 50%;}
+	.col-6{ width: 60%;}
+	.col-7{ width: 70%;}
+	.col-8{ width: 80%;}
+	.col-9{ width: 90%;}
+	/* 等分栅格 */
+	.col-2-2{ width: 50%;}
+	.col-3-3{ width: 33.333333%;}
+	.col-4-4{ width: 25%;}
+	.col-5-5{ width: 20%;}
+}
+
+/* 列表 */
+.list-ver li{ display: block; float: left;}
+.list-ver li a{ display: block; float: left;}
+
+/* 清除浮动 */
+.l{ display: block; float: left;}
+.c{ display: block; float: left;}
+.r{ display: block; float: right;}
+.left{ display: block; float: left;}
+.center{ display: block; float: left;}
+.right{ display: block; float: right;}
+.clearfix { *zoom: 1;}
+.clearfix:before,.clearfix:after{ display: table; height:0; line-height: 0; content: "";}
+.clearfix:after{ clear: both;}
+
+/* 文字对齐方式 (text-align) */
+.text-left{ text-align: left;}
+.text-center{ text-align: center;}
+.text-right{ text-align: right;}
+
+/* 圆形、圆角、盒子阴影 */
+.border-circle{ border-radius: 50%; background: #d44950; width: 100px; height: 100px;}
+.border-radius{ border: 1px solid #ddd; border-radius: 3px;}
+.box-shadow{ box-shadow: 0 0 3px #ddd;}
+
+/* 图文混排 */
+.dl-ver,.dl-ver dt,.dl-ver dd{ display: block; float: left;}
+
+/* transition */
+.transition{ transition:all 0.5s ease 0s;}
+.hover-border{ padding: 5px; outline: 3px solid #ddd; outline-offset:-3px;}
+.hover-border:hover{ outline: 3px solid #d44950; outline-offset:-3px;}
+.hover-shadow:hover{ box-shadow: 0 0 10px #ddd;}
+
+/* 图片缩放 */
+.scale:hover{
+	-moz-transform:scale(1.1,1.1);  
+	-webkit-transform:scale(1.1,1.1);  
+	-o-transform:scale(1.1,1.1);
+	transform:scale(1.1,1.1)
+}
+.scale-x:hover{
+	-moz-transform:scaleX(1.1);
+	-webkit-transform:scaleX(1.1);
+	-o-transform:scaleX(1.1);
+	transform:scaleX(1.1);
+}
+.scale-y:hover{
+	-moz-transform:scaleY(1.1);
+	-webkit-transform:scaleY(1.1);
+	-o-transform:scaleY(1.1);
+	transform:scaleY(1.1);
+}
+
+
+/******************** lean.js ********************/

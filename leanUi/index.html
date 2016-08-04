@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="x-ua-compatible" content="IE=8;" />
+<title>LeanUI - by LeeLean</title>
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/lean.css">
+<script src="style/jquery-1.9.0.min.js"></script>
+<script src="style/lean.js"></script>
+
+
+<!-- 低版本ie支持html5标签 -->
+<!--[if lt IE 9]>
+<script> 
+   (function() {
+     if (! 
+     /*@cc_on!@*/
+     0) return;
+     var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+     var i= e.length;
+     while (i--){
+         document.createElement(e[i])
+     } 
+})() 
+</script>
+<![endif]-->
+<!-- 低版本ie支持html5标签 -->
+
+</head>
+<body>
+
+<!-- container -->
+<div class="container">
+	<!-- aside -->
+	<aside class="l">
+		<h1><a href="index.html">Lean-UI</a></h1>
+		<!-- nav -->
+		<ul class="tab">
+			<li><a href="javascript:void(0)" class="preNav">CSS</a></li>
+			<li><a href="index.html" class="selected">简介</a></li>
+			<li><a href="css-column.html">栅格布局</a></li>
+			<li><a href="css-list.html">列表</a></li>
+			<li><a href="css-clearfix.html">浮动、清除浮动</a></li>
+			<li><a href="css-text-align.html">文本对齐方式</a></li>
+			<li><a href="css-border-radius.html">圆形、圆角、盒子阴影</a></li>
+			<li><a href="css-gird.html">图文混排</a></li>
+			<li><a href="css-transition.html">Transition</a></li>
+		</ul>
+		<!-- nav -->
+	</aside>
+	<!-- aside -->
+
+	<!-- section -->
+	<section class="r">
+		<!-- info -->
+		<article>
+			<h3>Lean-UI 简介</h3>
+			<div class="info">
+				<p>Lean-UI - version1.0</p>
+				<br>
+				<p>在线地址：http://leancase.sinaapp.com/leanUi/style/lean.min.css</p>
+				<br>
+				<a href="http://leancase.sinaapp.com/leanUi/style/lean.min.css" target="_blank" class="border-radius" style="background-color:#e74e3d; color:#fff; padding:5px 11px; border:none;">点击下载</a>
+			</div>
+			<h3>代码约定</h3>
+			<code>
+				移动端需要添加特殊的meta标签
+				<br>
+				<br>
+				<span><</span>meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=no" <span>/></span>
+				<br>
+				页面放大到设备实际尺寸 N 倍，一般设置1.0，禁止用户缩放页面
+				<br>
+				<br>
+				<span><</span>meta content=“email=no” name=“format-detection” <span>/></span>
+				<br>
+				不要将页面中的数字识别为电话号码
+			</code>
+			<code>
+				1、代码片段出现的 .className 均为 Submit Text编辑器的emmet 快捷键
+			</code>
+			<code>
+				2、代码片段中出现的"*n" n代表需要添加的数目
+			</code>
+			<code>
+				3、代码片段中出现的"&&" 表示并且的意思，需要两个class同时具备
+			</code>
+			<code>
+				4、多个效果只需添加多个Class Example：class="box-shadow scale-x m-t-10"
+			</code>
+		</article>
+		<!-- info -->
+	</section>
+	<!-- section -->
+	<div class="clearfix"></div>
+</div>
+<!-- container -->
+
+</body>
+</html>

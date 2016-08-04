@@ -1,0 +1,411 @@
+/*base CSS*/
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,textarea,input,button,p,strong,b,em,i,a,span,del,pre{ margin:0; padding:0; border:0;}
+body{ background: #eeeded; font-size: 12px; font-family: "Microsoft YaHei"; color: #222;}
+h1,h2,h3,h4,h5,h6{ font-size: 12px; font-weight:normal; font-family: "Microsoft YaHei";}
+ul li,li{ list-style: none;}
+a{ text-decoration:none; blr:expression(this.onFocus=this.blur()); outline: none;}
+a:focus { outline: none;}
+em,i{ font-style: normal;}
+::selection { background: #e74e3d; color: #fff; }
+::-moz-selection { background: #e74e3d; color: #fff;}
+::-webkit-selection { background: #e74e3d; color: #fff;}
+
+.left{ display: block; float: left;}
+.center{ display: block; float: left;}
+.right{ display: block; float: right;}
+.clear{ clear: both;}
+.container{ width: 1200px; margin:0 auto;}
+
+.top{ height: 38px; line-height: 38px; color: #fff; background: #363636;}
+.top a{ color: #fff;}
+.top a:hover{ text-decoration: underline;}
+.top .right a{ margin: 0 5px;}
+
+.fix_header{ position: relative; height: 80px; line-height: 80px; background: #fff; box-shadow: 0 0 5px #ccc; z-index: 9999;}
+.fix{ position: fixed; width: 100%; top: 0px;}
+.logo{ display: block; float: left; width: 100px;}
+.fix_header .nav{ display: block; float: left;}
+.fix_header .nav ul li{ display: inline;}
+.fix_header .nav ul li a{ display: block; float: left; height: 80px; font-size: 16px; width: 79px; text-align: center; color: #666;}
+.fix_header .nav ul li a:hover,.nav ul li .selected{ background: #e74e3d; color: #fff;}
+.fix_header .right ul li{ display: block; float: left;}
+.fix_header .search{ width: 210px; border-radius: 15px; height: 35px; line-height: 35px; margin: 23px 10px 0 0; background: #f6f6f6;}
+.search_text{ width: 157px; height: 34px; font-size: 12px; line-height: 34px; background: #f6f6f6; margin-left: 15px; padding: 0; border: none;}
+.search_submit{ height: 34px; width: 34px; padding: 0; border: none; background: url(../images/search.png) no-repeat 5px 10px;}
+.user_log a,.user_reg a{ padding: 8px 25px; margin-left: 7px; color: #000; border: 1px solid #e9e9e9; border-radius: 4px;}
+
+.main,.jigou,.mote{ margin-top: 35px;}
+
+.title{ height: 54px; line-height: 54px; font-size: 22px; color: #444;}
+.title span{ font-size: 12px; margin-left: 20px;}
+.title ul li{ display: block; float: left;}
+.title ul li a{ color: #333; font-size: 12px; padding: 4px 15px;}
+.title ul li a:hover{ background: #e74e3d; color: #fff;}
+
+.guide_title{ height: 42px; font-size: 14px; border-bottom: 1px solid #edeff5; padding-left: 10px; border-radius: 2px 2px 0 0;}
+.guide_title h5{ width: 56px; height: 41px; font-size: 14px; line-height: 41px; margin: 0; font-family: "Microsoft YaHei"; border-bottom: 2px solid #e74e3d;}
+.new_user{ width: 270px; height: 380px; background: #fff; border-radius: 2px 2px 0 0;}
+.new_user dl{ display: block; float: left; margin: 11px 0 0 11px;}
+.new_user dl dt{ width: 75px; height: 75px; background: #ddd; border-radius: 50%;}
+.new_user dl dd{ text-align: center; margin-top: 5px;}
+.new_user dl dd a{ color: #444;}
+.new_user dl dd a:hover{ text-decoration: underline; color: #e74e3d;}
+
+.banner{ width: 660px; height: 380px; margin-left: 15px; background: #fff;}
+.banner #myCarousel{ height: 380px;}
+.banner .carousel-indicators{ bottom: 0;}
+.banner .carousel-control{ width: 8%;}
+.activity{ width: 240px; height: 380px; background: #fff; border-radius: 2px 2px 0 0;}
+.activity dl{ margin: 9px 0 0 0; padding-left: 15px; padding-bottom: 8px;}
+.activity dl:hover{ background: #e74e3d; color: #fff;}
+.activity dl:hover a{ color: #fff;}
+.activity dl dt{ font-size: 14px; height: 30px; line-height: 30px;}
+.activity dl dt a{ color: #444;}
+.activity dl dt a:hover{ text-decoration: underline;}
+.activity dl dd{ line-height: 21px;}
+
+
+.model,.albums{ margin-top: 55px;}
+.jobs,.institution,.neirong{ margin-top: 35px;}
+
+.model-m .left{ width: 690px;}
+.model-m .right{ width: 510px;}
+.model-m .right .model-small{ margin-right: 0;}
+.model-m ul li{ display: block; float: left; background: #ddd; margin-right: 10px;}
+.model-m .model-big{ width: 339px; height: 400px}
+.model-m .model-small{ width: 160px; height: 195px; margin-bottom: 10px;}
+.model-m .bot_mar{ margin-bottom: 0;}
+
+.albums-m .user_albums{ display: block; float: left; width: 223px; height: 375px; margin: 0px 0 20px 21px; border-radius: 3px; background: #fff; position: relative;}
+.user_albums a:hover{ color: #e74e3d; text-decoration: underline;}
+.user_pic{ width: 223px; height: 280px; background: #ddd;}
+.info{ height: 27px; line-height: 27px; margin: 3px 0 0 11px;}
+.info b a{ color: #333;}
+.user_albums b{ margin-right: 50px; font-size: 14px; display: block; float: left;}
+.user_albums span{ display: block; float: right; margin-right: 10px;}
+.group{ height: 30px; line-height: 30px; margin-left: 11px;}
+.group a{ color: #333; margin: 0 8px 0 0;}
+.group a:hover{ text-decoration: underline;}
+.view{ height: 35px; line-height: 35px; border-top: 1px solid #ebebeb; padding-left: 10px;}
+.user_albums .view span{ font-size: 12px;}
+.view a{ color: #333;}
+.view b{ font-size: 12px; cursor: pointer; color: #999; padding-left: 28px; font-weight: normal; height: 35px; background: url(../images/view.png) no-repeat 0 10px;}
+.view b:hover{ background: url(../images/view.png) no-repeat 0 -25px;}
+
+.jobs_m{ height: 350px; border-radius: 2px 2px 0 0;}
+.jobs_m .left{ width: 290px; height: 337px; background: #fff;}
+.jobs_m .left ul li{ display: block; float: left; height: 130px; width: 130px; margin: 11px 0 0 10px; background: #ddd;}
+.jobs_m .right{ width: 895px; height: 337px; background: #fff;}
+.jobs_m .right ul{ display: block; margin-top: 18px;}
+.jobs_m .right ul li{ height: 38px; line-height: 38px; padding-left: 20px; background: url(../images/list-li-bg.jpg) no-repeat 10px 17px;}
+.jobs_m .right ul li:hover{ background: url(../images/list-li-bg.jpg) no-repeat 11px center #fbfbfb;}
+.jobs_m .right ul li:hover a{ color: #e74e3d; text-decoration: underline;}
+.jobs_m .right ul li a{ display: block; float: left; color: #333;}
+.jobs_m .job_title{ width: 400px; font-size: 13px;}
+.jobs_m .job_local{ width: 200px;}
+.jobs_m .job_wage{ width: 160px;}
+.jobs_m .right ul li span{ display: block; float: left; margin-right: 15px; color: #666;}
+
+.institution-m{ height: 420px; background: #fff;}
+.institution-m .left{ width: 300px; height: 420px; display: block; float: right; border-left: 1px solid #f1f1f1;}
+.institution-m .left ul li{ display: inline;}
+.institution-m .left ul li a{ display: block; float: left; width: 77px; margin: 15px 0 0 16px; padding: 3px 0 4px 0; color: #333; text-align: center; border: 1px dashed #e9e9e9;}
+.institution-m .left ul li a:hover{ background: #e74e3d; color: #fff;}
+.institution_tj dl{ display: block; float: left; width: 124px; height: 124px; background: #ddd; margin: 15px 0 0 18px; position: relative;}
+.institution_tj dl dt{ position: absolute;}
+.institution_tj dl dt img{ width: 124px; height: 124px;}
+.institution_tj dl dd{ text-align: center; height: 22px; line-height: 22px; background: #000; opacity: 0.5; position: absolute; bottom: 0; width: 100%;}
+.institution_tj dl dd a{ color: #fff;}
+.institution-m .right{ width: 880px; height: 420px; display: block; float: left;}
+.institution-m .right a{ color: #333;}
+.institution-m .right a:hover{ text-decoration: underline;}
+.institution-m .right h5{ margin:16px 0 0 17px; font-size: 16px; border-left: 4px solid #e74e3d; padding-left: 7px; font-weight: bolder; color: #333;}
+.institution-m .right ul li{ display: block; float: left; width: 204px; height: 155px; margin: 25px 0 0 16px; position: relative;}
+.institution-m .right ul li i a{ display: block; width: 204px; height: 135px; background: #ddd;}
+.institution-m .right ul li em{ display: block; height: 22px; line-height: 22px; margin-top: 3px; width: 100%; text-align: center;}
+
+
+.bottom_info{ height: 160px; background: #fff; margin-top: 50px; padding-top: 25px;}
+
+.bottom_gz{ width: 280px; font-weight: bolder;}
+.bottom_gz img{ vertical-align: top; margin-left: 5px;}
+
+.bottom_nav dl{ display: block; float: left; margin-right: 90px;}
+.bottom_nav dl a{ color: #333;}
+.bottom_nav dl a:hover{ text-decoration: underline; color: #e74e3d;}
+.bottom_nav dl dt{ font-weight: bolder; margin-bottom: 9px;}
+.bottom_nav dl dd{ line-height: 24px;}
+
+.bottom_contact{ width: 145px; text-align: center; margin-right: 55px; line-height: 20px;}
+.bottom_contact p{ font-weight: bolder; margin-bottom: 5px;}
+.bottom_contact .bottom_contact_phone{ font-size: 18px; color: #e74e3d; font-weight: bolder;}
+.bottom_contact p a{ display: block; width: 145px; height: 40px; margin-top: 15px; line-height: 40px; text-align: center; background: #e74e3d; color: #fff; font-size: 14px;}
+
+.copyright{ height: 140px; line-height: 24px; color: #797979; background: #eeeded; text-align: center; padding-top: 30px;}
+
+.fix_bottom{ position: fixed; width: 100%; height: 60px; line-height: 60px; bottom: 0; background: #000; opacity: 0.7;}
+.fix_bottom .left{ font-size: 26px; color: #fff;}
+.fix_bottom .right{ color: #fff; margin-right: 70px;}
+.fix_bottom .right a{ font-size: 16px; color: #fff; padding: 7px 33px; border-radius: 3px; margin-left: 20px; background: #f00;}
+.close_fix_bottom{ position: absolute; ; left: 50%; margin-left: 550px; top: 10px; cursor: pointer; display: block; float: right; font-size: 28px; color: #fff;}
+
+.back_top{ display: none; position: fixed; bottom: 110px; left: 50%; margin-left: 600px; cursor: pointer;}
+
+.position{ margin-bottom: 10px;}
+.position a{ color: #555;}
+.position a:hover{ color: #e74e3d;}
+
+/*register*/
+.register{ width: 450px; height: 480px; position: fixed; top: 50%; left: 50%; margin: -255px 0 0 -225px; border-radius: 3px; background: #fff; box-shadow: 0 0 7px #777;}
+.register h3,.login h3{ height: 48px; line-height: 48px; background: #e4463d; border-radius: 3px 3px 0 0;}
+.register h3 i,.login h3 i{ display: block; float: left; margin-left: 15px; font-size: 20px; font-weight: bolder; color: #fff;}
+.register h3 em,.login h3 em{ display: block; float: right; margin-right: 15px;}
+.register h3 em a,.login h3 em a{ color: #fff;}
+.register h3 em a:hover,.login h3 em a:hover{ text-decoration: underline;}
+
+.register ul{ margin-top: 50px;}
+.register ul li{ display: block; clear: both; font-size: 14px; color: #333; line-height: 36px;}
+.register ul li input{ height: 36px; border: 1px solid #ddd; width: 231px; padding: 0 5px; border-radius: 4px; color: #444; font-size: 14px;}
+.register ul li span{ display: block; float: left; margin-bottom: 23px;}
+.register ul .reg-li1 input{ width: 115px;}
+.register ul .reg-li1 a{ color: #444; text-decoration: underline;}
+.register ul .reg-li1 a:hover{ color: #e74e3d;}
+.register ul .reg-li5 input{ width: 125px; background: #e74e3d; color: #fff; border: none; cursor: pointer;}
+
+.reg-li5 .reg-list1{ text-indent: 9999em;}
+.reg-li5 a{ color: #444;}
+.reg-li5 a:hover{ color: #e74e3d; text-decoration: underline;}
+.reg-list1,.reg-list6{ width: 110px; text-align: right; margin-right: 11px;}
+.reg-list2{ margin-left: 10px;}
+.reg-list3{ margin-left: 10px;}
+.reg-list4{ margin-right: 20px;}
+.register ul .reg-li2{ height: 20px; line-height: 20px;}
+.register ul .reg-li2 input{ width: 18px; height: 18px; vertical-align: middle;}
+.register ul .reg-li2 i{ margin-right: 30px;}
+
+/*login*/
+.login{ width: 450px; height: 350px; position: fixed; top: 50%; left: 50%; margin: -175px 0 0 -225px; border-radius: 3px; background: #fff; box-shadow: 0 0 7px #777;}
+.login h3{ margin-bottom: 60px;}
+.login-list li{ display: block; float: left; margin-bottom: 30px;}
+.login-list input{ height: 36px; border: 1px solid #ddd; padding: 0 5px; width: 240px; border-radius: 4px; color: #444; font-size: 14px;}
+.login-list-li1{ width: 110px; text-align: right; margin-right: 11px; height: 38px; line-height: 38px; font-size: 14px;}
+.login-list-notext{ text-indent: 9999em;}
+.login-list .login-log{ width: 133px; border: none; background: #e74e3d; color: #fff; margin-right: 8px;}
+.login-list a{ color: #444;}
+.login-list a:hover{ color: #e74e3d; text-decoration: underline;}
+
+/*match*/
+.match{ margin-top: 15px; border-radius: 2px 2px 0 0;}
+.march_list{ height: 280px; margin-bottom: 20px; background: #fff;}
+.march_pic{ display: block; float: left; height: 280px; width: 620px; background: #ddd;}
+.march_pic img{ width: 650px; height: 280px;}
+.march_info{display: block; float: left; height: 280px; width: 280px; padding-left: 20px;}
+.march_info h3{ font-size: 16px; line-height: 22px; margin: 30px 0 12px 0;}
+.march_info h3 a{ color: #333;}
+.march_info h3 a:hover{ text-decoration: underline; color: #e74e3d;}
+.march_info h4,.march_info h5{ height: 45px; line-height: 45px; margin-left: 3px;}
+.march_info h4 span{ color: #e74e3d; font-weight: bolder; margin-right: 3px;}
+.march_info p{ margin-top: 30px;}
+.march_info p a{ display: block; width: 128px; height: 38px; background: #e74e3d; line-height: 38px; font-size: 14px; border-radius: 3px; color: #fff; text-align: center;}
+
+
+/*jigou*/
+.jigou .left{ width: 920px;}
+.ban{ height: 300px; background: #ddd;}
+.img_list{ margin-top: 15px;}
+.img_list dl{ display: block; height: 170px; background: #fff; margin-bottom: 15px;}
+.img_list dl dt{ display: block; float: left; width: 212px; height: 140px; margin: 15px 30px 0 15px; background: #999;}
+.img_list dl dd{ display: block; float: left; width: 645px; color: #333;}
+.img_list dl dd a:hover{ text-decoration: underline;}
+
+.img_list_title{ font-size: 14px; font-weight: bolder; height: 45px; line-height: 45px; margin-top: 3px;}
+.img_list_title a{ color: #444;}
+.img_list_title a:hover{ color: #e74e3d;}
+.img_list_info{ line-height: 20px; margin-bottom: 7px;}
+.img_list_info a{ color: #e74e3d;}
+.img_list_contact{ line-height: 20px;}
+
+.page{ margin-top: 25px; margin:50px 0 30px 300px;}
+.page ul li{ display: inline;}
+.page ul li a{ display: block; float: left; width: 55px; height: 30px; margin: 0 2px; line-height: 30px; text-align: center; color: #6c6c6c; background: #fff; border-radius: 2px;}
+.page ul li a:hover,.page ul li .selected{ background: #e74e3d; color: #fff;}
+
+.jigou .right{ width: 260px;}
+.shenqing{ height: 300px; background: #fff; border-radius: 2px 2px 0 0;}
+.shenqing dl{ margin: 11px 11px 0 13px; padding-bottom: 11px; border-bottom: 1px dashed #ddd;}
+.shenqing dl dt{ margin-bottom: 7px; font-size: 14px; font-weight: bolder; color: #444;}
+.shenqing dl dd{ margin-left: 3px;}
+.shenqing p a{ display: block; width: 226px; height: 38px; line-height: 38px; margin: 10px auto 0 auto; border-radius: 2px; font-size: 16px; text-align: center; color: #fff; background: #e74e3d;}
+
+.cat{ margin-top: 15px; padding-bottom: 2px; background: #fff; border-radius: 2px 2px 0 0;}
+.cat ul{ margin-top: 15px;}
+.cat ul li{ display: inline;}
+.cat ul li a{ display: block; float: left; width: 70px; height: 28px; line-height: 28px; text-align: center; border: 1px solid #ebe8e8; border-radius: 3px; margin: 0 0 12px 11px; color: #222;}
+.cat ul li a:hover{ background: #e74e3d; color: #fff; border-color: #e74e3d;}
+.flag_job{ margin-top: 15px; background: #fff; border-radius: 2px 2px 0 0;}
+.city{ margin-top: 15px; background: #fff; border-radius: 2px 2px 0 0;}
+.flag_job ul{ margin: 13px 0 0 0; padding-bottom: 12px;}
+.flag_job ul li{ height: 30px; line-height: 30px; padding-left: 25px; background: url(../images/list-li-bg.jpg) 14px 13px no-repeat;}
+.flag_job ul li a{ color: #555;}
+.flag_job ul li a:hover{ color: #e74e3d; text-decoration: underline;}
+.flag_job span{ float: right; margin-right: 13px; color: #888;}
+
+.city{ padding-bottom: 5px;}
+.city ul{ display: block; margin: 14px 0 0 0;}
+.city ul li{ display: inline;}
+.city ul li a{ display: block; float: left; width: 48px; height: 26px; border-radius: 2px; line-height: 26px; text-align: center; color: #333; border: 1px solid #ebe8e8; margin: 0 0 10px 12px;}
+.city ul li a:hover{ background: #e74e3d; color: #fff; border-color: #e74e3d;}
+
+
+/*mote*/
+.mote_fix{ position: fixed; bottom: 0; width: 100%; height: 80px; background: #000; opacity: 0.8;}
+
+/*job*/
+.job_list{ margin-top: 15px; padding: 0 25px 25px 25px; background: #fff; border-radius: 2px 2px 0 0;}
+.job_title{ height: 110px; border-bottom: 1px dashed #ddd; color: #444;}
+.job_title dl dt{ font-size: 16px; margin: 0 0 20px 0; padding-top: 25px; font-weight: bolder;}
+.job_title dl dd a{ color: #333; margin: 0 3px; color: #e74e3d;}
+.job_list a:hover{ text-decoration: underline;}
+.job_list_m ul{ height: 170px; padding-left: 2px; border-bottom: 1px dashed #ddd; color: #444;}
+.job_list_m ul:hover{ border-bottom: 1px dashed #e74e3d;}
+.job_list_m ul a{ color: #444;}
+.job_list_m h3{ font-size: 16px; margin-top: 10px; height: 35px; line-height: 35px;}
+.job_list_m h3 a{ color: #e74e3d;}
+.job_list_m h4{ height: 26px; line-height: 26px;}
+.job_list_m h4 span{ margin-right: 15px;}
+.job_list_m h5{ margin-top: 5px; line-height: 20px; height: 40px;}
+.job_list_m h5 a:hover{ color: #e74e3d;}
+.job_list_m p{ display: block; text-align: right; margin-top: 25px;}
+.job_list_m p a{ padding: 6px 15px; background: #e74e3d; color: #fff; border-radius: 2px;}
+.job_title-tt{ display: block; float: left; width: 400px;}
+
+/*neirong*/
+.neirong .left{ width: 810px; background: #fff; color: #333; padding: 0 25px 30px 25px; border-radius: 2px 2px 0 0;}
+.neirong h3{ height: 60px; line-height: 60px; margin-top: 15px; font-size: 28px; text-align: center;}
+.neirong h4{ text-align: center;}
+.contont{ padding-top: 30px; border-top: 1px dashed #ddd; font-size: 14px; line-height: 24px; margin: 25px 30px 0 30px; line-height: 30px;}
+.contont p{ margin-bottom: 35px; text-indent: 2em;}
+.neirong .right{ width: 320px;}
+.god_girl{ background: #fff; border-radius: 2px 2px 0 0; padding-bottom: 20px;}
+.god_girl dl{ display: block; float: left; margin: 20px 0 0 20px;}
+.god_girl dl dt a{ display: block; width: 80px; height: 80px; border-radius: 50%; background: #ddd;}
+.god_girl dl dd{ text-align: center; margin-top: 3px;}
+.god_girl dl dd a{ color: #444;}
+.god_girl dl dd a:hover{ color: #e74e3d; text-decoration: underline;}
+.tj_news{ margin-top: 20px; background: #fff; border-radius: 2px 2px 0 0;}
+
+/*news_list*/
+.news_list{ padding: 15px 0;}
+.news_list ul li{ height: 125px; border-bottom: 1px dashed #ddd; padding-top: 10px;}
+.news_list ul li:hover{ border-bottom: 1px dashed #e74e3d;}
+.news_list ul li h3{ margin-top: 5px;}
+.news_list ul li h3 a{ font-size: 16px; color: #e74e3d; height: 28px; line-height: 28px;}
+.news_list ul li h4{ margin:8px 0 13px 0;}
+.news_list ul li h4 span{ margin-right: 10px;}
+.news_list ul li h5{ height: 36px; margin: 5px 0 0 0; line-height: 18px;}
+.news_list ul li h5 a{ color: #333;}
+.news_list ul li h5 a:hover{ text-decoration: underline; color: #e74e3d;}
+
+
+/*member*/
+.profile{ height: 350px; background: #3191b1;}
+.profile dl{ padding-top: 65px;}
+.profile dl dt{ display: block; float: left; width: 200px; height: 200px; border: 5px solid #fff; background: #ddd;}
+.profile dl dd{ display: block; float: left; margin-left: 25px; font-size: 14px; color: #fff;}
+.profile dl dd h3{ font-size: 22px; font-weight: bolder; margin: 2px 0 12px 0;}
+.profile dl dd h4{ margin-bottom: 12px;}
+.profile dl dd h4 span{ margin-right: 11px;}
+.profile dl dd h5{ margin-top: 16px;}
+.profile dl dd h5 a{ display: block; width: 250px; height: 38px; text-align: center; line-height: 38px; font-size: 16px; background: #e74e3d; color: #fff;}
+.member-m{ margin-top: 20px;}
+.member-m .left{ width: 860px; background: #fff; padding-bottom: 25px;}
+.mem_photo ul{ padding-top: }
+.mem_photo ul li{ display: block; float: left; width: 194px; height: 194px; border:1px solid #ddd; margin: 15px 0 0 15px; background: #ddd;}
+.mem_photo ul li:hover{ border: 1px solid #e74e3d;}
+.mem_info{ margin-top: 15px;}
+.mem_info ul{ margin: 40px 0 20px 0; border-bottom: 1px solid #f7f7f7;}
+.mem_info ul li{ display: block; margin: 0 0 0 0; color: #444; border-bottom: 1px solid #f7f7f7; clear: both;}
+.mem_info ul li i,.mem_info ul li em{ display: block; float: left; padding: 15px 0;}
+.mem_info ul li i{ width: 115px; text-align: right; padding-right: 15px;}
+.mem_info ul li em{ padding-left: 20px; border-left: 1px solid #f7f7f7;}
+.mem_info ul li em p{ line-height: 22px;}
+
+.member-m .right{ width: 320px;}
+.visitor{ background: #fff; margin-bottom: 20px; padding-bottom: 20px;}
+.visitor dl{ display: block; float: left; margin: 15px 0 0 15px;}
+.visitor dl dt{ width: 87px; height: 87px; background: #ddd;}
+.visitor dl dd{ text-align: center; margin-top: 5px;}
+.visitor dl dd a{ color: #333;}
+.visitor dl dd a:hover{ text-decoration: underline; color: #e74e3d;}
+
+
+/*jigou center*/
+.prifile_jigou{ background: #473c4d;}
+.member .prifile_jigou h5{ margin-top: 45px;}
+
+.jigou_profile_info{ background: #fff; margin-bottom: 20px; padding: 0 0 20px 0;}
+.jigou_profile_info p{ height: 13px; line-height: 13px; margin-top: 20px; margin-left: 22px;}
+
+
+/*upgrade-jigou*/
+.upgrade-user{ margin-top: 35px; background: #fff;}
+.upgrade-user h3{ height: 120px; border-bottom: 3px solid #e74f3d; line-height: 120px; color: #444; font-weight: bolder; font-size: 36px; margin: 0 45px; padding-left: 25px;}
+.upgrade-user ul{ margin: 70px 0 0 50px; padding-bottom: 70px; font-size: 14px;}
+.upgrade-user ul li{ display: block; height: auto; line-height: 32px; clear: both;}
+.upgrade-user ul li label{ margin-bottom: 25px; display: block; float: left; margin-right: 11px; width: 120px; text-align: right;}
+.upgrade-user ul li label span{ color: #f00;}
+.upgrade-user ul li input{ margin-bottom: 25px; display: block; float: left; width: 375px; padding-left: 5px; font-size: 12px; height: 30px; line-height: 30px; border: 1px solid #eeeded;}
+.upgrade-user ul li textarea{ margin-bottom: 25px; height: 80px; width: 375px; padding-left: 5px; padding-top: 5px; font-size: 12px; border: 1px solid #eeeded;}
+.upgrade-user ul li select{ margin-bottom: 25px; height: 30px; font-size: 13px; width: 125px; padding-left: 10px; border: 1px solid #eeeded;}
+.upgrade-user ul li option{ padding-left: 10px; padding: 8px 15px; cursor: pointer;}
+.upgrade-user ul li button{ font-size: 12px; border-radius: 2px; height: 32px; width: 80px; margin-right: 15px; margin-bottom: 15px; cursor: pointer;}
+.upgrade-user ul li button:hover,.upgrade-user ul li .button_click{ background: #e74e3d; color: #fff;}
+.upgrade-user ul .model-style{ margin: 50px 0 40px 0;}
+.model-submit{ margin-top: 20px;}
+.upgrade-user ul .model-submit label{ text-indent: 9999em; color: #fff;}
+.upgrade-user ul .model-submit a{ padding: 12px 80px; background: #e74e3d; border-radius: 2px; font-size: 16px; color: #fff;}
+
+/*job_detail*/
+.job_detail{ margin-top: 15px; background: #fff;}
+.job_detail ul{ margin: 40px 20px 30px 20px;}
+.job_detail ul li{ display: block; height: 34px; line-height: 34px; border-bottom: 1px dashed #f9f9f9; padding: 0 10px 0 15px; background: url(../images/list-li-bg.jpg) no-repeat 3px 16px;}
+.job_detail ul li:hover{ background: url(../images/list-li-bg1.jpg) no-repeat 3px 16px #e74e3d;}
+.job_detail ul li:hover a,.job_detail ul li:hover span{ color: #fff;}
+.job_detail ul li a:hover{ text-decoration: underline;}
+.job_detail ul li a{ color: #444; font-size: 14px;}
+.job_detail ul li span{ float: right; color: #777;}
+.job_detail i{ display: block; margin: 25px 30px 0 30px; padding-bottom: 30px; line-height: 28px; color: #555;}
+.job_content dl{ margin: 25px;}
+.job_content dl span{ margin-right: 10px;}
+.job_content dl dt{ font-size: 26px; margin-bottom: 15px;}
+.job_content_date{ margin-bottom: 25px;}
+.job_content_style span{ display: block; line-height: 22px;}
+.job_content_submit{ margin-top: 25px; line-height: 22px;}
+.job_content_submit a{ display: block; width: 40%; height: 48px; line-height: 48px; text-align: center; border-radius: 1px; font-size: 18px; color: #fff; background: #e74e3d;}
+.job_content_ask{ margin-top: 35px; margin-bottom: 40px; background: #eee; color: #444; padding: 10px; line-height: 22px;}
+.job_content_ask span{ display: block; margin-bottom: 10px;}
+
+/*about*/
+.about{ margin-top: 35px;}
+.about_title{ height: 70px; line-height: 70px; font-size: 26px; font-weight: bolder; padding-left: 15px; border-left: 4px solid #e74e3d; background: #fff; margin-bottom: 15px;}
+.about .left{ width: 180px; background: #fff; border-radius: 3px 3px 0 0;}
+.about .left ul{ margin: 20px 0;}
+.about .left ul li{ display: block; height: 34px; line-height: 34px;}
+.about .left ul li a{ display: block; color: #444; height: 34px; padding-left: 40px; background: url(../images/list-li-bg.jpg) no-repeat 30px 16px;}
+.about .left ul li a:hover,.about .left ul li .selected{ background: url(../images/list-li-bg1.jpg) no-repeat 30px 16px #e74e3d; color: #fff;}
+.about .right{ width: 1005px;  background: #fff; border-radius: 3px 3px 0 0;}
+
+.about dl{ margin: 0 15px; font-size: 14px; margin-top: 10px; padding-bottom: 15px;}
+.about dl dt{ height: 35px; line-height: 35px; display: block; margin-bottom: 10px; padding-left: 3px; border-bottom: 1px solid #eee; color: #555; font-weight: bolder;}
+.about dl dd a{ height: 28px; line-height: 28px; padding-left: 14px; display: block; margin-top: 5px; color: #555; background: url(../images/list-li-bg.jpg) no-repeat 5px 14px;}
+.about dl dd a:hover{ background: url(../images/list-li-bg.jpg) no-repeat 5px 14px #eee;}
+
+.about_main ul{ margin: 20px 25px 0 25px; padding-bottom: 45px;}
+.about_main ul li{ clear: both; height: 42px; line-height: 42px; color: #666; border-bottom: 1px dotted #ddd;}
+.about_main ul li:hover{ border-bottom: 1px dotted #e74e3d;}
+.about_main ul li a{ color: #333;}
+.about_main ul li:hover a{ text-decoration: underline; color: #e74e3d;}
+.about_main ul li i,.about_main ul li em{ display: block; float: left;}
+.about_main ul li i{ width: 160px;}
+.about_main ul li em{ color: #333;}
+.about_main ul li p{ display: block; float: right;}

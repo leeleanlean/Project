@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="x-ua-compatible" content="IE=8;" />
+<title>LeanUI - by LeeLean</title>
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/lean.css">
+<script src="style/jquery-1.9.0.min.js"></script>
+<script src="style/lean.js"></script>
+
+
+<!-- 低版本ie支持html5标签 -->
+<!--[if lt IE 9]>
+<script> 
+   (function() {
+     if (! 
+     /*@cc_on!@*/
+     0) return;
+     var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+     var i= e.length;
+     while (i--){
+         document.createElement(e[i])
+     } 
+})() 
+</script>
+<![endif]-->
+<!-- 低版本ie支持html5标签 -->
+
+</head>
+<body>
+
+<!-- container -->
+<div class="container">
+	<!-- aside -->
+	<aside class="l">
+		<h1><a href="index.html">Lean-UI</a></h1>
+		<!-- nav -->
+		<ul class="tab javascriptTab">
+			<li><a href="javascript:void(0)" class="preNav">CSS</a></li>
+			<li><a href="index.html">简介</a></li>
+			<li><a href="css-column.html">栅格布局</a></li>
+			<li><a href="css-list.html">列表</a></li>
+			<li><a href="css-clearfix.html">浮动、清除浮动</a></li>
+			<li><a href="css-text-align.html">文本对齐方式</a></li>
+			<li><a href="css-border-radius.html">圆形、圆角、盒子阴影</a></li>
+			<li><a href="css-gird.html" class="selected">图文混排</a></li>
+			<li><a href="css-transition.html">Transition</a></li>
+		</ul>
+		<!-- nav -->
+	</aside>
+	<!-- aside -->
+
+	<!-- section -->
+	<section class="r">
+		<!-- 图文混排 -->
+		<article>
+			<h3>图文左右混排</h3>
+
+			<div class="col clearfix">
+				<dl class="dl-ver clearfix">
+					<dt><img class="transition" src="images/img.jpg" /></dt>
+					<dd>
+						文字标题
+						<p>文字简单介绍</p>
+					</dd>
+				</dl>
+				<dl class="dl-ver clearfix">
+					<dt><img class="transition" src="images/img.jpg" /></dt>
+					<dd>
+						文字标题
+						<p>文字简单介绍</p>
+					</dd>
+				</dl>
+			</div>
+			<code>.dl-ver > dt+dd</code>
+
+			<h3>自适应图文左右混排</h3>
+			<div class="col clearfix">
+				<div class="col-2-2">
+					<div class="mr-5 clearfix">
+						<dl class="dl-ver clearfix">
+							<dt><img class="transition" src="images/img.jpg" alt=""></dt>
+							<dd>
+								文字标题
+								<p>文字简单介绍</p>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="col-2-2">
+					<div class="mr-5 clearfix">
+						<dl class="dl-ver clearfix">
+							<dt><img class="transition" src="images/img.jpg" alt=""></dt>
+							<dd>
+								文字标题
+								<p>文字简单介绍</p>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<code>.col > .col-2-2*2 > .mr-5 > .dl-ver > dt+dd</code>
+
+			<h3>自适应图文上下混排</h3>
+			<div class="col clearfix">
+				<dl class="dl-hor clearfix">
+					<dt><img class="transition" src="images/img.jpg" height="300" /></dt>
+					<dd>
+						文字标题
+						<p>文字简单介绍</p>
+					</dd>
+				</dl>
+				<dl class="dl-hor clearfix">
+					<dt><img class="transition" src="images/img.jpg" height="300" /></dt>
+					<dd class="text-center">
+						文字标题
+						<p>文字简单介绍</p>
+					</dd>
+				</dl>
+				<dl class="dl-hor clearfix">
+					<dt><img class="transition" src="images/img.jpg" height="300" /></dt>
+					<dd class="text-right">
+						文字标题
+						<p>文字简单介绍</p>
+					</dd>
+				</dl>
+			</div>
+			<code>.dl-hor > dt+dd</code>
+			
+
+			<style>
+			.dl-hor img{ width: 100%;}
+			.mr-5{ border:1px solid #ddd;}
+			.col img:hover{ opacity: 0.6;}
+			</style>
+		</article>
+		<!-- 图文混排 -->
+	</section>
+	<!-- section -->
+	<div class="clearfix"></div>
+</div>
+<!-- container -->
+
+</body>
+</html>

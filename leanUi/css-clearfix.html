@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="x-ua-compatible" content="IE=8;" />
+<title>LeanUI - by LeeLean</title>
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/lean.css">
+<script src="style/jquery-1.9.0.min.js"></script>
+<script src="style/lean.js"></script>
+
+<!-- 低版本ie支持html5标签 -->
+<!--[if lt IE 9]>
+<script> 
+   (function() {
+     if (! 
+     /*@cc_on!@*/
+     0) return;
+     var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+     var i= e.length;
+     while (i--){
+         document.createElement(e[i])
+     } 
+})() 
+</script>
+<![endif]-->
+<!-- 低版本ie支持html5标签 -->
+
+</head>
+<body>
+
+<!-- container -->
+<div class="container">
+	<!-- aside -->
+	<aside class="l">
+		<h1><a href="index.html">Lean-UI</a></h1>
+		<!-- nav -->
+		<ul class="tab javascriptTab">
+			<li><a href="javascript:void(0)" class="preNav">CSS</a></li>
+			<li><a href="index.html">简介</a></li>
+			<li><a href="css-column.html">栅格布局</a></li>
+			<li><a href="css-list.html">列表</a></li>
+			<li><a href="css-clearfix.html" class="selected">浮动、清除浮动</a></li>
+			<li><a href="css-text-align.html">文本对齐方式</a></li>
+			<li><a href="css-border-radius.html">圆形、圆角、盒子阴影</a></li>
+			<li><a href="css-gird.html">图文混排</a></li>
+			<li><a href="css-transition.html">Transition</a></li>
+		</ul>
+		<!-- nav -->
+	</aside>
+	<!-- aside -->
+
+	<!-- section -->
+	<section class="r">
+		<!-- 清除浮动 -->
+		<article>
+			<h3>左浮动</h3>
+			<div class="left">左浮动</div>
+			<div class="clearfix"></div>
+			<code>.left + .clearfix</code>
+
+			<h3>右浮动</h3>
+			<div class="right">右浮动</div>
+			<div class="clearfix"></div>
+			<code>.right + .clearfix</code>
+
+			<h3>左、右浮动</h3>
+			<div class="left">左浮动</div>
+			<div class="right">右浮动</div>
+			<div class="clearfix"></div>
+			<code>.left + .right + .clearfix</code>
+
+			<h3>左、中、右浮动</h3>
+			<div class="left" style="width:33.333333%">左浮动</div>
+			<div class="center" style="width:33.333333%">左浮动</div>
+			<div class="right" style="width:33.333333%">右浮动</div>
+			<div class="clearfix"></div>
+			<code>.left + .center + .right + .clearfix</code>
+
+			<h3>清除浮动</h3>
+			<code>
+				1、元素在设置浮动后，需要设置清除浮动
+				<br>
+				<br>
+				添加方法：1、在浮动元素的父层添加class：clearfix
+				<br>
+				添加方法：2、在浮动元素的结尾同级结构中添加 class为 clearfix 的div
+			</code>
+
+			<style>
+			.left,.right,.center{ width: 400px; line-height: 100px; border:1px solid #ddd; text-align: center;}
+			</style>
+		</article>
+		<!-- 清除浮动 -->
+	</section>
+	<!-- section -->
+	<div class="clearfix"></div>
+</div>
+<!-- container -->
+
+</body>
+</html>
