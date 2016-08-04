@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=no,maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no,email=no" />
+<title>14、angular-route 路由</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/learn.css">
+
+<!-- js文件引用 -->
+<script src="js/angular1.5.5.min.js"></script>
+<script src="js/angular-route.min.js"></script>
+
+</head>
+<body>
+
+<!-- angular start -->
+<div class="angular clearfix" ng-app="app">
+
+	<!-- 左侧导航菜单 start -->
+    <div ng-include="'template/nav.html'"></div>
+	<!-- 左侧导航菜单 end -->
+
+	<!-- 右侧内容 start -->
+	<div class="content col-sm-12 col-md-10">
+
+		<!-- start -->
+		<fieldset class="example" ng-controller="example">
+			<legend>angular-route 路由</legend>
+			<div class="cloumn">
+
+				<ul>
+					<li><a href="#tab1">tab1</a></li>
+					<li><a href="#tab2">tab2</a></li>
+					<li><a href="#tab3">tab3</a></li>
+				</ul>
+
+				<div ng-view></div>
+
+				<!-- tab1 -->
+				<script type="text/ng-template" id="tab1.html">
+					this is tab1 content
+				</script>
+				<!-- tab1 -->
+
+				<!-- tab2 -->
+				<script type="text/ng-template" id="tab2.html">
+					this is tab2 content
+				</script>
+				<!-- tab2 -->
+
+				<!-- tab3 -->
+				<script type="text/ng-template" id="tab3.html">
+					this is tab3 content
+				</script>
+				<!-- tab3 -->
+				
+				<p class="analysed m-t20">
+					代码解析：
+					<br>
+					* 引入angular route js文件
+					<br>
+					* 设置一个空的 ng-view 存储点击后加载的内容
+					<br>
+					* 加载来的内容，可以是页面内的 ng-template内容，也可以是外部文件路径
+					<br>
+					* 一个页面只能有一个ng-view
+				</p>
+			</div>
+		</fieldset>
+		<!-- end -->
+
+		<!-- 显示导航 -->
+		<a href="#isMobile" class="showNav" ng-controller="showNav" ng-click="showNav()">显示导航</a>
+		<!-- 显示导航 -->
+
+		<!-- UY BEGIN -->
+		<div id="uyan_frame"></div>
+		<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2087884"></script>
+		<!-- UY END -->
+		
+	</div>
+	<!-- 右侧内容 end -->
+</div>
+<!-- angular end -->
+
+<script>
+
+/**
+* angular Module
+*
+* Description
+*/
+var app = angular.module("app",['ngRoute']);
+
+// 移动端点击显示导航
+app.controller('showNav', function($scope){
+	$scope.showNav = function(){
+		angular.element(document.querySelector('#isMobile').style.display = "block");
+	}
+
+	
+})
+
+app.controller('example', function($scope){
+	
+});
+
+app.config(['$routeProvider',function($routeProvider) {
+	$routeProvider
+	.when("/tab1",{
+		templateUrl: "tab1.html"
+	})
+	.when("/tab2",{
+		templateUrl: "tab2.html"
+	})
+	.when("/tab3",{
+		templateUrl: "tab3.html"
+	})
+	.otherwise({
+		redirectTo: "tab1"
+	});
+}])
+</script>
+
+</body>
+</html>

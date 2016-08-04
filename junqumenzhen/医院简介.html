@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>军区官方网站-医院简介</title>
+<meta name="description" content="军区官方网站" />
+<meta name="keywords" content="军区官方网站" />
+<link rel="stylesheet" href="style/base.css" />
+<link rel="stylesheet" href="style/inside.css" />
+<script src="style/jquery-1.4.1.min.js"></script>
+<script src="style/idTabs.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+var loaded = true;
+var top = $("#demo").offset().top;
+function Add_Data()
+{var scrolla=$(window).scrollTop();
+ var cha=parseInt(top)-parseInt(scrolla);
+
+if(loaded && cha<=0){ 
+$("#demo").removeClass("demo2").addClass("demo1");
+loaded=false;
+}
+if(!loaded && cha>0){
+$("#demo").removeClass("demo1").addClass("demo2");
+loaded=true;
+}
+}
+$(window).scroll(Add_Data);
+});
+</script>
+</head>
+
+<body>
+<!--head-->
+<div class="head">
+	<div class="head_m">
+        <div class="left"><a href="#"><img src="images/logo.png" /></a></div>
+        <div class="right">
+        	<a href="#"><img src="images/head02_1.png" /></a>
+            <a href="#"><img src="images/head02_2.png" /></a>
+            <a href="#"><img src="images/head02_3.png" /></a>
+            <a href="#"><img src="images/head02_4.png" /></a>
+        </div>
+    </div>
+</div>
+<!--head-->
+
+<!--nav-->
+<div class="nav">
+	<ul>
+    	<li><a href="#" class="nav_selected">网站首页</a></li>
+        <li><a href="医院简介.html">医院简介</a></li>
+        <li><a href="专家团队.html">专家团队</a></li>
+        <li><a href="权威技术.html">权威技术</a></li>
+        <li><a href="康复案例.html">康复病例</a></li>
+        <li><a href="专题.html">最新专题</a></li>
+        <li><a href="新闻中心.html">医院新闻</a></li>
+        <li><a href="来院线路.html">来院线路</a></li>
+        <li><a href="#"><img src="images/nav01.jpg" /></a></li>
+    </ul>
+</div>
+<!--nav-->
+
+<!--main_banner-->
+<div class="main_banner"><img src="images/main_ban.jpg" /></div>
+<!--main_banner-->
+
+<!--menu-->
+<div class="menu">
+	<ul class="ul1">
+    	<li><a href="#">佳菲尔人流</a></li>
+        <li><a href="#">微管人流</a></li>
+        <li><a href="#">超导人流</a></li>
+        <li><a href="#">无痛人流</a></li>
+        <div class="clear"></div>
+        <h4><a href="#"><img src="images/menu0.jpg" /></a></h4>
+    </ul>
+    <ul class="ul2">
+    	<li><a href="#">佳菲尔人流</a></li>
+        <li><a href="#">微管人流</a></li>
+        <li><a href="#">超导人流</a></li>
+        <li><a href="#">无痛人流</a></li>
+        <div class="clear"></div>
+        <h4><a href="#"><img src="images/menu00.jpg" /></a></h4>
+    </ul>
+    <ul class="ul3">
+    	<li><a href="#">佳菲尔人流</a></li>
+        <li><a href="#">微管人流</a></li>
+        <li><a href="#">超导人流</a></li>
+        <li><a href="#">无痛人流</a></li>
+        <div class="clear"></div>
+        <h4><a href="#"><img src="images/menu000.jpg" /></a></h4>
+    </ul>
+    <ul class="ul4">
+    	<li><a href="#">佳菲尔人流</a></li>
+        <li><a href="#">微管人流</a></li>
+        <li><a href="#">超导人流</a></li>
+        <li><a href="#">无痛人流</a></li>
+        <div class="clear"></div>
+        <h4><a href="#"><img src="images/menu0000.jpg" /></a></h4>
+    </ul>
+    <ul class="ul5">
+    	<li><a href="#">佳菲尔人流</a></li>
+        <li><a href="#">微管人流</a></li>
+        <li><a href="#">超导人流</a></li>
+        <li><a href="#">无痛人流</a></li>
+        <div class="clear"></div>
+        <h4><a href="#"><img src="images/menu00000.jpg" /></a></h4>
+    </ul>
+</div>
+<!--menu-->
+<div class="clear"></div>
+
+<!--main-->
+<div class="main">
+    <!--search-->
+    <div class="search">
+        <div class="left">
+            <a href="#">做人流</a>
+            <a href="#">选医院</a>
+            <a href="#">找专家</a>
+            <a href="#">问价格</a>
+        </div>
+        <div class="center">
+            <form>
+              <input type="text" class="input_tex1" value="如：宫颈糜烂" onfocus="if (value =='如：宫颈糜烂'){value =''}" onblur="if (value ==''){value='如：宫颈糜烂'}" />
+              <input type="image" src="images/search03.jpg" class="input_sub1" />
+            </form>
+        </div>
+        <div class="right">
+            <ul>
+                <li>热点搜索：</li>
+                <li><a href="#">妇科病反复发作怎么办？</a></li>
+                <li><a href="#">目前最好的无痛人流技术有什么？</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--search-->
+    <div class="clear"></div>
+    
+    <!--honor-->
+    <div class="honor">
+    	<div class="left yyjjbg" id="demo">
+            <ul>
+                <li><a href="#">公立妇科</a></li>
+                <li><a href="#">专家团队</a></li>
+                <li><a href="#">权威技术</a></li>
+                <li><a href="#">先进器材</a></li>
+                <li><a href="#">医院环境</a></li>
+                <li><a href="#" class="honor_sel">医院荣誉</a></li>
+            </ul>
+        </div>
+        <div class="right yyjj">
+			<h4><img src="images/yyjj02.jpg" /></h4>
+            <h5 style=" height:320px; width:560px; padding:0;">
+            	<img src="images/yyjj03.jpg" />
+                <span>浙江省军区门诊部妇科位于浙江省杭州市南山路150号，是浙江省唯一公立医院，为广大女性提供高标准、高质量的品牌化医院服务。浙江省军区门诊部妇科是浙江省军区特向杭州市上城区卫生局申请而建立的，该门诊原先只为军区首长提供体检与保健使用，但为了能给市民提供更好便捷的服务，现特增设新楼，并于2012年8月才正式对外开放。</span>
+                <img style="margin-left:25px;" src="images/yyjj04.jpg" />
+            </h5>
+            
+            <div class="yyjj-box1">
+            	<h3><img src="images/yyjj05.jpg" /></h3>
+                <span>浙江省军区门诊部妇科自创建以来，一直以“传承部队品质  服务地方人民”为努力追求目标。在历程中的点点滴滴无不承载着每个医务人员的辛勤付出与无私奉献。浙江省军区门诊部妇科是一所功能齐全、特色明显、技术力量雄厚、医疗设备先进，诊疗环境优良，集医疗、预防、保健的国家大型公立医院。全体医务人员树立“以病人为中心”的服务理念，禀承“病人第一、质量第一、安全第一”的服务宗旨发扬我的优良传统，廉洁行医，无私奉献，以精湛的技术、优良的服务、高尚的医德服务于军区、服务于社会，获得了广泛赞誉。</span>
+                <h3><img style="margin-left:20px;" src="images/yyjj06.jpg" /></h3>
+            </div>
+            
+            <div class="yyjj-box1">
+            	<h3><img src="images/yyjj07.jpg" /></h3>
+                <span>浙江省军区门诊部妇科拥有上海、杭州等地三级甲等医院的众多著名妇科专家，为杭州女性把脉健康，名医堂将有效合理地调配国内外顶尖的医疗资源，除开展妇科常见病、多发病的诊治以外，更重要的是开展对妇科疑难杂症的研究与治疗，以推动深圳女性健康事业的全面发展。</span>
+                <dl>
+                	<dt><a href="#"><img src="images/yyjj08.jpg" /></a></dt>
+                    <dd class="dd1">【个人简介】</dd>
+                    <dd class="dd2">浙江省军区门诊部妇科主任，进修于湖北同济医科大学，从事妇产科...<a href="#">[详细]</a></dd>
+                </dl>
+                <dl>
+                	<dt><a href="#"><img src="images/yyjj08.jpg" /></a></dt>
+                    <dd class="dd1">【个人简介】</dd>
+                    <dd class="dd2">浙江省军区门诊部妇科主任，进修于湖北同济医科大学，从事妇产科...<a href="#">[详细]</a></dd>
+                </dl>
+                <dl>
+                	<dt><a href="#"><img src="images/yyjj08.jpg" /></a></dt>
+                    <dd class="dd1">【个人简介】</dd>
+                    <dd class="dd2">浙江省军区门诊部妇科主任，进修于湖北同济医科大学，从事妇产科...<a href="#">[详细]</a></dd>
+                </dl>
+            </div>
+            
+            <div class="yyjj-box3">
+            	<h3><img src="images/yyjj09.jpg" /></h3>
+                <span>浙江省军区妇科始终关注医疗新动态，不断斥巨资积极引进医学科学新技术，追踪国内外医学科学发展方向和高精技术，积极开展新技术新业务。以人性的现代化诊疗特色领航国内医学界，从"微创"跨跃到"超微创"治疗，成为华东地区首屈一指的军区"品牌医院"。</span>
+                
+                <div class="yyjj-box3-m">
+                	<img src="images/yyjj13.jpg" align="left" />
+                    <div class="yyjj-box3-m-t">
+                    	<p class="p1">家菲尔无痛人流</p>
+                        <p class="p2">人流产业新标准</p>
+                    </div>
+                    <div class="yyjj-box3-m-b">
+                    技术，积极开展新技术新业务。以人性的现代化诊疗特色领航国内医学界，从的技术，积极开展新技术新业务。以人性的现代化诊疗特色领航国内医学界。
+                    </div>
+                </div>
+                <div class="yyjj-box3-m">
+                	<img src="images/yyjj13.jpg" align="left" />
+                    <div class="yyjj-box3-m-t">
+                    	<p class="p1">家菲尔无痛人流</p>
+                        <p class="p2">人流产业新标准</p>
+                    </div>
+                    <div class="yyjj-box3-m-b">
+                    技术，积极开展新技术新业务。以人性的现代化诊疗特色领航国内医学界，从的技术，积极开展新技术新业务。以人性的现代化诊疗特色领航国内医学界。
+                    </div>
+                </div>
+                <div class="yyjj-box3-m">
+                	<img src="images/yyjj13.jpg" align="left" />
+                    <div class="yyjj-box3-m-t">
+                    	<p class="p1">家菲尔无痛人流</p>
+                        <p class="p2">人流产业新标准</p>
+                    </div>
+                    <div class="yyjj-box3-m-b">
+                    技术，积极开展新技术新业务。以人性的现代化诊疗特色领航国内医学界，从的技术，积极开展新技术新业务。以人性的现代化诊疗特色领航国内医学界。
+                    </div>
+                </div>
+                <div class="yyjj-box3-m">
+                	<img src="images/yyjj13.jpg" align="left" />
+                    <div class="yyjj-box3-m-t">
+                    	<p class="p1">家菲尔无痛人流</p>
+                        <p class="p2">人流产业新标准</p>
+                    </div>
+                    <div class="yyjj-box3-m-b">
+                    技术，积极开展新技术新业务。以人性的现代化诊疗特色领航国内医学界，从的技术，积极开展新技术新业务。以人性的现代化诊疗特色领航国内医学界。
+                    </div>
+                </div>
+                <div class="yyjj-box3-m">
+                	<img src="images/yyjj13.jpg" align="left" />
+                    <div class="yyjj-box3-m-t">
+                    	<p class="p1">家菲尔无痛人流</p>
+                        <p class="p2">人流产业新标准</p>
+                    </div>
+                    <div class="yyjj-box3-m-b">
+                    技术，积极开展新技术新业务。以人性的现代化诊疗特色领航国内医学界，从的技术，积极开展新技术新业务。以人性的现代化诊疗特色领航国内医学界。
+                    </div>
+                </div>
+                <div class="yyjj-box3-m">
+                	<img src="images/yyjj13.jpg" align="left" />
+                    <div class="yyjj-box3-m-t">
+                    	<p class="p1">家菲尔无痛人流</p>
+                        <p class="p2">人流产业新标准</p>
+                    </div>
+                    <div class="yyjj-box3-m-b">
+                    技术，积极开展新技术新业务。以人性的现代化诊疗特色领航国内医学界，从的技术，积极开展新技术新业务。以人性的现代化诊疗特色领航国内医学界。
+                    </div>
+                </div>
+                
+                <div class="clear"></div>
+                
+            </div>
+            
+            <div class="yyjj-box1">
+            	<h3><img src="images/yyjj10.jpg" /></h3>
+                <span>浙江省军区门诊部妇科拥有上海、杭州等地三级甲等医院的众多著名妇科专家，为杭州女性把脉健康，名医堂将有效合理地调配国内外顶尖的医疗资源，除开展妇科常见病、多发病的诊治以外，更重要的是开展对妇科疑难杂症的研究与治疗，以推动深圳女性健康事业的全面发展。</span>
+                <div class="yyjj-box1-m">
+                <dl class="dl1">
+                	<dt><a href="#"><img src="images/yyjj11.jpg" /></a></dt>
+                    <dd class="dd1">2010年5月12日，五一二国际护士节宣誓大会</dd>
+                </dl>
+                <dl class="dl1">
+                	<dt><a href="#"><img src="images/yyjj11.jpg" /></a></dt>
+                    <dd class="dd1">2010年5月12日，五一二国际护士节宣誓大会</dd>
+                </dl>
+                <dl class="dl1">
+                	<dt><a href="#"><img src="images/yyjj11.jpg" /></a></dt>
+                    <dd class="dd1">2010年5月12日，五一二国际护士节宣誓大会</dd>
+                </dl>
+                </div>
+            </div>
+            
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--honor-->
+    
+    <!--bottom-->
+    <div class="bottom">
+    	<ul>
+        	<li><a href="#">医院首页</a></li>
+            <li><a href="#">医院简介</a></li>
+            <li><a href="#">专家团队</a></li>
+            <li><a href="#">权威技术</a></li>
+            <li><a href="#">康复病例</a></li>
+            <li><a href="#">最新专题</a></li>
+            <li><a href="#">医院新闻</a></li>
+            <li><a href="#">来院路线</a></li>
+        </ul>
+        <div class="bottom_b">
+        	<div class="left"><a href="#"><img src="images/bottom02.jpg" /></a></div>
+            <div class="right">
+            
+            	<p>65天无假日 24小时咨询热线：0571-87921323 QQ在线医师：2251004360</p>
+                <p>地址：杭州市南山路150号</p>
+                <p>浙江省军区门诊部妇科 版权所有Copyright 2009</p>
+                <p>浙江省军区门诊部妇科 All Right Reserved 浙ICP备13016025号-1</p>
+            </div>
+        </div>
+    </div>
+    <!--bottom-->
+    
+</div>
+<!--main-->
+
+</body>
+</html>

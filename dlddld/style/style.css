@@ -1,0 +1,144 @@
+/* CSS Document */
+
+*{ margin:0; padding:0;}
+body{ font-size:12px; font-family:"Microsoft YaHei"; overflow-x:hidden; background:url(../images/08.jpg) repeat}
+ul li,li{ list-style:none;}
+a{ text-decoration:none; blr:expression(this.onFocus=this.blur()); outline: none;}
+a:hover{ text-decoration:underline;}
+a:focus { outline: none;}  
+img{ border:none; *margin-bottom:-5px;}
+h1,h2,h3,h4,h5,h6{ display:block; font-size:12px; font-weight:normal;}
+
+.l{ float:left;}
+.c{ float:left;}
+.r{ float:right;}
+.left{ float:left;}
+.center{ float:left;}
+.right{ float:right;}
+.clear{ clear:both;}
+.w1120{ width:1120px; margin:0 auto; padding:25px;}
+.w1170{ width:1170px; margin:0 auto; }
+
+/*选中文字背景颜色设置*/
+::selection {color: #fff;background-color: #fe6b00;}   
+::-moz-selection {color: #fff;background-color: #fe6b00;}
+
+/*top*/
+.top{ width:100%; height:77px; line-height:77px; background:#fff; border-top:8px solid #34495e; border-bottom:1px solid #f9f9f9; position:fixed; top:0; z-index:9999;}
+.top-main{ width:1170px; margin:0 auto;}
+.top .l{ margin:20px 0 0 3px;}
+.top .r ul{ margin-top:20px;}
+.top .r ul li{ display:inline;}
+.top .r ul li a{ display:block; float:left; font-size:14px; color:#666; width:90px; height:35px; line-height:35px; margin:0 3px; text-decoration:none; text-align:center;}
+.top .r ul li .selected,.top .r ul li a:hover{ background:url(../images/nav-hover.jpg) no-repeat; color:#fff;}
+
+/*banner*/
+.banner{ height:450px; margin:86px 0 0 0; background:#34495e;}
+.banner .focus{height:450px;position:relative;}
+.banner .focus .f_pic{width:100%;height:450px;}
+.banner .focus .focus_1{ background:url(../images/ban1.jpg) no-repeat center center;}
+.banner .focus .focus_2{ background:url(../images/ban2.jpg) no-repeat center center;}
+.banner .focus .focus_3{ background:url(../images/ban3.jpg) no-repeat center center;}
+.banner .focus .pagination{ width:1170px; text-align:right; bottom:10px; left:50%; margin-left:-585px; position:absolute;}
+.banner .focus .pagination .toc{ display:inline-block; margin:0 3px; width:40px; height:6px; line-height:99; overflow:hidden; background:#fff;}
+.banner .focus .pagination .selected{ background:#1abc9c;}
+
+/*index*/
+.guide{ height:325px; background:#fff;}
+.guide dl{ display:block; float:left; width:305px; margin:52px 0 0 60px;}
+.guide dl dt{ display:block; float:left; width:81px;}
+.guide dl dd{ display:block; float:left; width:205px; margin-left:15px;}
+.guide dl dd p{ font-size:18px; color:#555; margin-top:6px; margin-bottom:10px;}
+.guide dl dd span{ color:#666;}
+
+.about{ height:230px; border-bottom:3px solid #efefef; background:#fff;}
+.about .l:hover,.about .r:hover{ width:572px; height:175px; background:url(../images/about1.jpg) no-repeat;}
+.about .r,.about .l{ width:572px; height:175px; background:url(../images/about2.jpg) no-repeat;}
+.about dl dt{ display:block; float:left; width:150px; height:150px; margin:15px 0 0 51px;}
+.about dl dt img{ opacity:0.7;}
+.about dl dd{ display:block; float:left; width:340px; margin:50px 0 0 22px; color:#fff;}
+.about dl dd p{ font-size:18px; margin-bottom:15px;}
+.about dl dd span{ line-height:20px;}
+.about dl dd a{ color:#fff;}
+
+/*main*/
+.main{ background:#fff; margin:0px auto 40px auto; border-radius:0 0 3px 3px;}
+.main .l{ width:780px;}
+.position{ height:34px; line-height:34px; border-bottom:1px solid #ddd; padding-left:3px; text-align:right;}
+.position h3{ float:left; font-size:14px; color:#444;}
+.position ul{ display:block; float:right;}
+.position a{ color:#666; margin-right:3px;}
+.position a:hover{ color:#1abc9c;}
+
+/*page*/
+.page{ text-align:center; margin:55px 0 40px 0;}
+.page a{ margin:0 15px;}
+
+/*main-l image*/
+.image{ padding:15px 0 40px 0;}
+.image dl{ display:block; float:left; width:340px; margin:30px 0 0 25px; border:2px solid #f5f5f5; padding:5px;}
+.image dl:hover{ border:2px solid #1abc9c;}
+.image dl dt{ display:block; height:215px; background:#666;}
+.image dl dt img{ width:340px; height:215px;}
+.image dl dd{ display:block; margin-top:3px; padding-left:3px; line-height:30px; text-align:;}
+.image dl a{ color:#666; text-decoration:none;}
+.image dl a:hover{ color:#333;}
+
+/*main-l list*/
+.list{ padding-bottom:40px;}
+.list ul{ margin:50px 20px 0 25px;}
+.list ul li{ display:block; height:37px; line-height:37px; font-size:14px; padding:0 15px 0 25px; border-radius:1px; background:url(../images/list-bg.jpg) no-repeat 12px 16px;}
+.list ul li a{ display:block; height:37px; color:#444;}
+.list ul li a:hover{ color:#1abc9c;}
+.list ul li span{ float:right; font-size:12px; color:#999;}
+
+/*main-r*/
+.main .r{ width:290px; border-left:1px solid #f9f9f9; padding-left:25px;}
+.main .r1{ position:fixed; left:400px; top:0; z-index:99999999;}
+.title{ height:34px; line-height:34px; border-bottom:1px solid #e7e7e7; background:#fff;}
+.title h3{ display:block; float:left; font-size:14px; color:#444;}
+.title p{ display:block; float:right;}
+.title p a{ color:#888;}
+.title p a:hover{ color:#1abc9c;}
+
+.main-r01{ text-align:center;}
+.main-r01 dl{ margin-bottom:30px;}
+.main-r01 dl dt{ margin:45px 0 15px 0;}
+.main-r01 dl dd{ line-height:22px; color:#444;}
+
+.main-r02 .yl-box{ width:310px; overflow:hidden; margin:7px 0 20px 0;}
+.main-r02 .yl-box li{ display:block; float:left; height:44px; line-height:44px; width:135px; text-align:center; margin:17px 5px 0 5px; color:#fff; border-radius:1px; cursor:pointer;}
+.yl-01{ background:#dc4c32;}
+.yl-02{ background:#00b8d3;}
+.yl-03{ background:#00a7a1;}
+.yl-04{ background:#ff8b02;}
+.yl-05{ background:#844cb0;}
+.yl-06{ background:#8e9300;}
+.yl-07{ background:#00994a;}
+.yl-08{ background:#c13831;}
+.yl-09{ background:#004fac;}
+.yl-10{ background:#27ae60;}
+
+.main-r03 ul{ margin:15px 0 15px 3px;}
+.main-r03 ul li{ display:block; height:30px; line-height:30px; padding-left:15px; background:url(../images/list-bg.jpg) no-repeat 2px 12px;}
+.main-r03 ul li a{ color:#555;}
+.main-r03 ul li a:hover{ color:#222;}
+.main-r03 ul li span{ float:right; color:#666;}
+
+/*bottom*/
+.bottom{ height:120px; line-height:120px; background:#fff;}
+.bottom-main{ width:1170px; margin:0 auto;}
+.bottom a{ color:#666; margin:0 7px;}
+.bottom a:hover{ color:#1abc9c;}
+.bottom .l{ color:#888;}
+
+/*back_top*/
+.back_top{ position:fixed; right:35px; bottom:35px; display:none;}
+
+/*show*/
+.show-title{ text-align:center;}
+.show-title h3{ font-size:30px; color:#333; margin:40px 0 15px 0;}
+.show-title h4{ color:#888; margin-bottom:40px;}
+.show-title h4 span{ margin:0 5px;}
+.content{ margin:0 30px; font-size:14px; color:#333; line-height:23px; padding-bottom:30px;}
+.content p{ margin-bottom:37px;}

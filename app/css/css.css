@@ -1,0 +1,64 @@
+html,body,div,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,table,tr,th,td,strong,b,i,em,span{ margin: 0; padding: 0;}
+body{ background-color: #f5f5f9; max-width: 1024px; margin: 0 auto;}
+ul,li{ list-style: none;}
+i,em{ font-style: normal;}
+img{ width: 100%;}
+
+/* index */
+.am-header{ text-align: center;}
+.am-header .logo{ font-size: 2.8rem; color: #fff;}
+.am-header-default{ background-color: #2dcd8f;}
+.banner{ margin-bottom: 0;}
+.banner .am-control-nav{ bottom: 5px;}
+.am-slider-default .am-control-nav li{ margin: 0 4px;}
+.am-slider-default .am-control-nav li a{ box-shadow: none; background-color: #fff; opacity: 0.6;}
+.am-slider-default .am-control-nav li a.am-active{ background-color: #0aa770; opacity: 0.9;}
+.am-direction-nav{ display: none;}
+
+.am-navbar-default .am-navbar-nav{ background-color: #0aa770;}
+.am-navbar-nav a .am-navbar-label{ padding-top: 3px;}
+
+/* guide */
+.guide{ margin: 0.7rem 0; text-align: center;}
+.guide .am-u-sm-3{ padding:1rem 0; background-color: #fff; outline: 1px solid #f5f5f9;}
+.guide em,.guide i{ display: block;}
+.guide em{ font-size: 1.8rem;}
+.guide i{ font-size: 1.2rem; color: #888;}
+.guide .glass-icon{ color: #fdaa3c;}
+.guide .paper-icon{ color: #2dcd8f;}
+.guide .electron-icon{ color: #47a8ef;}
+.guide .clothes-icon{ color: #ff6600;}
+
+/* intro1 */
+.intro1{ margin-bottom: 0.7rem; padding: 2rem 1rem; color: #fff; background-color: #2dcd8f;}
+.intro1 .line1{ font-size: 2.4rem; margin-bottom: 1rem;}
+.intro1 .line2{ font-size: 1.2rem; margin-bottom: 1rem; padding: 0 2.5rem;}
+.intro1 .line3 .intro1-btn{ background-color: #feba55; border:none; padding: 0.9rem 3rem;}
+
+/* intro2 */
+.intro2{ margin-bottom: 0.7rem; padding-top: 2rem; color: #fff; background-color: #feba55;}
+.intro2 .line1{ font-size: 2.4rem; padding: 0 1rem; margin-bottom: 1rem;}
+.intro2 .line2{ font-size: 1.2rem; padding: 0 1rem; margin-bottom: 1.5rem; padding: 0 2.5rem;}
+.intro2 .line3 .intro2-btn{ background-color: #2dcd8f; border:none; padding: 0.9rem 3rem;}
+
+/* sort */
+#doc-sort{ opacity: 0.9;}
+.sort{ margin-bottom: 10px;}
+.sort ul li{ font-size: 1.4rem;}
+
+/* bottom */
+.bottom{ text-align: center; padding: 1.3rem 0; font-size:1.2rem; color: #666; background-color: #fff;}
+
+/* booking */
+.booking{ margin-top: 20px;}
+.booking .am-btn{ width: 100%; padding: 0.7em 1em; background-color: #ea544a; color: #fff; border: none;}
+.booking .am-btn-tips{ margin-top: 5px; font-size: 1.1rem;}
+.booking .am-form-group{ margin-bottom: 2rem;}
+.booking .am-form-group input,.booking select,.booking textarea{ border:1px solid #ddd;}
+
+/* member */
+.member .icon{ height: 110px; background-color: #666;}
+.member .profile{ background-color: #fff; margin-top: 8px; color: #666; font-size:1.4rem; padding: 13px 0 13px 0; margin-bottom: 8px;}
+.member .profile .am-u-sm-9{ text-align: right;}
+
+.am-modal input{ width: 100%; height: 32px; line-height: 32px; padding: 0 0.5rem; border:1px solid #ddd;}

@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>简约婚纱艺术摄影</title>
+<link rel="stylesheet" href="style/lean.css">
+<link rel="stylesheet" href="style/jianyue.css">
+<script src="style/jquery-1.8.0.min.js"></script>
+<script src="style/nanobar.js"></script>
+<script src="style/slider.js"></script>
+<script src="style/jianyue.js"></script>
+</head>
+<body>
+
+<!-- 顶部加载进度条 -->
+<script>
+var options = {
+	bg: '#e74e3e',
+	target: document.getElementById('myDivId'),
+	id: 'mynano'
+};
+var nanobar = new Nanobar( options );
+nanobar.go(0);
+nanobar.go(100);
+</script>
+<!-- 顶部加载进度条 -->
+
+<!-- fixed-top -->
+<div class="fixed-top">
+	<div class="container clearfix">
+		<div class="logo l"><img src="images/logo.png" alt=""></div>
+		<ul class="nav r list-ver clearfix">
+			<li><a href="\" class="selected">网站首页</a></li>
+			<li><a href="image.html">作品展示</a></li>
+			<li><a href="list.html">新闻动态</a></li>
+			<li><a href="image.html">客片展示</a></li>
+			<li><a href="list.html">服务报价</a></li>
+			<li><a href="content.html">关于我们</a></li>
+		</ul>
+	</div>
+</div>
+<!-- fixed-top -->
+
+<!-- banner -->
+<div class="banner">
+	<div class="focus">
+	    <div id="focusPic" class="sliderwrapper">
+	        <div class="contentdiv" style="display:block;">
+	            <div class="f_pic focus_1"></div>
+	        </div>
+	        <div class="contentdiv">
+	            <div class="f_pic focus_2"></div>
+	        </div>
+	        <div class="contentdiv">
+	            <div class="f_pic focus_3"></div>
+	        </div>
+	    </div>
+	    <div id="paginate-focusPic" class="pagination">
+	        <i class="toc"></i><i class="toc"></i><i class="toc"></i><i class="toc"></i>
+	    </div>
+	</div>
+	<script>
+	// banner
+    featuredcontentslider.init({id: "focusPic",contentsource: ["inline", ""],toc: "#increment",nextprev: ["", ""], revealtype: "mouseover", enablefade: [true, 0.15], autorotate: [true, 3000], delay: 150,onChange: function(previndex, curindex){}});
+	</script>
+</div>
+<!-- banner -->
+
+<!-- guide -->
+<div class="guide">
+	<div class="container clearfix">
+		<div class="l"><img src="images/guide-01.png" alt=""></div>
+		<div class="r"><a href="#"><img src="images/guide-02.png" alt=""></a></div>
+	</div>
+</div>
+<!-- guide -->
+
+<!-- activity -->
+<div class="activity container">
+	<!-- title -->
+	<div class="title clearfix">
+		<div class="l"></div>
+		<div class="r"><a href="#" class="transition">查看更多</a></div>
+	</div>
+	<!-- title -->
+	<!-- activitybox -->
+	<ul class="activitybox list-ver clearfix">
+		<li class="activitybox-fir"><img src="images/activity01.jpg" alt="">
+			<div class="hideActivity">活动介绍：五一迎客，活动不停歇...凡是五一拍摄的顾客均有礼品赠送。活动介绍：五一迎客，活动不停歇...凡是五一拍摄的顾客均有礼品赠送。</div>
+		</li>
+		<li><img src="images/activity02.jpg" alt="">
+			<div class="hideActivity">活动介绍：五一迎客，活动不停歇...凡是五一拍摄的顾客均有礼品赠送。活动介绍：五一迎客，活动不停歇...凡是五一拍摄的顾客均有礼品赠送。</div>
+		</li>
+		<li><img src="images/activity03.jpg" alt="">
+			<div class="hideActivity">活动介绍：五一迎客，活动不停歇...凡是五一拍摄的顾客均有礼品赠送。活动介绍：五一迎客，活动不停歇...凡是五一拍摄的顾客均有礼品赠送。</div>
+		</li>
+		<li><img src="images/activity04.jpg" alt="">
+			<div class="hideActivity">活动介绍：五一迎客，活动不停歇...凡是五一拍摄的顾客均有礼品赠送。活动介绍：五一迎客，活动不停歇...凡是五一拍摄的顾客均有礼品赠送。</div>
+		</li>
+		<li><img src="images/activity05.jpg" alt="">
+			<div class="hideActivity">活动介绍：五一迎客，活动不停歇...凡是五一拍摄的顾客均有礼品赠送。活动介绍：五一迎客，活动不停歇...凡是五一拍摄的顾客均有礼品赠送。</div>
+		</li>
+	</ul>
+	<!-- activitybox -->
+</div>
+<!-- activity -->
+
+<!-- case -->
+<div class="case container">
+	<!-- title -->
+	<div class="title clearfix">
+		<div class="l"></div>
+		<div class="r">
+			<a href="#" class="transition">婚纱作品</a>
+			<a href="#" class="transition">写真作品</a>
+			<a href="#" class="transition">查看更多</a>
+		</div>
+	</div>
+	<!-- title -->
+	<!-- case-m -->
+	<ul class="col clearfix">
+		<li class="col-3-3">
+			<a href="#">
+				<div class="showCase"><img src="images/img1.jpg" class="scale transition" alt=""></div>
+				<div class="hideCaseBg" style="display: none;"></div>
+				<div class="hideCaseCon" style="display: none;">
+					<h3>这是作品案例标题</h3>
+					<p class="case-time">2014-11-11</p>
+				</div>
+			</a>
+		</li>
+		<li class="col-3-3">
+			<a href="#">
+				<div class="showCase"><img src="images/img2.jpg" class="scale transition" alt=""></div>
+				<div class="hideCaseBg" style="display: none;"></div>
+				<div class="hideCaseCon" style="display: none;">
+					<h3>这是作品案例标题</h3>
+					<p class="case-time">2014-11-11</p>
+				</div>
+			</a>
+		</li>
+		<li class="col-3-3">
+			<a href="#">
+				<div class="showCase"><img src="images/img3.jpg" class="scale transition" alt=""></div>
+				<div class="hideCaseBg" style="display: none;"></div>
+				<div class="hideCaseCon" style="display: none;">
+					<h3>这是作品案例标题</h3>
+					<p class="case-time">2014-11-11</p>
+				</div>
+			</a>
+		</li>
+		<li class="col-3-3">
+			<a href="#">
+				<div class="showCase"><img src="images/img4.jpg" class="scale transition" alt=""></div>
+				<div class="hideCaseBg" style="display: none;"></div>
+				<div class="hideCaseCon" style="display: none;">
+					<h3>这是作品案例标题</h3>
+					<p class="case-time">2014-11-11</p>
+				</div>
+			</a>
+		</li>
+		<li class="col-3-3">
+			<a href="#">
+				<div class="showCase"><img src="images/img1.jpg" class="scale transition" alt=""></div>
+				<div class="hideCaseBg" style="display: none;"></div>
+				<div class="hideCaseCon" style="display: none;">
+					<h3>这是作品案例标题</h3>
+					<p class="case-time">2014-11-11</p>
+				</div>
+			</a>
+		</li>
+		<li class="col-3-3">
+			<a href="#">
+				<div class="showCase"><img src="images/img2.jpg" class="scale transition" alt=""></div>
+				<div class="hideCaseBg" style="display: none;"></div>
+				<div class="hideCaseCon" style="display: none;">
+					<h3>这是作品案例标题</h3>
+					<p class="case-time">2014-11-11</p>
+				</div>
+			</a>
+		</li>
+		<li class="col-3-3">
+			<a href="#">
+				<div class="showCase"><img src="images/img3.jpg" class="scale transition" alt=""></div>
+				<div class="hideCaseBg" style="display: none;"></div>
+				<div class="hideCaseCon" style="display: none;">
+					<h3>这是作品案例标题</h3>
+					<p class="case-time">2014-11-11</p>
+				</div>
+			</a>
+		</li>
+		<li class="col-3-3">
+			<a href="#">
+				<div class="showCase"><img src="images/img4.jpg" class="scale transition" alt=""></div>
+				<div class="hideCaseBg" style="display: none;"></div>
+				<div class="hideCaseCon" style="display: none;">
+					<h3>这是作品案例标题</h3>
+					<p class="case-time">2014-11-11</p>
+				</div>
+			</a>
+		</li>
+		<li class="col-3-3">
+			<a href="#">
+				<div class="showCase"><img src="images/img1.jpg" class="scale transition" alt=""></div>
+				<div class="hideCaseBg"></div>
+				<div class="hideCaseCon">
+					<h3>这是作品案例标题</h3>
+					<p class="case-time">2014-11-11</p>
+				</div>
+			</a>
+		</li>
+	</ul>
+	<!-- case-m -->
+
+</div>
+<!-- case -->
+
+<!-- screen -->
+<div class="screen">
+	<!-- title -->
+	<div class="title container clearfix">
+		<div class="l"></div>
+		<div class="r">
+			<a href="#" class="transition">婚纱作品</a>
+			<a href="#" class="transition">写真作品</a>
+			<a href="#" class="transition">查看更多</a>
+		</div>
+	</div>
+	<!-- title -->
+
+	<div class="screentab">
+		<ul class="tabNav list-ver clearfix">
+	    	<li><a class="screen1 on">黄河湿地公园</a></li>
+	        <li><a class="screen2">温哥华假日山庄</a></li>
+	        <li><a class="screen3">黄河湿地公园</a></li>
+	        <li><a class="screen4">温哥华假日山庄</a></li>
+	        <li><a class="screen5">黄河湿地公园</a></li>
+	        <li><a class="screen6">温哥华假日山庄</a></li>
+	    </ul>
+	    <div class="tabCon">
+	    	<div class="tabs" style="display:block;"><img src="images/ad01.jpg" alt=""></div>
+	        <div class="tabs" style="display:none;"><img src="images/ad02.jpg" alt=""></div>
+	        <div class="tabs" style="display:none;"><img src="images/ad01.jpg" alt=""></div>
+	        <div class="tabs" style="display:none;"><img src="images/ad02.jpg" alt=""></div>
+	        <div class="tabs" style="display:none;"><img src="images/ad01.jpg" alt=""></div>
+	        <div class="tabs" style="display:none;"><img src="images/ad02.jpg" alt=""></div>
+	    </div>
+	</div>
+	<script>
+	$(function(){
+		tab(".tabNav>li",".tabCon>.tabs");
+		function tab(oTab,oNeirong){
+			$(oTab).click(function(){
+				$(this).find("a").addClass("on");
+				$(this).siblings().find("a").removeClass("on");
+				$(oNeirong).hide();
+				$(oNeirong).eq($(this).index()).show();
+			})
+		}
+	})
+	</script>
+	
+</div>
+<!-- screen -->
+
+<!-- custom -->
+<div class="custom container">
+	<!-- title -->
+	<div class="title clearfix">
+		<div class="l"></div>
+		<div class="r">
+			<a href="#" class="transition">婚纱客片</a>
+			<a href="#" class="transition">写真客片</a>
+			<a href="#" class="transition">查看更多</a>
+		</div>
+	</div>
+	<!-- title -->
+	<!-- custombox -->
+	<ul class="custombox list-ver clearfix">
+		<li class="transition"><a href="#"><img src="images/img.jpg" alt=""></a></li>
+		<li class="transition"><a href="#"><img src="images/img.jpg" alt=""></a></li>
+		<li class="transition"><a href="#"><img src="images/img.jpg" alt=""></a></li>
+		<li class="transition"><a href="#"><img src="images/img.jpg" alt=""></a></li>
+		<li class="transition"><a href="#"><img src="images/img.jpg" alt=""></a></li>
+		<li class="transition"><a href="#"><img src="images/img.jpg" alt=""></a></li>
+		<li class="transition"><a href="#"><img src="images/img.jpg" alt=""></a></li>
+		<li class="transition"><a href="#"><img src="images/img.jpg" alt=""></a></li>
+		<li class="transition"><a href="#"><img src="images/img.jpg" alt=""></a></li>
+		<li class="transition"><a href="#"><img src="images/img.jpg" alt=""></a></li>
+		<li class="transition"><a href="#"><img src="images/img.jpg" alt=""></a></li>
+		<li class="transition"><a href="#"><img src="images/img.jpg" alt=""></a></li>
+	</ul>
+	<!-- custombox -->
+</div>
+<!-- custom -->
+
+<!-- server_turn -->
+<div class="server_turn container"></div>
+<!-- server_turn -->
+
+<!-- news -->
+<div class="news container">
+	<!-- title -->
+	<div class="title clearfix">
+		<div class="l"></div>
+		<div class="r">
+			<a href="#" class="transition">更多资讯</a>
+		</div>
+	</div>
+	<!-- title -->
+	<!-- newsbox -->
+	<div class="newsbox clearfix">
+		<!-- l -->
+		<div class="l">
+			<div class="newsbox_t"><span>HOT NEWS</span><i>热门资讯</i></div>
+			<ul>
+				<li><a href="#">热门资讯内容显示标题</a><p>Post Time:2014-11-11</p></li>
+				<li><a href="#">热门资讯内容显示标题</a><p>Post Time:2014-11-11</p></li>
+				<li><a href="#">热门资讯内容显示标题</a><p>Post Time:2014-11-11</p></li>
+				<li><a href="#">热门资讯内容显示标题</a><p>Post Time:2014-11-11</p></li>
+			</ul>
+		</div>
+		<!-- l -->
+
+		<!-- c -->
+		<div class="c">
+			<div class="newsbox_t"><span>HOT EVENTS</span><i>热门活动</i></div>
+			<ul>
+				<li><a href="#">热门资讯内容显示标题</a><p>Post Time:2014-11-11</p></li>
+				<li><a href="#">热门资讯内容显示标题</a><p>Post Time:2014-11-11</p></li>
+				<li><a href="#">热门资讯内容显示标题</a><p>Post Time:2014-11-11</p></li>
+				<li><a href="#">热门资讯内容显示标题</a><p>Post Time:2014-11-11</p></li>
+			</ul>
+		</div>
+		<!-- c -->
+
+		<!-- r -->
+		<div class="r">
+			<div class="newsbox_t"><span>SERVER TIPS</span><i>服务小贴士</i></div>
+			<ul>
+				<li><a href="#">热门资讯内容显示标题</a><p>Post Time:2014-11-11</p></li>
+				<li><a href="#">热门资讯内容显示标题</a><p>Post Time:2014-11-11</p></li>
+				<li><a href="#">热门资讯内容显示标题</a><p>Post Time:2014-11-11</p></li>
+				<li><a href="#">热门资讯内容显示标题</a><p>Post Time:2014-11-11</p></li>
+			</ul>
+		</div>
+		<!-- r -->
+	</div>
+	<!-- newsbox -->
+</div>
+<!-- news -->
+
+<!-- bottom -->
+<div class="bottom">
+	<div class="container clearfix">
+		<!-- footer_l -->
+		<div class="l">1</div>
+		<!-- footer_l -->
+		<!-- footer_r -->
+		<div class="r">
+			<ul class="footer_nav list-ver clearfix">
+				<li><a href="#">网站首页</a></li>
+				<li><a href="#">作品展示</a></li>
+				<li><a href="#">新闻动态</a></li>
+				<li><a href="#">客片展示</a></li>
+				<li><a href="#">服务报价</a></li>
+				<li><a href="#">关于我们</a></li>
+			</ul>
+			<p><i>郑州简约婚纱摄影</i><i>郑州婚纱摄影</i><i>拍婚纱照</i><i>好的婚纱艺术摄影</i><i>郑州艺术摄影</i><i>艺术照</i><i>婚纱照拍摄郑州</i></p>
+			<p>地址：啊实打实大阿萨德阿萨德</p>
+			<p>来店路线：啊实打实阿萨德来店路线：啊实打实阿萨德来店路线：啊实打实阿萨德来店路线：啊实打实阿萨德来店路线：啊实打实阿萨德来店路线：啊实打实阿萨德来店路线：啊实打实阿萨德来店路线：啊实打实阿萨德来店路线：啊实打实阿萨德来店路线：啊实打实阿萨德</p>
+			<p>Copyright 2015 www.jianyuephoto.com 郑州简约婚纱艺术摄影 ICP备：201111223355</p>
+		</div>
+		<!-- footer_r -->
+	</div>
+</div>
+<!-- bottom -->
+
+<!-- back_top -->
+<div class="back_top"><img src="images/back_top.png"></div>
+<!-- back_top -->
+
+<!-- fixleft -->
+<div class="fixleft">
+	<p><a href="#"><img src="images/ser-qq.jpg"></a></p>
+	<p><a href="#"><img src="images/ser-wx.jpg"></a></p>
+</div>
+<!-- fixleft -->
+
+<!-- fixfooter -->
+<div class="fixfooter">
+	<ul class="container clearfix">
+		<li class="qq l"><a href=""><img src="images/qq.png" alt=""></a></li>
+		<li class="phone r">content</li>
+	</ul>
+</div>
+<!-- fixfooter -->
+
+</body>
+</html>
