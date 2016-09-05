@@ -1,0 +1,274 @@
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 12px; }
+
+.w1100 {
+  width: 1100px;
+  margin: 0 auto; }
+
+.m-b15 {
+  margin-bottom: 15px; }
+
+.hide {
+  display: none; }
+
+.bg-fff {
+  background-color: #fff; }
+
+.btn-h38 {
+  display: block;
+  width: 100%;
+  height: 38px;
+  background: #e74e3d;
+  line-height: 38px;
+  font-size: 14px;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center; }
+
+/* top */
+.top {
+  height: 36px;
+  line-height: 36px;
+  color: #ddd;
+  background-color: #252c34; }
+  .top ul li a {
+    color: #ddd;
+    margin: 0 7px; }
+  .top ul li a:hover {
+    color: #fff; }
+  .top ul li:last-child a {
+    margin-right: 0px; }
+
+/* head */
+.head .w1100 {
+  height: 80px;
+  line-height: 80px; }
+  .head .w1100 .logo {
+    width: 270px; }
+    .head .w1100 .logo img {
+      width: 150px;
+      margin: 20px 0 0 20px; }
+  .head .w1100 .allMoney {
+    font-size: 12px;
+    color: #999; }
+    .head .w1100 .allMoney span {
+      margin-right: 4px;
+      font-size: 20px;
+      font-weight: bolder;
+      color: #e74e3d; }
+  .head .w1100 .menu a {
+    height: 80px;
+    width: 100px;
+    margin: 0 0 0 15px;
+    font-size: 14px;
+    text-align: right; }
+  .head .w1100 .menu a:hover, .head .w1100 .menu a.selected {
+    color: #e74e3d; }
+
+.banner {
+  height: 450px;
+  background: url(../images/banner.jpg) center #ddd; }
+
+.bottom {
+  height: 36px; }
+
+.index {
+  margin: 20px auto 30px auto; }
+  .index .l {
+    width: 250px; }
+    .index .l h4 {
+      line-height: 42px;
+      font-size: 14px;
+      padding-left: 15px;
+      border-bottom: 1px solid #f4f4f4; }
+      .index .l h4 i {
+        padding: 0 2px 10px 2px;
+        border-bottom: 2px solid #e74e3d; }
+    .index .l .index-draw {
+      height: 260px;
+      margin-bottom: 20px;
+      border: 1px solid #efefef; }
+    .index .l .index-record {
+      margin-bottom: 20px;
+      border: 1px solid #efefef; }
+      .index .l .index-record a:hover {
+        text-decoration: none; }
+      .index .l .index-record dl {
+        padding: 0 15px;
+        padding-top: 15px;
+        height: 80px;
+        border-bottom: 1px dotted #ddd; }
+        .index .l .index-record dl dt {
+          line-height: 25px; }
+          .index .l .index-record dl dt i.left {
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+            margin-top: 2px;
+            background-color: #ddd;
+            border-radius: 50%; }
+          .index .l .index-record dl dt em.left {
+            font-size: 14px;
+            color: #666; }
+            .index .l .index-record dl dt em.left span {
+              font-size: 12px;
+              margin-left: 10px;
+              color: #999; }
+        .index .l .index-record dl dd {
+          color: #999;
+          margin: 4px 0 0 35px; }
+      .index .l .index-record dl:last-child {
+        border: none; }
+      .index .l .index-record dl:hover {
+        background-color: #f3f7fb; }
+    .index .l .index-news {
+      border: 1px solid #efefef; }
+      .index .l .index-news dl {
+        height: 75px;
+        padding: 12px 0 0 2px;
+        margin: 0 15px;
+        border-bottom: 1px dotted #ddd; }
+        .index .l .index-news dl dt a {
+          font-size: 14px;
+          line-height: 30px; }
+        .index .l .index-news dl dd {
+          color: #999; }
+      .index .l .index-news dl:hover {
+        border-bottom: 1px dotted #aaa; }
+      .index .l .index-news dl:last-child {
+        border: none; }
+      .index .l .index-news a:hover {
+        color: #e74e3d; }
+  .index .r {
+    width: 835px; }
+    .index .r .index-list {
+      position: relative;
+      margin-bottom: 20px;
+      height: 260px; }
+      .index .r .index-list .left {
+        width: 510px;
+        height: 260px;
+        background-color: #ddd; }
+        .index .r .index-list .left img {
+          height: 100%;
+          width: 100%; }
+      .index .r .index-list .right {
+        width: 300px; }
+      .index .r .index-list .status {
+        position: absolute;
+        width: 115px;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        color: #fff;
+        left: 0;
+        top: 0;
+        opacity: 0.9;
+        background-color: #e74e3d; }
+      .index .r .index-list .index-list-info {
+        padding: 0 25px; }
+        .index .r .index-list .index-list-info h3 {
+          font-size: 16px;
+          line-height: 25px;
+          margin: 20px 0 10px 0; }
+        .index .r .index-list .index-list-info h5 {
+          line-height: 26px; }
+          .index .r .index-list .index-list-info h5 span {
+            color: #e74e3d;
+            font-weight: bolder;
+            font-size: 16px;
+            margin-right: 3px; }
+        .index .r .index-list .index-list-info .peoples {
+          line-height: 19px;
+          margin: 0 0 17px 1px; }
+          .index .r .index-list .index-list-info .peoples span {
+            font-weight: bolder;
+            color: #e74e3d; }
+        .index .r .index-list .index-list-info .progress {
+          position: relative;
+          margin: 20px 0;
+          height: 5px;
+          border-radius: 1px;
+          background-color: #ddd; }
+          .index .r .index-list .index-list-info .progress .progressNum {
+            position: absolute;
+            width: 30%;
+            height: 5px;
+            top: 0;
+            left: 0;
+            border-radius: 1px;
+            background-color: #e74e3d; }
+        .index .r .index-list .index-list-info p a:hover {
+          color: #fff;
+          opacity: 0.9;
+          text-decoration: none; }
+        .index .r .index-list .index-list-info a:hover {
+          color: #e74e3d; }
+    .index .r .index-list:hover {
+      box-shadow: 0 3px 12px #ccc; }
+
+.page {
+  margin-top: 25px;
+  margin: 50px 0 30px 0; }
+  .page ul li a {
+    width: 50px;
+    height: 28px;
+    margin: 0 4px;
+    line-height: 28px;
+    text-align: center;
+    color: #6c6c6c;
+    background: #fff;
+    border-radius: 2px; }
+  .page ul li a:hover, .page ul li .selected {
+    background: #e74e3d;
+    color: #fff; }
+
+.list-container .list-one {
+  display: block;
+  float: left;
+  width: 356px;
+  height: 410px;
+  border-bottom: 4px solid #eee;
+  margin: 20px 15px 0 0;
+  font-size: 14px;
+  background: #fff;
+  box-shadow: 0 2px 8px #eee;
+  position: relative;
+  cursor: pointer; }
+  .list-container .list-one a:hover {
+    color: #e74e3d; }
+  .list-container .list-one .product_pic {
+    width: 356px;
+    height: 237px; }
+    .list-container .list-one .product_pic img {
+      width: 100%;
+      height: 100%; }
+  .list-container .list-one .product_name {
+    height: 27px;
+    line-height: 27px;
+    font-size: 17px;
+    font-weight: bolder;
+    margin: 22px 0 15px 15px; }
+  .list-container .list-one .product_price {
+    margin: 10px 0 0 15px; }
+  .list-container .list-one .product_subscribe {
+    width: 80px;
+    height: 30px;
+    line-height: 28px;
+    margin: 14px 0 0 15px;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    background-color: #e74e3d; }
+.list-container .list-one:hover {
+  box-shadow: 0 3px 12px #ccc;
+  border-bottom: 4px solid #ccc;
+  text-decoration: none; }
+  .list-container .list-one:hover .product_subscribe {
+    opacity: 0.9; }
+.list-container .list-one:nth-child(3n) {
+  margin: 20px 0 0 2px; }
+
+/*# sourceMappingURL=ask.css.map */

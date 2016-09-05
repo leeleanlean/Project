@@ -1,0 +1,67 @@
+/********** reset **********/
+*,*:after,*:before{ -webkit-box-sizing: border-box;	-moz-box-sizing: border-box; box-sizing: border-box;}
+html,body,div,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,table,tr,th,td,strong,b,i,em,span{ margin: 0; padding: 0;}
+body,button,input,select,textarea{ font-size: 12px; line-height: 18px; font-family:"Microsoft YaHei";}
+h1,h2,h3,h4,h5,h6{ font-weight: normal;}
+ul li,li{ list-style:none;}
+a{ display: block; text-decoration:none; outline: none; color: #333;}
+a:hover{ text-decoration:underline;}
+i,em{ font-style: normal;}
+input,textarea,select,a:focus{ outline: none;}
+input{ -webkit-appearance: none;}
+img{ vertical-align:top; border:0; *margin-bottom:-5px;}
+
+/******************** lean.css ********************/
+
+/* 栅格布局 */
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-2-2,.col-3-3,.col-4-4,.col-5-5{ display: block; float: left;}
+/*不等分栅格*/
+.col{ width: 100%;}
+.col-1{ width: 10%;}
+.col-2{ width: 20%;}
+.col-3{ width: 30%;}
+.col-4{ width: 40%;}
+.col-5{ width: 50%;}
+.col-6{ width: 60%;}
+.col-7{ width: 70%;}
+.col-8{ width: 80%;}
+.col-9{ width: 90%;}
+/* 等分栅格 */
+.col-2-2{ width: 50%;}
+.col-3-3{ width: 33.333333%;}
+.col-4-4{ width: 25%;}
+.col-5-5{ width: 20%;}
+
+/* 列表 */
+.list-ver li{ display: block; float: left;}
+.list-ver li a{ display: block; float: left;}
+
+/* 清除浮动 */
+.l{ display: block; float: left;}
+.c{ display: block; float: left;}
+.r{ display: block; float: right;}
+.left{ display: block; float: left;}
+.center{ display: block; float: left;}
+.right{ display: block; float: right;}
+.clearfix { *zoom: 1;}
+.clearfix:before,.clearfix:after{ display: table; height:0; line-height: 0; content: "";}
+.clearfix:after{ clear: both;}
+
+/* 文字对齐方式 (text-align) */
+.text-left{ text-align: left;}
+.text-center{ text-align: center;}
+.text-right{ text-align: right;}
+
+/* 圆形、圆角、盒子阴影 */
+.border-circle{ border-radius: 50%; background: #d44950; width: 100px; height: 100px;}
+.border-radius{ border: 1px solid #ddd; border-radius: 3px;}
+.box-shadow{ box-shadow: 0 0 3px #ddd;}
+
+/* 图文混排 */
+.dl-ver,.dl-ver dt,.dl-ver dd{ display: block; float: left;}
+
+/* transition */
+.transition{ transition:all 0.5s ease 0s;}
+.hover-border{ padding: 5px; outline: 3px solid #ddd; outline-offset:-3px;}
+.hover-border:hover{ outline: 3px solid #d44950; outline-offset:-3px;}
+.hover-shadow:hover{ box-shadow: 0 0 10px #ddd;}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+<title>添加地址</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<meta name="full-screen" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" href="css/amazeui.min.css">
+<link rel="stylesheet" href="css/safe.css">
+</head>
+
+<body style="background-color: #fff;">
+
+<!-- header -->
+<header id="header" data-am-widget="header" class="am-header am-header-default">
+    <div class="am-header-left am-header-nav">
+        <a href="#sidebar" data-am-offcanvas>
+            <i class="am-header-icon am-icon-bars"></i>
+        </a>
+    </div>
+    <div class="am-header-right am-header-nav">添加地址</div>
+</header>
+<!-- header -->
+
+<!-- login -->
+<div class="login">
+
+	<form class="am-form am-form-horizontal">
+	    <div class="am-form-group">
+	        <label class="am-u-sm-2 am-form-label">姓名</label>
+	        <div class="am-u-sm-10">
+	            <input type="text" placeholder="请输入姓名">
+	        </div>
+	    </div>
+	    <div class="am-form-group">
+            <label class="am-u-sm-2 am-form-label">手机</label>
+            <div class="am-u-sm-10">
+                <input type="text" placeholder="请输入手机号">
+            </div>
+        </div>
+        <div class="am-form-group">
+            <label class="am-u-sm-2 am-form-label">邮编</label>
+            <div class="am-u-sm-10">
+                <input type="text" placeholder="请输入邮编">
+            </div>
+        </div>
+        <div class="am-form-group">
+            <label class="am-u-sm-2 am-form-label">省市</label>
+            <div class="am-u-sm-10">
+                <input type="text" placeholder="请输入省市区">
+            </div>
+        </div>
+        <div class="am-form-group">
+            <label class="am-u-sm-2 am-form-label">街道</label>
+            <div class="am-u-sm-10">
+                <input type="text" placeholder="请输入街道和门号">
+            </div>
+        </div>
+	    <button type="submit" class="btn">确认添加</button>
+	</form>
+</div>
+
+<!-- login -->
+
+<!-- sidebar -->
+<div class="sidebar">
+    <div id="sidebar" class="am-offcanvas">
+        <div class="am-offcanvas-bar">
+            <div class="am-offcanvas-content">
+                <div class="logo">Logo</div>
+                <ul>
+                    <li><a href="car.html">我的作品</a></li>
+                    <li><a href="myOrder.html">我的订单</a></li>
+                    <li><a href="template.html">模板选择</a></li>
+                    <li><a href="message.html">消息</a></li>
+                    <li><a href="location.html">地址管理</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+                <aside class="am-g isLogin no clearfix hide">
+                    <a href="login.html" class="am-btn am-btn-danger l">注册</a>
+                    <a href="register.html"class="am-btn am-btn-danger r">登录</a>
+                </aside>
+                <aside class="isLogin yes">
+                    <p>账户：LeeLean</p>
+                    <p>余额：100元</p>
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- sidebar -->
+
+</body>
+
+<!-- js文件 -->
+<script src="js/jquery.min.js"></script>
+<script src="js/amazeui.min.js"></script>
+<script src="js/angular-1.5.5.js"></script>
+
+<script>
+/**
+* app Module
+* 2016-05-25
+* safeGuarantee by leelean
+*/
+var app = angular.module('app', []);
+app.controller('lantian', function($scope,$element){
+
+	
+})
+</script>
+
+</html>

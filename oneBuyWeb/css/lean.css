@@ -1,0 +1,29 @@
+/******************** base css ********************/
+*,*:after,*:before{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html,body,div,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,table,tr,th,td,strong,b,i,em,span{ font-weight: normal; margin: 0; padding: 0;}
+h1,h2,h3,h4,h5,h6{ font-weight: normal;}
+body,button,input,select,textarea{ font-size: 0.73rem; font-family:"Microsoft YaHei"; color: #333;}
+li{ list-style:none;}
+a{ display: block; text-decoration:none; outline: none; color: #444;}
+a:hover{ text-decoration: underline;}
+input,textarea,select,a:focus{ outline: none;}
+img{ vertical-align:top; border:0; *margin-bottom:-5px;}
+i,em{ font-style: normal;}
+input{-webkit-appearance: none;}
+
+/******************** float clear ********************/
+.l{ display: block; float: left;}
+.c{ display: block; float: left;}
+.r{ display: block; float: right;}
+.left{ display: block; float: left;}
+.center{ display: block; float: left;}
+.right{ display: block; float: right;}
+.clearfix { *zoom: 1;}
+.clearfix:before,.clearfix:after{ display: table; height:0; line-height: 0; content: "";}
+.clearfix:after{ clear: both;}
+
+/******************** inline list ********************/
+.list-ver li,.list-ver li a,.dl-ver,.dl-ver dt,.dl-ver dd{ display: block; float: left;}
+
+/* transition */
+.transition{ transition:all 0.25s ease 0s;}

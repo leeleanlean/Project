@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>军区官方网站-荣誉</title>
+<meta name="description" content="军区官方网站" />
+<meta name="keywords" content="军区官方网站" />
+<link rel="stylesheet" href="style/base.css" />
+<link rel="stylesheet" href="style/inside.css" />
+<script src="style/jquery-1.4.1.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+var loaded = true;
+var top = $("#demo").offset().top;
+function Add_Data()
+{var scrolla=$(window).scrollTop();
+ var cha=parseInt(top)-parseInt(scrolla);
+
+if(loaded && cha<=0){ 
+$("#demo").removeClass("demo2").addClass("demo1");
+loaded=false;
+}
+if(!loaded && cha>0){
+$("#demo").removeClass("demo1").addClass("demo2");
+loaded=true;
+}
+}
+$(window).scroll(Add_Data);
+});
+</script>
+</head>
+
+<body>
+<!--head-->
+<div class="head">
+	<div class="head_m">
+        <div class="left"><a href="#"><img src="images/logo.png" /></a></div>
+        <div class="right">
+        	<a href="#"><img src="images/head02_1.png" /></a>
+            <a href="#"><img src="images/head02_2.png" /></a>
+            <a href="#"><img src="images/head02_3.png" /></a>
+            <a href="#"><img src="images/head02_4.png" /></a>
+        </div>
+    </div>
+</div>
+<!--head-->
+
+<!--nav-->
+<div class="nav">
+	<ul>
+    	<li><a href="#" class="nav_selected">网站首页</a></li>
+        <li><a href="医院简介.html">医院简介</a></li>
+        <li><a href="专家团队.html">专家团队</a></li>
+        <li><a href="权威技术.html">权威技术</a></li>
+        <li><a href="康复案例.html">康复病例</a></li>
+        <li><a href="专题.html">最新专题</a></li>
+        <li><a href="新闻中心.html">医院新闻</a></li>
+        <li><a href="来院线路.html">来院线路</a></li>
+        <li><a href="#"><img src="images/nav01.jpg" /></a></li>
+    </ul>
+</div>
+<!--nav-->
+
+<!--main_banner-->
+<div class="main_banner"><img src="images/main_ban.jpg" /></div>
+<!--main_banner-->
+
+<!--menu-->
+<div class="menu">
+	<ul class="ul1">
+    	<li><a href="#">佳菲尔人流</a></li>
+        <li><a href="#">微管人流</a></li>
+        <li><a href="#">超导人流</a></li>
+        <li><a href="#">无痛人流</a></li>
+        <div class="clear"></div>
+        <h4><a href="#"><img src="images/menu0.jpg" /></a></h4>
+    </ul>
+    <ul class="ul2">
+    	<li><a href="#">佳菲尔人流</a></li>
+        <li><a href="#">微管人流</a></li>
+        <li><a href="#">超导人流</a></li>
+        <li><a href="#">无痛人流</a></li>
+        <div class="clear"></div>
+        <h4><a href="#"><img src="images/menu00.jpg" /></a></h4>
+    </ul>
+    <ul class="ul3">
+    	<li><a href="#">佳菲尔人流</a></li>
+        <li><a href="#">微管人流</a></li>
+        <li><a href="#">超导人流</a></li>
+        <li><a href="#">无痛人流</a></li>
+        <div class="clear"></div>
+        <h4><a href="#"><img src="images/menu000.jpg" /></a></h4>
+    </ul>
+    <ul class="ul4">
+    	<li><a href="#">佳菲尔人流</a></li>
+        <li><a href="#">微管人流</a></li>
+        <li><a href="#">超导人流</a></li>
+        <li><a href="#">无痛人流</a></li>
+        <div class="clear"></div>
+        <h4><a href="#"><img src="images/menu0000.jpg" /></a></h4>
+    </ul>
+    <ul class="ul5">
+    	<li><a href="#">佳菲尔人流</a></li>
+        <li><a href="#">微管人流</a></li>
+        <li><a href="#">超导人流</a></li>
+        <li><a href="#">无痛人流</a></li>
+        <div class="clear"></div>
+        <h4><a href="#"><img src="images/menu00000.jpg" /></a></h4>
+    </ul>
+</div>
+<!--menu-->
+<div class="clear"></div>
+
+<!--main-->
+<div class="main">
+    <!--search-->
+    <div class="search">
+        <div class="left">
+            <a href="#">做人流</a>
+            <a href="#">选医院</a>
+            <a href="#">找专家</a>
+            <a href="#">问价格</a>
+        </div>
+        <div class="center">
+            <form>
+              <input type="text" class="input_tex1" value="如：宫颈糜烂" onfocus="if (value =='如：宫颈糜烂'){value =''}" onblur="if (value ==''){value='如：宫颈糜烂'}" />
+              <input type="image" src="images/search03.jpg" class="input_sub1" />
+            </form>
+        </div>
+        <div class="right">
+            <ul>
+                <li>热点搜索：</li>
+                <li><a href="#">妇科病反复发作怎么办？</a></li>
+                <li><a href="#">目前最好的无痛人流技术有什么？</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--search-->
+    <div class="clear"></div>
+    
+    <!--honor-->
+    <div class="honor">
+    	<div class="left honorbg" id="demo">
+            <ul>
+                <li><a href="#">公立妇科</a></li>
+                <li><a href="#">专家团队</a></li>
+                <li><a href="#">权威技术</a></li>
+                <li><a href="#">先进器材</a></li>
+                <li><a href="#">医院环境</a></li>
+                <li><a href="#" class="honor_sel">医院荣誉</a></li>
+            </ul>
+        </div>
+        <div class="right">
+        	<h3><img src="images/honor01.jpg" /></h3>
+            <h4><img src="images/honor02.jpg" /></h4>
+            <h5>浙江省军区门诊部妇科 始终坚持“以病人为中心”的服务宗旨，建设一流的现代化医院为目标，历年被评为“拥政爱民先进单位”，2004年被杭州卫生厅评为“全国荣誉示范单位”，2005年被评为“省会最专业特色十大优秀医院”。并先后荣获全国“百姓放心医院”、“全国妇科病微创诊疗示范单位”、杭州市“消费诚信单位”及“全国荣誉示范单位”、“杭州市文明单位”和“杭州市爱心老特色基地”等光荣称号。</h5>
+            <h6>
+            	<a href="#"><img src="images/honor03.jpg" /></a>
+                <a href="#"><img src="images/honor03.jpg" /></a>
+                <a href="#"><img src="images/honor04.jpg" /></a>
+                <a href="#"><img src="images/honor04.jpg" /></a>
+                <a href="#"><img src="images/honor04.jpg" /></a>
+                <a href="#"><img src="images/honor04.jpg" /></a>
+                <a href="#"><img src="images/honor04.jpg" /></a>
+                <a href="#"><img src="images/honor04.jpg" /></a>
+                <a href="#"><img src="images/honor04.jpg" /></a>
+                <a href="#"><img src="images/honor04.jpg" /></a>
+                <a href="#"><img src="images/honor04.jpg" /></a>
+            </h6>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--honor-->
+    
+    <!--bottom-->
+    <div class="bottom">
+    	<ul>
+        	<li><a href="#">医院首页</a></li>
+            <li><a href="#">医院简介</a></li>
+            <li><a href="#">专家团队</a></li>
+            <li><a href="#">权威技术</a></li>
+            <li><a href="#">康复病例</a></li>
+            <li><a href="#">最新专题</a></li>
+            <li><a href="#">医院新闻</a></li>
+            <li><a href="#">来院路线</a></li>
+        </ul>
+        <div class="bottom_b">
+        	<div class="left"><a href="#"><img src="images/bottom02.jpg" /></a></div>
+            <div class="right">
+            
+            	<p>65天无假日 24小时咨询热线：0571-87921323 QQ在线医师：2251004360</p>
+                <p>地址：杭州市南山路150号</p>
+                <p>浙江省军区门诊部妇科 版权所有Copyright 2009</p>
+                <p>浙江省军区门诊部妇科 All Right Reserved 浙ICP备13016025号-1</p>
+            </div>
+        </div>
+    </div>
+    <!--bottom-->
+    
+</div>
+<!--main-->
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+body{ max-width: 1200px; margin: 0 auto; background-color: #ddd; font-family: "Microsoft Yahei" }
+
+*{ margin: 0; padding: 0;}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{ margin: 0; padding: 0; }
+ul li,li{ list-style:none;}
+a{ text-decoration:none; outline: none; color: #333;}
+a:hover{ text-decoration:underline; color: #d44950;}
+i,em{ font-style: normal;}
+input,textarea,select,a:focus{ outline: none;}
+input{ -webkit-appearance: none;}
+img{ vertical-align:top; border:0; *margin-bottom:-5px;}
+
+.m-t20{ margin-top: 20px; }
+.tipsRed{ font-size: 12px; color: #e74e3d; }
+.sourceCode{ display: block; width: 100%; margin: 15px 0 25px 0; padding: 5px 10px; border: 1px solid #e5e5e5; border-radius: 3px; background-color: #f7f7f7; color: #e74e3d; line-height: 28px; }
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{ background-color: #fff; border:1px solid #e9e9e9; box-shadow: 0 0 0; color: #888; }
+
+.angular nav .logo{ font-size: 22px; padding-left: 17px; margin: 0; line-height: 60px;}
+.angular nav .guide{ background-color: #e74e3d; height: 36px; line-height: 36px; margin: 6px 0; padding-left: 27px; color: #fff; margin-left: -10px; }
+.angular nav a{ display: block; height: 38px; line-height: 38px; padding: 0 17px; color: #777; text-decoration: none; font-size: 13px; border-bottom: 1px solid #e9e9e9; }
+.angular nav a:hover,.angular nav a.selected{ background-color: #fff; color: #d44950; text-decoration: underline; }
+.angular{ background-color: #fff; min-height: 100%; }
+.angular .cloumn{ margin-top: 10px; padding-bottom: 10px; line-height: 26px; border-bottom: 1px dotted #e9e9e9; }
+.angular .analysed{ margin-top: 20px; border:1px solid #e5e5e5; border-radius: 4px; padding: 6px 13px; font-size: 14px; line-height: 28px; color: #e74e3d; background-color: #f7f7f7; }
+.angular fieldset legend{ font-size: 22px; line-height: 32px; padding: 16px 0; }
+.reward_mask .con{ position: fixed; left: 50%; top: 60px; width: 70%; margin-left: -35%; color: #aaa; z-index: 999; }
+.reward_mask .bg{ position: fixed; left: 0; top: 0; width:100%; height: 100%; background-color: #19212c; opacity: 0.8; z-index: 99; }
+.reward_mask img{ max-width: 100%; margin:15px auto 0 auto; }
+.reward .caret{ position: absolute; top:-21px; left: 50%; margin-left: -4px; border-top: 8px dashed #19212c; border-right: 8px solid transparent; border-left: 8px solid transparent; }
+
+#uyan_frame{ margin: 80px 0 0 10px; }
+.showNav{ opacity: 0.9; position: fixed; bottom: 30px; right: 0; width: 110px; height: 40px; line-height: 40px; color: #fff; text-align: center; border-radius: 20px 0 0 20px; background-color: #e74e3d;}
+.showNav:hover{ text-decoration: none;}
+.showNav:visited{  color: #fff;}
+/* 根据不同屏幕，确认菜单是否显示 */
+@media screen and (min-width: 1000px) {
+	.angular nav{ display: block; height: 100%; background-color: #f9f9f9; }
+	.showNav{ display: none;}
+	.content{ padding: 0 30px 20px 30px;  border-left: 5px solid #ddd;}
+	
+}
+@media screen and (max-width: 1000px) {
+	.angular nav{ display: none;}
+	.showNav{ display: block;}
+	.content{ border:none; padding: 0 15px; }
+	
+}

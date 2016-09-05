@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=no,maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no,email=no" />
+<title>15、通过$http与服务器通信</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/learn.css">
+
+<!-- js文件引用 -->
+<script src="js/angular1.5.5.min.js"></script>
+<script src="js/learn.js"></script>
+
+</head>
+<body>
+
+<!-- angular start -->
+<div class="angular clearfix" ng-app="app">
+
+	<!-- 左侧导航菜单 start -->
+    <div nav id="isMobile"></div>
+	<!-- 左侧导航菜单 end -->
+
+	<!-- 右侧内容 start -->
+	<div class="content col-sm-12 col-md-10">
+
+		<!-- start -->
+		<fieldset class="example" ng-controller="example">
+			<legend>$http请求的配置对象</legend>
+			<div class="cloumn">
+				
+				method:http请求方式，可以为GET,DELETE,HEAD,JSONP,POST,PUT
+				<br>
+				url:字符串，请求的目标
+				<br>
+				params:字符串或者对象，会被转换成为查询字符串追加的url后面
+				<br>
+				data:在发送post请求时使用，作为消息体发送到服务器
+				<br>
+				headers:一个列表，每个元素都是一个函数，返回http头
+				<br>
+				xsrfHeaderName(字符串)：保存XSFR令牌的http头的名称
+				<br>
+				xsrfCookieName:保存XSFR令牌的cookie名称
+				<br>
+				transformRequest:函数或者函数数组，用来对http请求的请求体和头信息进行转换，并返回转换后的结果。
+				<br>
+				transformResponse:函数或者函数数组，用来对http响应的响应体和头信息进行转换，并返回转换后的结果。
+				<br>
+				cache:布尔类型或者缓存对象，设置之后angular会缓存get请求。
+				<br>
+				timeout:数值，延迟请求
+				<br>
+				responseType：字符串，响应类型。可以为arraybuffer, blob,document,json, text, moz-blob, moz-chunked-text, moz-chunked-arraybuffer
+			</div>
+			<legend>$http请求的响应对象</legend>
+			<div class="cloumn">
+				
+				angular传递给then方法的响应对象包括以下几个属性:
+				<br>
+				data:转换之后的响应体
+				<br>
+				status:http响应状态码
+				<br>
+				headers:头信息
+				<br>
+				config:生成原始请求的设置对象
+				<br>
+				statusText:http响应状态的文本
+				
+			</div>
+
+			<legend>$http get请求实例</legend>
+			<div class="cloumn">
+				var params = {},
+					url = "";
+				<br>
+				$http
+				<br>
+				.get(url,params)
+				<br>
+				.success(function(data) {
+				<br>
+				$scope.data = data.msg;
+				<br>
+				});
+			</div>
+
+			<legend>$http post请求实例</legend>
+			<div class="cloumn">
+				var data = {},
+					url = "";
+				<br>
+				$http
+				<br>
+				.get(url,data)
+				<br>
+				.success(function(data) {
+				<br>
+				$scope.data = data.msg;
+				<br>
+				});
+			</div>
+
+			<legend>$http 请求实例</legend>
+			<div class="cloumn">
+
+				success()和error()方法:
+				<br>
+				<br>
+				var url = "",
+				<br>
+					method = "",
+				<br>
+					params = {};
+				<br>
+				$http({
+				<br>
+					url:url,
+				<br>
+					method:method,
+				<br>
+					params:params,
+				<br>
+				})
+				<br>
+				.success(function(data){
+				<br>
+					$scope.data = data.msg;
+				<br>
+				})
+
+				<br>
+				<br>
+				<br>
+
+				then()方法:
+				<br>
+				<br>
+				var url = "",
+				<br>
+					method = "",
+				<br>
+					params = {};
+				<br>
+				$http({
+				<br>
+					url:url,
+				<br>
+					method:method,
+				<br>
+					params:params,
+				<br>
+				})
+				<br>
+				.success(function(data){
+				<br>
+					$scope.data = data.msg;
+				<br>
+				})
+
+				<p class="analysed">
+					* then()方法与success()和error()方法的主要区别：
+					<br>
+					* then()方法接收到完整的响应对象
+					<br>
+					* success()和error()则会对响应对象进行析构。
+				</p>
+
+			</div>
+		</fieldset>
+		<!-- end -->
+
+		<!-- 显示导航 -->
+		<a href="#isMobile" class="showNav" ng-controller="showNav" ng-click="showNav()">显示导航</a>
+		<!-- 显示导航 -->
+
+		<!-- UY BEGIN -->
+		<div id="uyan_frame"></div>
+		<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2087884"></script>
+		<!-- UY END -->
+		
+	</div>
+	<!-- 右侧内容 end -->
+</div>
+<!-- angular end -->
+
+<script>
+app.controller('example', function($scope){
+		
+})
+</script>
+
+</body>
+</html>

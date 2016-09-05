@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="x-ua-compatible" content="IE=8;" />
+<title>LeanUI - by LeeLean</title>
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/lean.css">
+<script src="style/jquery-1.9.0.min.js"></script>
+<script src="style/lean.js"></script>
+
+
+<!-- 低版本ie支持html5标签 -->
+<!--[if lt IE 9]>
+<script> 
+   (function() {
+     if (! 
+     /*@cc_on!@*/
+     0) return;
+     var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+     var i= e.length;
+     while (i--){
+         document.createElement(e[i])
+     } 
+})() 
+</script>
+<![endif]-->
+<!-- 低版本ie支持html5标签 -->
+
+</head>
+<body>
+
+<!-- container -->
+<div class="container">
+	<!-- aside -->
+	<aside class="l">
+		<h1><a href="index.html">Lean-UI</a></h1>
+		<!-- nav -->
+		<ul class="tab javascriptTab">
+			<li><a href="javascript:void(0)" class="preNav">CSS</a></li>
+			<li><a href="index.html">简介</a></li>
+			<li><a href="css-column.html" class="selected">栅格布局</a></li>
+			<li><a href="css-list.html">列表</a></li>
+			<li><a href="css-clearfix.html">浮动、清除浮动</a></li>
+			<li><a href="css-text-align.html">文本对齐方式</a></li>
+			<li><a href="css-border-radius.html">圆形、圆角、盒子阴影</a></li>
+			<li><a href="css-gird.html">图文混排</a></li>
+			<li><a href="css-transition.html">Transition</a></li>
+		</ul>
+		<!-- nav -->
+	</aside>
+	<!-- aside -->
+
+	<!-- section -->
+	<section class="r">
+		<!-- column -->
+		<article>
+			<h3>栅格布局 >> 等分栅格</h3>
+			<div class="col text-center" style=" border:1px solid #ddd;">
+				一列宽度100%
+			</div>
+			<code>div.col</code>
+
+			<div class="col clearfix text-center">
+				<div class="col-2-2">两列等分 宽度50%</div>
+				<div class="col-2-2">两列等分 宽度50%</div>
+			</div>
+			<code>div.col > div.col-2-2</code>
+
+			<div class="col clearfix text-center">
+				<div class="col-3-3">三列等分 宽度33.333333%</div>
+				<div class="col-3-3">三列等分 宽度33.333333%</div>
+				<div class="col-3-3">三列等分 宽度33.333333%</div>
+				<div class="col-3-3">三列等分 宽度33.333333%</div>
+				<div class="col-3-3">三列等分 宽度33.333333%</div>
+				<div class="col-3-3">三列等分 宽度33.333333%</div>
+			</div>
+			<code>div.col > div.col-3-3</code>
+
+			<div class="col clearfix text-center">
+				<div class="col-4-4">四列等分 宽度25%</div>
+				<div class="col-4-4">四列等分 宽度25%</div>
+				<div class="col-4-4">四列等分 宽度25%</div>
+				<div class="col-4-4">四列等分 宽度25%</div>
+			</div>
+			<code>div.col > div.col-4-4</code>
+
+			<div class="col clearfix text-center">
+				<div class="col-5-5">五列等分 宽度20%</div>
+				<div class="col-5-5">五列等分 宽度20%</div>
+				<div class="col-5-5">五列等分 宽度20%</div>
+				<div class="col-5-5">五列等分 宽度20%</div>
+				<div class="col-5-5">五列等分 宽度20%</div>
+			</div>
+			<code>div.col > div.col-5-5</code>
+
+			<h3>栅格布局 >> 不等分栅格</h3>
+			<div class="col clearfix">
+				<div class="col-1">1</div>
+				<div class="col-9">9</div>
+			</div>
+
+			<div class="col clearfix">
+				<div class="col-2">2</div>
+				<div class="col-8">8</div>
+			</div>
+
+			<div class="col clearfix">
+				<div class="col-3">3</div>
+				<div class="col-7">7</div>
+			</div>
+
+			<div class="col clearfix">
+				<div class="col-4">4</div>
+				<div class="col-6">6</div>
+			</div>
+
+			<div class="col clearfix">
+				<div class="col-5">5</div>
+				<div class="col-5">5</div>
+			</div>
+
+			<code>
+				.col-x + .col-x tips:(X总和<=10)
+			</code>
+
+			<h3>栅格布局 >> 媒体查询（media query）小屏幕</h3>
+			<code>
+				屏幕尺寸小于等于768px
+				<br>
+				.col-sm-x + .col-sm-x tips:(X总和<=10)
+				<br>
+				.col-sm-x-x tips( (x==x) > 0 《= 5 )
+			</code>
+			<p>小屏幕显示为2列：</p>
+			<br>
+			<div class="col clearfix text-center">
+				<div class="col-3-3 col-sm-2-2">小屏幕显示宽度为50%</div>
+				<div class="col-3-3 col-sm-2-2">小屏幕显示宽度为50%</div>
+				<div class="col-3-3 col-sm-2-2">小屏幕显示宽度为50%</div>
+				<div class="col-3-3 col-sm-2-2">小屏幕显示宽度为50%</div>
+				<div class="col-3-3 col-sm-2-2">小屏幕显示宽度为50%</div>
+				<div class="col-3-3 col-sm-2-2">小屏幕显示宽度为50%</div>
+			</div>
+
+			<h3>栅格布局 >> 媒体查询（media query）中等屏幕</h3>
+			<code>
+				屏幕尺寸大于768px，小于1200px
+				<br>
+				.col-md-x + .col-md-x tips:(X总和<=10)
+				<br>
+				.col-md-x-x tips( (x==x) > 0 《= 5 )
+			</code>
+			<p>中等屏幕显示为4列：</p>
+			<br>
+			<div class="col clearfix text-center">
+				<div class="col-3-3 col-md-4-4">中等屏幕显示宽度为25%</div>
+				<div class="col-3-3 col-md-4-4">中等屏幕显示宽度为25%</div>
+				<div class="col-3-3 col-md-4-4">中等屏幕显示宽度为25%</div>
+				<div class="col-3-3 col-md-4-4">中等屏幕显示宽度为25%</div>
+				<div class="col-3-3 col-md-4-4">中等屏幕显示宽度为25%</div>
+				<div class="col-3-3 col-md-4-4">中等屏幕显示宽度为25%</div>
+			</div>
+
+			<style>
+			.col{ line-height:65px;}
+			.col>div{ border:1px solid #ddd;}
+			</style>
+		</article>
+		<!-- column -->
+	</section>
+	<!-- section -->
+	<div class="clearfix"></div>
+</div>
+<!-- container -->
+
+</body>
+</html>

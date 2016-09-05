@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="x-ua-compatible" content="IE=8;" />
+<title>LeanUI - by LeeLean</title>
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/lean.css">
+<script src="style/jquery-1.9.0.min.js"></script>
+<script src="style/lean.js"></script>
+
+
+<!-- 低版本ie支持html5标签 -->
+<!--[if lt IE 9]>
+<script> 
+   (function() {
+     if (! 
+     /*@cc_on!@*/
+     0) return;
+     var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+     var i= e.length;
+     while (i--){
+         document.createElement(e[i])
+     } 
+})() 
+</script>
+<![endif]-->
+<!-- 低版本ie支持html5标签 -->
+
+</head>
+<body>
+
+<!-- container -->
+<div class="container">
+	<!-- aside -->
+	<aside class="l">
+		<h1><a href="index.html">Lean-UI</a></h1>
+		<!-- nav -->
+		<ul class="tab javascriptTab">
+			<li><a href="javascript:void(0)" class="preNav">CSS</a></li>
+			<li><a href="index.html">简介</a></li>
+			<li><a href="css-column.html">栅格布局</a></li>
+			<li><a href="css-list.html">列表</a></li>
+			<li><a href="css-clearfix.html">浮动、清除浮动</a></li>
+			<li><a href="css-text-align.html">文本对齐方式</a></li>
+			<li><a href="css-border-radius.html">圆形、圆角、盒子阴影</a></li>
+			<li><a href="css-gird.html">图文混排</a></li>
+			<li><a href="css-transition.html" class="selected">Transition</a></li>
+		</ul>
+		<!-- nav -->
+	</aside>
+	<!-- aside -->
+
+	<!-- section -->
+	<section class="r">
+		<!-- transition -->
+		<article>
+			<h3>Transition - 基础样式</h3>
+			<div class="box">
+				<ul class="list-ver clearfix">
+					<li class="transition"></li>
+					<li class="transition"></li>
+				</ul>
+			</div>
+			<code>.transition</code>
+
+			<h3>Transition - box-shadow</h3>
+			<div class="hover-shadow transition"></div>
+
+			<h3>Transition - Border</h3>
+			<div class="box1">
+				<ul class="list-ver clearfix">
+					<li class="hover-border transition">border-sizing</li>
+					<li class="hover-border transition">border-sizing</li>
+					<li class="hover-border transition">border-sizing</li>
+				</ul>
+			</div>
+			<code>
+			.hover-border + .transition
+			</code>
+
+			<aside>
+				<h3>X轴缩放</h3>
+				<img class="scale-x transition" src="images/img.jpg">
+				<code>img.scale-x + .transition</code>
+				<h3>Y轴缩放</h3>
+				<img class="scale-y transition" src="images/img.jpg">
+				<code>img.scale-y + .transition</code>
+				<h3>Z轴缩放</h3>
+				<img class="scale transition" src="images/img.jpg">
+				<code>img.scale + .transition</code>
+			</aside>
+			<style>
+			.box li{ width: 150px; height: 150px; background: #d44950; margin-right: 10px;}
+			.box li:hover{ background: #222; width: 200px; height: 200px;}
+
+			.box1 li{ width:200px; height:200px; background:#f7f7f9; margin-right:10px;}
+
+			aside img{ width: 150px;}
+
+			.hover-shadow{ border:1px solid #ddd; height: 200px; width: 200px;}
+			</style>
+		</article>
+		<!-- transition -->
+	</section>
+	<!-- section -->
+	<div class="clearfix"></div>
+</div>
+<!-- container -->
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+body{ background: #f1f1f1; padding-bottom: 52px; overflow-x: hidden;}
+.container{ width: 1100px; margin: 0 auto;}
+
+/*header*/
+header{ position: fixed; width: 100%; height: 97px; line-height: 97px; background: #640060; z-index: 9999; box-shadow: 0 0 2px #51044e;}
+header nav a{ height: 97px; padding: 0 22px; font-size: 14px; color: #cc84ca; text-shadow: 1px 1px 5px #666;}
+header nav a:hover{ background: #480d2e;}
+.logo{ margin: 28px 0 0 2px;}
+
+/*banner*/
+.banner{ position: relative; top: 97px; width: 1920px; height: 450px; left: 50%; margin-left: -960px; background: #6b0c68;}
+
+/*main*/
+.main{ position: relative; top: -52px; background: #fff; border-radius: 3px 3px 0 0;}
+.main img:hover{ border:2px solid #cc84ca;}
+
+/*title*/
+.title{ margin: 0 30px; padding-top: 30px;}
+.title .l h5{ color: #a9a9a9; font-size: 14px; margin-left: 1px;}
+.title .l h4{ color: #707070; font-size: 32px; font-weight: bolder; line-height: 45px;}
+.title .l h3{ color: #555; font-size: 16px; margin-left: 2px;}
+.title .r{ margin-top: 40px;}
+.title .r a{ padding: 6px 17px; background: #640060; color: #cc84ca; border-radius: 2px; margin-left: 8px;}
+.title .r a:hover{ color: #ef8f1f;}
+
+/*case*/
+.case dl{ display: block; float: left; width: 320px; height: 370px; margin: 30px 0 0 34px;}
+.case dl dt img{ width: 318px; height: 193px; border:2px solid #fff;}
+.case a{ color: #666;}
+.case-t{ height: 45px; line-height: 45px; font-size: 16px; color: #444;}
+.case-info{ line-height: 18px; color: #777;}
+.case-more{ margin-top: 35px;}
+.case-more a{ padding: 6px 15px; background: #e8e8e8; color: #888;}
+.case-more a:hover{ background: #640060; color: #fff;}
+
+/*line*/
+.line{ height: 7px; margin-top: 15px; background: url(../images/line.png) repeat-x;}
+
+/*product*/
+.product{ padding: 35px;}
+.product .l{ width: 710px;}
+.product .r{ width: 320px;}
+.product h3{ font-size: 17px; height: 32px; line-height: 32px; color: #666; margin-bottom: 17px;}
+.product h3 span{ font-size: 12px; color: #cc84ca; font-style: italic;}
+.product dl{ width: 220px; margin: 2px 10px 0 0;}
+.product dl dt img{ width: 218px; height: 132px; border:2px solid #fff;}
+.product dl dd{ height: 30px; line-height: 30px; font-size: 14px;}
+.product dl dd a{ color: #666;}
+.product ul li a{ display: block; height: 37px; line-height: 37px; margin-bottom: 4px; padding-left: 10px; border-radius: 2px; background: #e8e8e8; color: #888;}
+.product ul li a:hover{ background: #640060; color: #fff;}
+.product-t a{ display: block; margin-bottom: 15px; font-size: 16px; color: #555;}
+.product-t a:hover{ color: #280027;}
+.product-info{ color: #777; line-height: 20px;}
+
+/*link*/
+.link{ margin-bottom: 30px; height: 52px; line-height: 52px; background: #fff; border-radius: 3px;}
+.link ul{ margin: 0 5px;}
+.link a{ margin: 0 10px; font-size: 13px; color: #888;}
+.link a:hover{ color: #640060;}
+
+/*footer*/
+footer{ height: 125px; background: #41003f;}
+footer .l{ width: 440px;}
+footer .l img{ margin: 50px 0 0 35px; opacity: 0.5;}
+footer .l img:hover{ opacity: 1;}
+footer .r{ width: 570px; line-height: 22px; color: #cc84ca; text-align: right;}
+footer nav{ margin: 30px 0 10px 0;}
+footer nav a{ display: block; float: right; color: #cc84ca; margin-left: 20px;}
+
+/*fix-wechat*/
+.fix-wechat{ position: fixed; right: 0; top: 180px; width: 110px; height: 145px;}
+.fix-wechat img{ border-radius: 3px;}
+
+/*fix-nav*/
+.fix-nav{ position: fixed; width: 100%; height: 52px; line-height: 52px; color: #cc84ca; bottom: 0; background: #280027;}
+.fix-nav .l img{ position: absolute; bottom: 0;}
+.fix-nav .r img{ margin-top: 12px;}
+
+
+/**************************************** 
+list.html
+****************************************/
+.list .l{ width: 795px; box-shadow: 0 0 6px #f9f9f9 inset; padding-bottom: 30px;}
+
+/*position*/
+.position{ height: 44px; line-height: 44px; padding-left: 12px; border-bottom: 1px solid #eee; color: #777;}
+.position a{ color: #777; margin: 0 3px;}
+.position a:hover{ color: #640060;}
+
+/*list-con*/
+.list-con dl{ display:block; height:155px; border-bottom:1px solid #eee; border-left:5px solid #fff; padding:0 15px;}
+.list-con dl:hover{ background:#fafafa; border-left:5px solid #cc84ca;}
+.list-con dl dt{ font-size:18px; height:60px; line-height:60px; padding-top:7px;}
+.list-con dl a{ text-decoration:none;}
+.list-con dl a dt{ color:#555; font-family:"Microsoft YaHei";}
+.list-con dl a:hover dt{ color:#640060;}
+.list-con dl dd{ margin-bottom:10px;}
+.list-con dl dd span{ margin:0 15px 0 0; color:#666;}
+.list-con dl p{ line-height:18px; color:#666;}
+
+/*page*/
+.page{ text-align:center; height:40px; line-height:40px; margin:25px 0;}
+.page li{ display: inline;}
+.page li a{ margin:0 9px; color:#666; font-size: 14px;}
+.page .thisclass a,.page li a:hover{ color:#cc84ca;}
+
+/*list r*/
+.list .r{ width: 300px;}
+.list .r h3{ display: block; height: 44px; line-height: 44px; margin-bottom: 15px; padding-left: 5px; border-bottom: 1px solid #eee; color: #555;}
+.list .r nav a{ display: block; height: 32px; line-height: 32px; padding-left: 10px; margin: 0 7px 6px 3px; color: #888; background: #e8e8e8;}
+.list .r nav a:hover{ background: #640060; color: #fff; text-decoration: none;}
+
+/*tj-new*/
+.tj-new{ padding-bottom: 10px;}
+.tj-new li{ display: block; height: 30px; line-height: 30px; padding-left: 22px; background: url(../images/li_bg.jpg) no-repeat 10px 13px;}
+.tj-new li span{ float: right; margin-right: 15px; color: #999;}
+.tj-new li a{ color: #555;}
+
+/*tj-zhuti*/
+.tj-zhuti img{ width: 280px; height: 340px; border:1px solid #fff; margin-left: 6px;}
+
+/**************************************** 
+content.html
+****************************************/
+.show{ min-height:700px;}
+.show h3{ height:40px; line-height:40px; margin:40px 0 10px 0; font-size:30px; color:#444; text-align:center; font-family:"Microsoft YaHei";}
+.show h4,.image h5{ line-height:40px; line-height:40px; color:#999; text-align:center;}
+.show h4 span{ margin:0 5px;}
+.content{ margin:30px 45px; line-height:28px; font-size:14px; color:#555; background:#fff;}
+.content p{ margin-bottom:40px; text-indent:2em;}

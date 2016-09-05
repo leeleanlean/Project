@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=no,maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no,email=no" />
+<title>10、ng-repeat循环输出</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/learn.css">
+
+<!-- js文件引用 -->
+<script src="js/angular1.5.5.min.js"></script>
+<script src="js/learn.js"></script>
+
+</head>
+<body>
+
+<!-- angular start -->
+<div class="angular clearfix" ng-app="app">
+
+	<!-- 左侧导航菜单 start -->
+    <div nav id="isMobile"></div>
+	<!-- 左侧导航菜单 end -->
+
+	<!-- 右侧内容 start -->
+	<div class="content col-sm-12 col-md-10">
+
+		<!-- start -->
+		<fieldset class="example" ng-controller="example">
+			<legend>ng-repeat循环输出</legend>
+			<div class="cloumn">
+
+				<table class="table text-center">
+					<thead>
+						<tr>
+							<th class="text-center">序号</th>
+							<th class="text-center">名称</th>
+							<th class="text-center">年龄</th>
+							<th class="text-center">第一条</th>
+							<th class="text-center">除去first last</th>
+							<th class="text-center">最后一条</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="user in user">
+							<th class="text-center" scope="row" ng-bind="$index+1"></th>
+							<td ng-bind="user.name"></td>
+							<td ng-bind="user.age"></td>
+							<td ng-bind="$first?'是':'否'"></td>
+							<td ng-bind="$middle?'是':'否'"></td>
+							<td ng-bind="$last?'是':'否'"></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p class="analysed">
+					示例分析：
+					<br>
+					* 在$scope上添加名为user的数组数据
+					<br>
+					* 用ng-repeat指令完成数据和页面的绑定，angular遍历user数组然后添加到页面指定位置
+					<br>
+					* ng-repeat 指令专有变量，$index(数据序列)，$first(是否第一条数据)，$middle(是否是除去第一和最后一条的数据)，$last(是否是最后一条数据)
+					<br>
+					* $first、$middle、$last返回布尔值，使用【$first?'是':'否'】转换为字符串
+				</p>
+			</div>
+		</fieldset>
+		<!-- end -->
+
+		<!-- 显示导航 -->
+		<a href="#isMobile" class="showNav" ng-controller="showNav" ng-click="showNav()">显示导航</a>
+		<!-- 显示导航 -->
+
+		<!-- UY BEGIN -->
+		<div id="uyan_frame"></div>
+		<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2087884"></script>
+		<!-- UY END -->
+		
+	</div>
+	<!-- 右侧内容 end -->
+</div>
+<!-- angular end -->
+
+<script>
+app.controller('example', function($scope){
+	$scope.user = [
+		{name:"小明",age:"15"},
+		{name:"小红",age:"18"},
+		{name:"小花",age:"22"},
+		{name:"张三",age:"28"},
+		{name:"李四",age:"32"},
+		{name:"王五",age:"26"},
+		{name:"赵四",age:"29"}
+	]
+})
+</script>
+
+</body>
+</html>

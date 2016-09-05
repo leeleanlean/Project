@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=no,maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no,email=no" />
+<title>19、angular.element</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/learn.css">
+
+<!-- js文件引用 -->
+<script src="js/angular1.5.5.min.js"></script>
+<script src="js/learn.js"></script>
+
+</head>
+<body>
+
+<!-- angular start -->
+<div class="angular clearfix" ng-app="app">
+
+	<!-- 左侧导航菜单 start -->
+    <div nav id="isMobile"></div>
+	<!-- 左侧导航菜单 end -->
+
+	<!-- 右侧内容 start -->
+	<div class="content col-sm-12 col-md-10">
+
+		<!-- start -->
+		<fieldset class="example" ng-controller="example">
+
+			<legend>angular获取dom</legend>
+			<div>
+				<p>p'text</p>
+				<a class="btn btn-danger" ng-click="btnClick($event)">点击获取父级元素中P的值</a>
+				<div class="m-t20 tipsRed">父级元素中P的值为：<span ng-bind="pText"></span></div>
+			</div>
+
+			<legend>angular.element</legend>
+			<form class="form-inline">
+				addClass()
+				<input type="text" class="sourceCode" value="为每个匹配的元素添加指定的样式类名">
+				after()
+				<input type="text" class="sourceCode" value="在匹配元素集合中的每个元素后面插入参数所指定的内容，作为其兄弟节点">
+				append()
+				<input type="text" class="sourceCode" value="在每个匹配元素里面的末尾处插入参数内容">
+				attr()
+				<input type="text" class="sourceCode" value="获取匹配的元素集合中的第一个元素的属性的值">
+				bind()
+				<input type="text" class="sourceCode" value="为一个元素绑定一个事件处理程序">
+				children()
+				<input type="text" class="sourceCode" value="获得匹配元素集合中每个元素的子元素，选择器选择性筛选">
+				clone()
+				<input type="text" class="sourceCode" value="创建一个匹配的元素集合的深度拷贝副本">
+				contents()
+				<input type="text" class="sourceCode" value="获得匹配元素集合中每个元素的子元素，包括文字和注释节点">
+				css()
+				<input type="text" class="sourceCode" value="获取匹配元素集合中的第一个元素的样式属性的值">
+				data()
+				<input type="text" class="sourceCode" value="在匹配元素上存储任意相关数据">
+				detach()
+				<input type="text" class="sourceCode" value="从DOM中去掉所有匹配的元素">
+				empty()
+				<input type="text" class="sourceCode" value="从DOM中移除集合中匹配元素的所有子节点">
+				eq()
+				<input type="text" class="sourceCode" value="减少匹配元素的集合为指定的索引的哪一个元素">
+				find()
+				<input type="text" class="sourceCode" value="通过一个选择器，jQuery对象，或元素过滤，得到当前匹配的元素集合中每个元素的后代">
+				hasClass()
+				<input type="text" class="sourceCode" value="确定任何一个匹配元素是否有被分配给定的（样式）类">
+				html()
+				<input type="text" class="sourceCode" value="获取集合中第一个匹配元素的HTML内容">
+				next()
+				<input type="text" class="sourceCode" value="取得匹配的元素集合中每一个元素紧邻的后面同辈元素的元素集合。如果提供一个选择器，那么只有紧跟着的兄弟元素满足选择器时，才会返回此元素">
+				on()
+				<input type="text" class="sourceCode" value="在选定的元素上绑定一个或多个事件处理函数">
+				off()
+				<input type="text" class="sourceCode" value="移除一个事件处理函数">
+				one()
+				<input type="text" class="sourceCode" value="为元素的事件添加处理函数。处理函数在每个元素上每种事件类型最多执行一次">
+				parent()
+				<input type="text" class="sourceCode" value="取得匹配元素集合中，每个元素的父元素，可以提供一个可选的选择器">
+				prepend()
+				<input type="text" class="sourceCode" value="将参数内容插入到每个匹配元素的前面（元素内部）">
+				prop()
+				<input type="text" class="sourceCode" value="获取匹配的元素集中第一个元素的属性（property）值">
+				ready()
+				<input type="text" class="sourceCode" value="当DOM准备就绪时，指定一个函数来执行">
+				remove()
+				<input type="text" class="sourceCode" value="将匹配元素集合从DOM中删除。（同时移除元素上的事件及 jQuery 数据。）">
+				removeAttr()
+				<input type="text" class="sourceCode" value="为匹配的元素集合中的每个元素中移除一个属性（attribute）">
+				removeClass()
+				<input type="text" class="sourceCode" value="移除集合中每个匹配元素上一个，多个或全部样式">
+				removeData()
+				<input type="text" class="sourceCode" value="在元素上移除绑定的数据">
+				replaceWith()
+				<input type="text" class="sourceCode" value="用提供的内容替换集合中所有匹配的元素并且返回被删除元素的集合">
+				text()
+				<input type="text" class="sourceCode" value="得到匹配元素集合中每个元素的合并文本，包括他们的后代">
+				toggleClass()
+				<input type="text" class="sourceCode" value="在匹配的元素集合中的每个元素上添加或删除一个或多个样式类,取决于这个样式类是否存在或值切换属性。即：如果存在（不存在）就删除（添加）一个类">
+				triggerHandler()
+				<input type="text" class="sourceCode" value="为一个事件执行附加到元素的所有处理程序">
+				unbind()
+				<input type="text" class="sourceCode" value="从元素上删除一个以前附加事件处理程序">
+				val()
+				<input type="text" class="sourceCode" value="获取匹配的元素集合中第一个元素的当前值">
+				wrap()
+				<input type="text" class="sourceCode" value="在每个匹配的元素外层包上一个html元素">
+			</form>
+		</fieldset>
+		<!-- end -->
+
+		<!-- 显示导航 -->
+		<a href="#isMobile" class="showNav" ng-controller="showNav" ng-click="showNav()">显示导航</a>
+		<!-- 显示导航 -->
+
+		<!-- UY BEGIN -->
+		<div id="uyan_frame"></div>
+		<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2087884"></script>
+		<!-- UY END -->
+		
+	</div>
+	<!-- 右侧内容 end -->
+</div>
+<!-- angular end -->
+
+<script>
+app.controller('example', function($scope){
+	$scope.btnClick = function(e){
+		var ev = e.target;
+		var _this = angular.element(ev);
+		var pText = _this.parent("div").find("p").text();
+		$scope.pText = pText;
+	}
+})
+</script>
+
+</body>
+</html>

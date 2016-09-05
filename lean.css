@@ -1,0 +1,99 @@
+/* base css */
+*,*:after,*:before{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html,body,div,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,table,tr,th,td,strong,b,i,em,span{ margin: 0; padding: 0;}
+body,button,input,select,textarea{ font-size: 12px; line-height: 18px; font-family:"Microsoft YaHei";}
+li{ list-style:none;}
+a{ text-decoration:none; outline: none; color: #333;}
+a:hover{ text-decoration:underline; color: #d44950;}
+input,textarea,select,a:focus{ outline: none;}
+img{ vertical-align:top; border:0; *margin-bottom:-5px;}
+
+/******************** lean.css ********************/
+
+/* 屏幕小于640 */
+@media only screen and (min-width: 0) and (max-width: 640px){
+	body{background-color:#f00;}
+	.lean-sm-1,.lean-sm-2,.lean-sm-3,.lean-sm-4,.lean-sm-5,.lean-sm-6,.lean-sm-7,.lean-sm-8,.lean-sm-9,.lean-sm-10{ display:block; float:left;}
+	.lean-sm-1{ width:100%;}
+	.lean-sm-2{ width:50%;}
+	.lean-sm-3{ width:33.33333%;}
+	.lean-sm-4{ width:25%;}
+	.lean-sm-5{ width:20%;}
+	.lean-sm-6{ width:16.66666%;}
+	.lean-sm-7{ width:14.28571%;}
+	.lean-sm-8{ width:12.5%;}
+	.lean-sm-9{ width:11.11111%;}
+	.lean-sm-10{ width:10%;}
+}
+/* 屏幕大于640 小于1024 */
+@media only screen and (min-width: 641px) and (max-width: 1024px){
+	body{background-color:#000;}
+	.lean-md-1,.lean-md-2,.lean-md-3,.lean-md-4,.lean-md-5,.lean-md-6,.lean-md-7,.lean-md-8,.lean-md-9,.lean-md-10{ display:block; float:left;}
+	.lean-md-1{ width:100%;}
+	.lean-md-2{ width:50%;}
+	.lean-md-3{ width:33.33333%;}
+	.lean-md-4{ width:25%;}
+	.lean-md-5{ width:20%;}
+	.lean-md-6{ width:16.66666%;}
+	.lean-md-7{ width:14.28571%;}
+	.lean-md-8{ width:12.5%;}
+	.lean-md-9{ width:11.11111%;}
+	.lean-md-10{ width:10%;}
+}
+/* 屏幕大于1024 */
+@media only screen and (min-width: 1025px){
+	body{background-color:#666;}
+	.lean-lg-1,.lean-lg-2,.lean-lg-3,.lean-lg-4,.lean-lg-5,.lean-lg-6,.lean-lg-7,.lean-lg-8,.lean-lg-9,.lean-lg-10{ display:block; float:left;}
+	.lean-lg-1{ width:100%;}
+	.lean-lg-2{ width:50%;}
+	.lean-lg-3{ width:33.33333%;}
+	.lean-lg-4{ width:25%;}
+	.lean-lg-5{ width:20%;}
+	.lean-lg-6{ width:16.66666%;}
+	.lean-lg-7{ width:14.28571%;}
+	.lean-lg-8{ width:12.5%;}
+	.lean-lg-9{ width:11.11111%;}
+	.lean-lg-10{ width:10%;}
+}
+
+/* 栅格布局 */
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-2-2,.col-3-3,.col-4-4,.col-5-5{ display: block; float: left;}
+/*不等分栅格*/
+.col{ width: 100%;}
+.col-1{ width: 10%;}
+.col-2{ width: 20%;}
+.col-3{ width: 30%;}
+.col-4{ width: 40%;}
+.col-5{ width: 50%;}
+.col-6{ width: 60%;}
+.col-7{ width: 70%;}
+.col-8{ width: 80%;}
+.col-9{ width: 90%;}
+/* 等分栅格 */
+.col-2-2{ width: 50%;}
+.col-3-3{ width: 33.333333%;}
+.col-4-4{ width: 25%;}
+.col-5-5{ width: 20%;}
+
+/* 列表 */
+.list-ver li,.list-ver li a{ display: block; float: left;}
+.dl-ver,.dl-ver dt,.dl-ver dd{ display: block; float: left;}
+
+/* 清除浮动 */
+.l{ display: block; float: left;}
+.c{ display: block; float: left;}
+.r{ display: block; float: right;}
+.left{ display: block; float: left;}
+.center{ display: block; float: left;}
+.right{ display: block; float: right;}
+.clearfix { *zoom: 1;}
+.clearfix:before,.clearfix:after{ display: table; height:0; line-height: 0; content: "";}
+.clearfix:after{ clear: both;}
+
+/* 文字对齐方式 (text-align) */
+.text-left{ text-align: left;}
+.text-center{ text-align: center;}
+.text-right{ text-align: right;}
+
+/* transition */
+.transition{ transition:all 0.5s ease 0s;}

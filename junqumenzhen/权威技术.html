@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>军区官方网站-权威技术</title>
+<meta name="description" content="军区官方网站" />
+<meta name="keywords" content="军区官方网站" />
+<link rel="stylesheet" href="style/base.css" />
+<link rel="stylesheet" href="style/inside.css" />
+<script src="style/jquery-1.4.1.min.js"></script>
+<script src="style/idTabs.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+var loaded = true;
+var top = $("#demo").offset().top;
+function Add_Data()
+{var scrolla=$(window).scrollTop();
+ var cha=parseInt(top)-parseInt(scrolla);
+
+if(loaded && cha<=0){ 
+$("#demo").removeClass("demo2").addClass("demo1");
+loaded=false;
+}
+if(!loaded && cha>0){
+$("#demo").removeClass("demo1").addClass("demo2");
+loaded=true;
+}
+}
+$(window).scroll(Add_Data);
+});
+</script>
+</head>
+
+<body>
+<!--head-->
+<div class="head">
+	<div class="head_m">
+        <div class="left"><a href="#"><img src="images/logo.png" /></a></div>
+        <div class="right">
+        	<a href="#"><img src="images/head02_1.png" /></a>
+            <a href="#"><img src="images/head02_2.png" /></a>
+            <a href="#"><img src="images/head02_3.png" /></a>
+            <a href="#"><img src="images/head02_4.png" /></a>
+        </div>
+    </div>
+</div>
+<!--head-->
+
+<!--nav-->
+<div class="nav">
+	<ul>
+    	<li><a href="#" class="nav_selected">网站首页</a></li>
+        <li><a href="医院简介.html">医院简介</a></li>
+        <li><a href="专家团队.html">专家团队</a></li>
+        <li><a href="权威技术.html">权威技术</a></li>
+        <li><a href="康复案例.html">康复病例</a></li>
+        <li><a href="专题.html">最新专题</a></li>
+        <li><a href="新闻中心.html">医院新闻</a></li>
+        <li><a href="来院线路.html">来院线路</a></li>
+        <li><a href="#"><img src="images/nav01.jpg" /></a></li>
+    </ul>
+</div>
+<!--nav-->
+
+<!--main_banner-->
+<div class="main_banner"><img src="images/main_ban.jpg" /></div>
+<!--main_banner-->
+
+<!--menu-->
+<div class="menu">
+	<ul class="ul1">
+    	<li><a href="#">佳菲尔人流</a></li>
+        <li><a href="#">微管人流</a></li>
+        <li><a href="#">超导人流</a></li>
+        <li><a href="#">无痛人流</a></li>
+        <div class="clear"></div>
+        <h4><a href="#"><img src="images/menu0.jpg" /></a></h4>
+    </ul>
+    <ul class="ul2">
+    	<li><a href="#">佳菲尔人流</a></li>
+        <li><a href="#">微管人流</a></li>
+        <li><a href="#">超导人流</a></li>
+        <li><a href="#">无痛人流</a></li>
+        <div class="clear"></div>
+        <h4><a href="#"><img src="images/menu00.jpg" /></a></h4>
+    </ul>
+    <ul class="ul3">
+    	<li><a href="#">佳菲尔人流</a></li>
+        <li><a href="#">微管人流</a></li>
+        <li><a href="#">超导人流</a></li>
+        <li><a href="#">无痛人流</a></li>
+        <div class="clear"></div>
+        <h4><a href="#"><img src="images/menu000.jpg" /></a></h4>
+    </ul>
+    <ul class="ul4">
+    	<li><a href="#">佳菲尔人流</a></li>
+        <li><a href="#">微管人流</a></li>
+        <li><a href="#">超导人流</a></li>
+        <li><a href="#">无痛人流</a></li>
+        <div class="clear"></div>
+        <h4><a href="#"><img src="images/menu0000.jpg" /></a></h4>
+    </ul>
+    <ul class="ul5">
+    	<li><a href="#">佳菲尔人流</a></li>
+        <li><a href="#">微管人流</a></li>
+        <li><a href="#">超导人流</a></li>
+        <li><a href="#">无痛人流</a></li>
+        <div class="clear"></div>
+        <h4><a href="#"><img src="images/menu00000.jpg" /></a></h4>
+    </ul>
+</div>
+<!--menu-->
+<div class="clear"></div>
+
+<!--main-->
+<div class="main">
+    <!--search-->
+    <div class="search">
+        <div class="left">
+            <a href="#">做人流</a>
+            <a href="#">选医院</a>
+            <a href="#">找专家</a>
+            <a href="#">问价格</a>
+        </div>
+        <div class="center">
+            <form>
+              <input type="text" class="input_tex1" value="如：宫颈糜烂" onfocus="if (value =='如：宫颈糜烂'){value =''}" onblur="if (value ==''){value='如：宫颈糜烂'}" />
+              <input type="image" src="images/search03.jpg" class="input_sub1" />
+            </form>
+        </div>
+        <div class="right">
+            <ul>
+                <li>热点搜索：</li>
+                <li><a href="#">妇科病反复发作怎么办？</a></li>
+                <li><a href="#">目前最好的无痛人流技术有什么？</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--search-->
+    <div class="clear"></div>
+    
+    <!--honor-->
+    <div class="honor">
+    	<div class="left honorbg" id="demo">
+            <ul>
+                <li><a href="#">公立妇科</a></li>
+                <li><a href="#">专家团队</a></li>
+                <li><a href="#">权威技术</a></li>
+                <li><a href="#">先进器材</a></li>
+                <li><a href="#">医院环境</a></li>
+                <li><a href="#" class="honor_sel">医院荣誉</a></li>
+            </ul>
+        </div>
+        <div class="right qwjs">
+        	<div class="qwjs-top">
+            	<ul class="idTabs">
+                	<li><a href="#qwjs-tab1">无痛人流</a></li>
+                    <li><a href="#qwjs-tab2">妇科炎症</a></li>
+                    <li><a href="#qwjs-tab3">宫颈疾病</a></li>
+                    <li><a href="#qwjs-tab4">妇科整形</a></li>
+                    <li><a href="#qwjs-tab5">中医妇科</a></li>
+                </ul>
+                
+                <div class="clear"></div>
+                
+                <div class="qwjs-top-m">
+                    <div id="qwjs-tab1">
+                    	<h3><a href="1"><img src="images/qwjs02.jpg" /></a></h3>
+                        <div class="qwjs-bottom">
+                            <ul>
+                                <li class="li1">法综述</li>
+                                <li class="li2">2011年8月，浙江省军区妇科诊疗中心联合华东医科大学、中华医学会会员等在内的50多所科研医疗机构，共同研制出治疗妇科炎症的新技术--“蓓尔蓝氧技术”，该技术是医术界上一种新型的微创妇科技术，治疗效果彻底，不会破坏阴道内酸碱环境，同时辅助酸碱平衡法调治妇科炎症，具有良好效果。
+            </li>
+                            </ul>
+                            <ul>
+                                <li class="li1">技术原理</li>
+                                <li class="li2">“蓓尔蓝氧技术”是医术界上一种新型的微创妇科技术，它根据生物学原理，通过纳米蓝氧发生器获得高浓度蓝氧治疗液，能在几分钟内杀灭99.85%大肠杆菌、金黄色葡萄球菌、白色念珠菌、霉菌、滴虫和其他有害致病菌的生物结构，使之失去生存能力。临床证实，蓓尔蓝氧技术可以使生殖道变成有氧环境，而且不会破坏阴道内酸碱环境，对久治不愈、反复发作的阴道炎患者，具有显着疗效。</li>
+                            </ul>
+                            <ul>
+                                <li class="li1">疗法优势</li>
+                                <li class="li3">1.前沿技术、效果显着，临床有效率高达98.6%以上。</li>
+                                <li class="li3">2.多维杀菌、无副作用，不留盲区，对人体无副作用。</li>
+                                <li class="li3">3.改善体质，恢复体内正常平衡,降低病情反复几率。</li>
+                                <li class="li3">4.快速起效,缩短疗程均匀扩散到病灶,进行彻底灭菌。</li>
+                                <li class="li3">5.蓓尔蓝氧技术属于物理治疗，不会产生耐药性，轻松无负担。</li>
+                            </ul>
+                            <ul>
+                                <li class="li1">先进仪器</li>
+                                <li class="li2">蓝氧治疗仪是利用臭氧发生器制取一定浓度的臭氧输出作用于患处达到治疗目的地仪器设备。随着医疗科技的国际化、市场化，近年来，国内已经成熟的将臭氧疗法运用到临床治疗中，实现了妇科炎症的无痛苦治疗。另外，臭氧治疗妇科类炎症将无菌治疗和无痛疗法完美结合，是近年来国内医学的重要进步，其发展前景值得关注。
+            </li>
+                            </ul>
+                            <ul>
+                                <li class="li1">诊疗环境</li>
+                                <li class="li2">千级层流净化无菌手术室，采用每小时换气600此的空气净化措施，将空气中的尘埃粒子过滤、消毒，使细菌无载体传播，达到除尘灭菌效果，手术严格遵循操作规范流程，均在空气洁净度高达99.99%的无菌实验室内进行，感染率几乎为零，有效杜绝外源性感染。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div id="qwjs-tab2">
+                    	<h3><a href="1"><img src="images/qwjs03.jpg" /></a></h3>
+                        <div class="qwjs-bottom1">
+                        	<div class="l"><a href="1"><img src="images/zh02.jpg" /></a></div>
+                            <div class="r">
+                            	<span>微管可视无痛人流采用的是静脉麻醉，术前使用宫颈松弛药物，不依赖机械性扩张，这就很好的避免了宫颈受到损伤。术中以B超做导引，以达到迅速和准确<a href="1">[详细]</a></span>
+                                <ol>
+                                	<li style="margin-bottom:15px;"><b>五大优势：</b></li>
+                                	<li>1.手术安全、可视、万例手术无事故专家亲诊；</li>
+                                    <li>2.轻松、无痛、无心理负担；</li>
+                                    <li>3.微创手术、精确定位；</li>
+                                    <li>4.无菌环境、安全保宫；</li>
+                                    <li>5.无疼痛、无副作用、私密性强。</li>
+                                </ol>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="qwjs-bottom1">
+                        	<div class="l"><a href="1"><img src="images/zh02.jpg" /></a></div>
+                            <div class="r">
+                            	<span>微管可视无痛人流采用的是静脉麻醉，术前使用宫颈松弛药物，不依赖机械性扩张，这就很好的避免了宫颈受到损伤。术中以B超做导引，以达到迅速和准确<a href="1">[详细]</a></span>
+                                <ol>
+                                	<li style="margin-bottom:15px;"><b>五大优势：</b></li>
+                                	<li>1.手术安全、可视、万例手术无事故专家亲诊；</li>
+                                    <li>2.轻松、无痛、无心理负担；</li>
+                                    <li>3.微创手术、精确定位；</li>
+                                    <li>4.无菌环境、安全保宫；</li>
+                                    <li>5.无疼痛、无副作用、私密性强。</li>
+                                </ol>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="qwjs-bottom1">
+                        	<div class="l"><a href="1"><img src="images/zh02.jpg" /></a></div>
+                            <div class="r">
+                            	<span>微管可视无痛人流采用的是静脉麻醉，术前使用宫颈松弛药物，不依赖机械性扩张，这就很好的避免了宫颈受到损伤。术中以B超做导引，以达到迅速和准确<a href="1">[详细]</a></span>
+                                <ol>
+                                	<li style="margin-bottom:15px;"><b>五大优势：</b></li>
+                                	<li>1.手术安全、可视、万例手术无事故专家亲诊；</li>
+                                    <li>2.轻松、无痛、无心理负担；</li>
+                                    <li>3.微创手术、精确定位；</li>
+                                    <li>4.无菌环境、安全保宫；</li>
+                                    <li>5.无疼痛、无副作用、私密性强。</li>
+                                </ol>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    
+                    <div id="qwjs-tab3">
+                    	<h3><a href="1"><img src="images/qwjs02.jpg" /></a></h3>
+                        <div class="qwjs-bottom">
+                            <ul>
+                                <li class="li1">疗法综述</li>
+                                <li class="li2">2011年8月，浙江省军区妇科诊疗中心联合华东医科大学、中华医学会会员等在内的50多所科研医疗机构，共同研制出治疗妇科炎症的新技术--“蓓尔蓝氧技术”，该技术是医术界上一种新型的微创妇科技术，治疗效果彻底，不会破坏阴道内酸碱环境，同时辅助酸碱平衡法调治妇科炎症，具有良好效果。
+            </li>
+                            </ul>
+                            <ul>
+                                <li class="li1">技术原理</li>
+                                <li class="li2">“蓓尔蓝氧技术”是医术界上一种新型的微创妇科技术，它根据生物学原理，通过纳米蓝氧发生器获得高浓度蓝氧治疗液，能在几分钟内杀灭99.85%大肠杆菌、金黄色葡萄球菌、白色念珠菌、霉菌、滴虫和其他有害致病菌的生物结构，使之失去生存能力。临床证实，蓓尔蓝氧技术可以使生殖道变成有氧环境，而且不会破坏阴道内酸碱环境，对久治不愈、反复发作的阴道炎患者，具有显着疗效。</li>
+                            </ul>
+                            <ul>
+                                <li class="li1">疗法优势</li>
+                                <li class="li3">1.前沿技术、效果显着，临床有效率高达98.6%以上。</li>
+                                <li class="li3">2.多维杀菌、无副作用，不留盲区，对人体无副作用。</li>
+                                <li class="li3">3.改善体质，恢复体内正常平衡,降低病情反复几率。</li>
+                                <li class="li3">4.快速起效,缩短疗程均匀扩散到病灶,进行彻底灭菌。</li>
+                                <li class="li3">5.蓓尔蓝氧技术属于物理治疗，不会产生耐药性，轻松无负担。</li>
+                            </ul>
+                            <ul>
+                                <li class="li1">先进仪器</li>
+                                <li class="li2">蓝氧治疗仪是利用臭氧发生器制取一定浓度的臭氧输出作用于患处达到治疗目的地仪器设备。随着医疗科技的国际化、市场化，近年来，国内已经成熟的将臭氧疗法运用到临床治疗中，实现了妇科炎症的无痛苦治疗。另外，臭氧治疗妇科类炎症将无菌治疗和无痛疗法完美结合，是近年来国内医学的重要进步，其发展前景值得关注。
+            </li>
+                            </ul>
+                            <ul>
+                                <li class="li1">诊疗环境</li>
+                                <li class="li2">千级层流净化无菌手术室，采用每小时换气600此的空气净化措施，将空气中的尘埃粒子过滤、消毒，使细菌无载体传播，达到除尘灭菌效果，手术严格遵循操作规范流程，均在空气洁净度高达99.99%的无菌实验室内进行，感染率几乎为零，有效杜绝外源性感染。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="qwjs-tab4">
+                    	<h3><a href="1"><img src="images/qwjs03.jpg" /></a></h3>
+                        <div class="qwjs-bottom1">
+                        	<div class="l"><a href="1"><img src="images/zh02.jpg" /></a></div>
+                            <div class="r">
+                            	<span>微管可视无痛人流采用的是静脉麻醉，术前使用宫颈松弛药物，不依赖机械性扩张，这就很好的避免了宫颈受到损伤。术中以B超做导引，以达到迅速和准确<a href="1">[详细]</a></span>
+                                <ol>
+                                	<li style="margin-bottom:15px;"><b>五大优势：</b></li>
+                                	<li>1.手术安全、可视、万例手术无事故专家亲诊；</li>
+                                    <li>2.轻松、无痛、无心理负担；</li>
+                                    <li>3.微创手术、精确定位；</li>
+                                    <li>4.无菌环境、安全保宫；</li>
+                                    <li>5.无疼痛、无副作用、私密性强。</li>
+                                </ol>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="qwjs-bottom1">
+                        	<div class="l"><a href="1"><img src="images/zh02.jpg" /></a></div>
+                            <div class="r">
+                            	<span>微管可视无痛人流采用的是静脉麻醉，术前使用宫颈松弛药物，不依赖机械性扩张，这就很好的避免了宫颈受到损伤。术中以B超做导引，以达到迅速和准确<a href="1">[详细]</a></span>
+                                <ol>
+                                	<li style="margin-bottom:15px;"><b>五大优势：</b></li>
+                                	<li>1.手术安全、可视、万例手术无事故专家亲诊；</li>
+                                    <li>2.轻松、无痛、无心理负担；</li>
+                                    <li>3.微创手术、精确定位；</li>
+                                    <li>4.无菌环境、安全保宫；</li>
+                                    <li>5.无疼痛、无副作用、私密性强。</li>
+                                </ol>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="qwjs-bottom1">
+                        	<div class="l"><a href="1"><img src="images/zh02.jpg" /></a></div>
+                            <div class="r">
+                            	<span>微管可视无痛人流采用的是静脉麻醉，术前使用宫颈松弛药物，不依赖机械性扩张，这就很好的避免了宫颈受到损伤。术中以B超做导引，以达到迅速和准确<a href="1">[详细]</a></span>
+                                <ol>
+                                	<li style="margin-bottom:15px;"><b>五大优势：</b></li>
+                                	<li>1.手术安全、可视、万例手术无事故专家亲诊；</li>
+                                    <li>2.轻松、无痛、无心理负担；</li>
+                                    <li>3.微创手术、精确定位；</li>
+                                    <li>4.无菌环境、安全保宫；</li>
+                                    <li>5.无疼痛、无副作用、私密性强。</li>
+                                </ol>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div id="qwjs-tab5">
+                    	<h3><a href="1"><img src="images/qwjs02.jpg" /></a></h3>
+                        <div class="qwjs-bottom">
+                            <ul>
+                                <li class="li1">法综述</li>
+                                <li class="li2">2011年8月，浙江省军区妇科诊疗中心联合华东医科大学、中华医学会会员等在内的50多所科研医疗机构，共同研制出治疗妇科炎症的新技术--“蓓尔蓝氧技术”，该技术是医术界上一种新型的微创妇科技术，治疗效果彻底，不会破坏阴道内酸碱环境，同时辅助酸碱平衡法调治妇科炎症，具有良好效果。
+            </li>
+                            </ul>
+                            <ul>
+                                <li class="li1">技术原理</li>
+                                <li class="li2">“蓓尔蓝氧技术”是医术界上一种新型的微创妇科技术，它根据生物学原理，通过纳米蓝氧发生器获得高浓度蓝氧治疗液，能在几分钟内杀灭99.85%大肠杆菌、金黄色葡萄球菌、白色念珠菌、霉菌、滴虫和其他有害致病菌的生物结构，使之失去生存能力。临床证实，蓓尔蓝氧技术可以使生殖道变成有氧环境，而且不会破坏阴道内酸碱环境，对久治不愈、反复发作的阴道炎患者，具有显着疗效。</li>
+                            </ul>
+                            <ul>
+                                <li class="li1">疗法优势</li>
+                                <li class="li3">1.前沿技术、效果显着，临床有效率高达98.6%以上。</li>
+                                <li class="li3">2.多维杀菌、无副作用，不留盲区，对人体无副作用。</li>
+                                <li class="li3">3.改善体质，恢复体内正常平衡,降低病情反复几率。</li>
+                                <li class="li3">4.快速起效,缩短疗程均匀扩散到病灶,进行彻底灭菌。</li>
+                                <li class="li3">5.蓓尔蓝氧技术属于物理治疗，不会产生耐药性，轻松无负担。</li>
+                            </ul>
+                            <ul>
+                                <li class="li1">先进仪器</li>
+                                <li class="li2">蓝氧治疗仪是利用臭氧发生器制取一定浓度的臭氧输出作用于患处达到治疗目的地仪器设备。随着医疗科技的国际化、市场化，近年来，国内已经成熟的将臭氧疗法运用到临床治疗中，实现了妇科炎症的无痛苦治疗。另外，臭氧治疗妇科类炎症将无菌治疗和无痛疗法完美结合，是近年来国内医学的重要进步，其发展前景值得关注。
+            </li>
+                            </ul>
+                            <ul>
+                                <li class="li1">诊疗环境</li>
+                                <li class="li2">千级层流净化无菌手术室，采用每小时换气600此的空气净化措施，将空气中的尘埃粒子过滤、消毒，使细菌无载体传播，达到除尘灭菌效果，手术严格遵循操作规范流程，均在空气洁净度高达99.99%的无菌实验室内进行，感染率几乎为零，有效杜绝外源性感染。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <script>
+                $(".qwjs").idTabs("!mouseover");
+                </script>
+                
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--honor-->
+    
+    <!--bottom-->
+    <div class="bottom">
+    	<ul>
+        	<li><a href="#">医院首页</a></li>
+            <li><a href="#">医院简介</a></li>
+            <li><a href="#">专家团队</a></li>
+            <li><a href="#">权威技术</a></li>
+            <li><a href="#">康复病例</a></li>
+            <li><a href="#">最新专题</a></li>
+            <li><a href="#">医院新闻</a></li>
+            <li><a href="#">来院路线</a></li>
+        </ul>
+        <div class="bottom_b">
+        	<div class="left"><a href="#"><img src="images/bottom02.jpg" /></a></div>
+            <div class="right">
+            
+            	<p>65天无假日 24小时咨询热线：0571-87921323 QQ在线医师：2251004360</p>
+                <p>地址：杭州市南山路150号</p>
+                <p>浙江省军区门诊部妇科 版权所有Copyright 2009</p>
+                <p>浙江省军区门诊部妇科 All Right Reserved 浙ICP备13016025号-1</p>
+            </div>
+        </div>
+    </div>
+    <!--bottom-->
+    
+</div>
+<!--main-->
+
+</body>
+</html>

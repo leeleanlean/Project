@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+.list{ background:#fff; padding-bottom:15px;}
+.list-banner{ height:167px; background:url(../images/list-01.jpg) no-repeat center #eaeaea;}
+.postion{ height:36px; line-height:36px; background:#e5e5e5; margin:15px auto; font-size:14px;}
+.postion ul{ color:#666; padding-left:45px; background:url(../images/list-02.jpg) no-repeat 10px 6px;}
+.postion ul li{ display:inline;}
+.postion ul li a{ color:#666;}
+
+.list .left{ width:203px; box-shadow:0px 2px 3px #ddd;}
+.list .right{ width:780px;}
+.menu h3{ margin-bottom:25px; margin-top:30px; margin-left:10px;}
+.menu h4{ height:25px; line-height:25px; padding-left:30px; color:#fff; font-size:14px; background:url(../images/list-02.png) no-repeat;}
+.menu ul li a{ display:block; height:23px; line-height:23px; color:#666; padding-left:30px; margin:12px 0; font-size:14px; background:url(../images/box1-03.jpg) no-repeat 15px 12px; font-family:"宋体";}
+.menu ul li a:hover,.menu ul li .selected{ background:url(../images/list-03.png) no-repeat; text-decoration:none;}
+.addus{ background:#fff; border-radius:4px; box-shadow:0px 5px 0px #e6e6e6; margin-bottom:15px;}
+.addus h3{ line-height:40px; border-bottom:1px dashed #c7c7c7; font-size:18px; color:#1b1b1b; margin:0 10px; text-align:center;}
+.add-main{ padding:0 10px;}
+.add-main h4{ height:36px; line-height:36px; color:#656565;}
+.add-main h5{ text-align:center; margin-top:10px; padding-bottom:10px;}
+.input1{ display:block; height:28px; color:#999;}
+.input1 input{ float:left; height:18px;}
+.input1 label{ float:left; margin-left:5px; line-height:16px;}
+.input2{ height:24px; color:#666;}
+.input2 input{ display:block; width:105px; float:left; background:none; border:1px solid #dedede; height:16px; color:#666; padding-left:5px;}
+.input2 label{ float:left; display:block; width:65px;}
+.input2 select{ background:#eee; border:1px solid #ddd; color:#555;}
+
+.list .right h3{ margin-top:30px; height:50px; margin-right:10px; background:url(../images/list-04.jpg) repeat-x bottom;}
+.list .right ul{ margin:20px 0 40px 0;}
+.list .right ul li{ display:block; width:775px; height:38px; line-height:38px; font-size:14px;}
+.list .right ul li:hover{ background:#e9e9e9;}
+.list .right ul li a{ color:#666666; font-family:"宋体";}
+.list .right ul li .l{ margin-right:15px; margin-left:5px;}
+.list .right ul li .r{ font-size:12px; color:#999; margin-right:15px;}
+
+.page{ text-align:center;}
+.page a{ color:#666; background:#ddd; padding:4px 10px;}
+.page a:hover{ background:#666; color:#eee; text-decoration:none;}
+
+.content{ margin:35px 30px 70px 35px; font-size:14px; color:#555;}
+.content h4{ font-size:26px; height:50px; line-height:50px; text-align:center;}
+.content p{ margin:20px 0; line-height:24px; font-family:"宋体"; text-indent:2em;}
+
+.message{ background:#fff; padding-bottom:80px; box-shadow:0px 0px 3px #ddd;}
+.server{ margin:25px 15px 15px 15px;}
+.server p{ margin:7px 0; font-size:14px; color:#666;}
+.mess{ margin-top:45px;}
+.mess .left{ width:660px; margin-left:15px;}
+.mess .left h3{ margin-bottom:30px;}
+.mess .right{ width:310px;}
+.mess .right li{ color:#666;}
+.mess .right .li1{ height:43px; line-height:43px; margin-top:30px; background:url(../images/mess-01.jpg) no-repeat; padding-left:40px;}
+.mess .right .li2{ height:20px; line-height:20px; margin-top:15px; background:url(../images/mess-02.jpg) no-repeat 5px 0; padding-left:40px;}
+.mess .right .li3{ height:20px; line-height:20px; margin-top:15px; background:url(../images/mess-03.jpg) no-repeat 5px 0; padding-left:40px;}
+
+.mess-m label{ display:block; width:90px; height:50px; line-height:37px; float:left; text-align:right; color:#666666;}
+.all{ height:50px; font-size:14px;}
+.all .inp1{ height:37px; width:300px; line-height:37px; background:#fff; border:1px solid #dfdfdf; color:#666; padding-left:3px; line-height:37px;}
+.all span{ font-size:12px; font-family:"宋体"; margin-left:8px; color:#999;}
+.all .inp2{ margin-left:10px; vertical-align:middle;}
+.aa1 span{ font-size:14px; line-height:37px;}
+.all1 .inp3{ background:#fff; display:block; border:1px solid #ddd; height:180px; margin-bottom:30px; color:#666; padding:12px; line-height:18px;}
+.all2 input{ margin-left:90px;}
+.inp4{ height:24px; margin-top:7px; border:1px solid #dedede; width:150px; font-size:14px; color:#666; background:#fff;}
+.all1 label{ font-size:14px;}
