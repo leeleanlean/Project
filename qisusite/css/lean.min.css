@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+*, :after, :before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+	margin: 0;
+	padding: 0
+}
+html {
+	font-size: 62.5%
+}
+body, button, input, select, textarea {
+	font-size: 1.4rem;
+	line-height: 1;
+	font-family: arial, 'Microsoft YaHei'
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: 400
+}
+address, cite, dfn, em, i, var {
+	font-style: normal
+}
+code, kbd, pre, samp {
+	font-family: couriernew, courier, monospace
+}
+small {
+	font-size: 1.2rem
+}
+ol, ul {
+	list-style: none
+}
+a {
+	text-decoration: none;
+	outline: 0
+}
+a:hover {
+	text-decoration: underline
+}
+sup {
+	vertical-align: text-top
+}
+sub {
+	vertical-align: text-bottom
+}
+legend {
+	color: #000
+}
+fieldset, img {
+	border: 0
+}
+button, input, select, textarea {
+	font-size: 100%
+}
+a:focus, input, select, textarea {
+	outline: 0
+}
+input {
+	-webkit-appearance: none
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+img{
+	max-width: 100%;
+}
+.font-weight {
+	font-weight: bolder
+}
+.hide {
+	display: none
+}
+.col {
+	width: 100%
+}
+.col, .col-1, .col-2, .col-2-2, .col-3, .col-3-3, .col-4, .col-4-4, .col-5, .col-5-5, .col-6, .col-7, .col-8, .col-9 {
+	display: block;
+	float: left
+}
+.col-1 {
+	width: 10%
+}
+.col-2 {
+	width: 20%
+}
+.col-3 {
+	width: 30%
+}
+.col-4 {
+	width: 40%
+}
+.col-5 {
+	width: 50%
+}
+.col-6 {
+	width: 60%
+}
+.col-7 {
+	width: 70%
+}
+.col-8 {
+	width: 80%
+}
+.col-9 {
+	width: 90%
+}
+.col-2-2 {
+	width: 50%
+}
+.col-3-3 {
+	width: 33.333333%
+}
+.col-4-4 {
+	width: 25%
+}
+.col-5-5 {
+	width: 20%
+}
+.dl-ver dd, .dl-ver dt, .ul-ver a, .ul-ver li {
+	display: block;
+	float: left
+}
+.flex-list {
+	display: flex;
+	align-items: center
+}
+.flex-list-top {
+	display: flex;
+	align-items: top
+}
+.flex-list-bottom {
+	display: flex;
+	align-items: bottom
+}
+.c, .center, .l, .left {
+	float: left
+}
+.r, .right {
+	float: right
+}
+.clearfix {
+	*zoom: 1
+}
+.clearfix:after, .clearfix:before {
+	display: table;
+	height: 0;
+	line-height: 0;
+	content: ""
+}
+.clearfix:after {
+	clear: both
+}
+.text-left {
+	text-align: left
+}
+.text-center {
+	text-align: center
+}
+.text-right {
+	text-align: right
+}
+.transition {
+	-webkit-transition: all .3s ease 0s;
+	transition: all .3s ease 0s
+}
