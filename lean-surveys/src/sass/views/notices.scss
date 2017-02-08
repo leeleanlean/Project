@@ -1,0 +1,42 @@
+// notices
+.notices{
+	padding:25px 18px 0 18px;
+	h4{
+		font-size:1.6rem;
+		font-weight:bolder;
+		color:#333;
+	}
+	article{
+		p{
+			margin-top:15px;
+			line-height:2.2rem;
+			color:#666;
+			span{
+				color:#333;
+			}
+		}
+	}
+	footer{
+		position:fixed;
+		bottom:0;
+		left:0;
+		a{
+			height:40px;
+			line-height:40px;
+			&.col-5{
+				color:#fc8738;
+				background-color:#e7e7e7;
+				border-right:2px solid #f5f5f5;
+			}
+			&.col-7{
+				color:#fff;
+				background-color:#fc8738;
+				border-left:2px solid #f5f5f5;
+			}
+			&:hover{
+				text-decoration:none;
+				opacity:0.9;
+			}
+		}
+	}
+}

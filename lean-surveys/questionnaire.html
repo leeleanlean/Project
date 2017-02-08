@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<meta name="full-screen" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>问卷调查</title>
+<link rel="stylesheet" href="dest/css/plugins/lean.css">
+<link rel="stylesheet" href="dest/css/views/comman.min.css">
+</head>
+<body>
+
+<!-- questionnaire -->
+<section class="questionnaire" ng-controller="questionnaire">
+
+	<!-- progress -->
+	<header class="progress">
+		<div class="progress-bar" ng-style="progress_width"></div>
+	</header>
+	<!-- progress -->
+
+	<!-- ask -->
+	<article class="clearfix">
+		<h3 ng-bind="questions.title"></h3>
+		<form class="clearfix">
+			<div class="form-list col clearfix" ng-repeat="list in questions.list">
+				<div class="col-11 col-lg-11" ng-bind="list.option+' '+list.content"></div>
+				<div class="col-1 col-lg-1 text-right"><input type="radio" name="questions_{{questions.id}}" data-value="{{list.value}}" ng-click="nxtQues(+questions.id+2,$event)"></div>
+			</div>
+		</form>
+		<!-- aside -->
+			<!-- questions.id==0 -->
+			<aside class="col clearfix" ng-if="questions.id==0">
+				<div class="col-12 text-right">第{{+questions.id+1}}题（共10题）</div>
+			</aside>
+			<!-- questions.id==0 -->
+
+			<!-- questions.id>0 -->
+			<aside class="col clearfix" ng-if="questions.id>0">
+				<div class="col-6"><span ng-click="preQues(questions.id)">上一题</span></div>
+				<div class="col-6 text-right">第{{+questions.id+1}}题（共10题）</div>
+			</aside>
+			<!-- questions.id>0 -->
+
+		<!-- aside -->
+	</article>
+	<!-- ask -->
+
+</section>
+<!-- questionnaire -->
+
+<script src="dest/js/angular-1.5.5.min.js"></script>
+<script src="dest/js/angular-route.min.js"></script>
+<script src="dest/js/comman.min.js"></script>
+
+</body>
+</html>

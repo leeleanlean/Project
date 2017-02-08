@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<meta name="full-screen" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>问卷调查</title>
+<link rel="stylesheet" href="dest/css/plugins/lean.css">
+<link rel="stylesheet" href="dest/css/views/comman.min.css">
+</head>
+<body>
+
+<!-- result -->
+<section class="result" ng-controller="result">
+
+	<h3>感谢您参与本调查，总分为<span ng-bind="score"></span>分</h3>
+
+	<!-- result-type -->
+	<dl class="text-center">
+		<dt><img src="dest/images/result-icon.png" alt=""></dt>
+		<dd>
+			<span ng-if="score>=0 && score<=20">保守型投资者</span>
+			<span ng-if="score>=21 && score<=40">谨慎型投资者</span>
+			<span ng-if="score>=41 && score<=60">稳健型投资者</span>
+			<span ng-if="score>=61 && score<=80">积极型投资者</span>
+			<span ng-if="score>=81 && score<=100">激进型投资者</span>
+			<p>且有较强的风险承受能力</p>
+			<a href="#resultDetail">《查看评估明细》</a>
+		</dd>
+	</dl>
+	<!-- result-type -->
+
+	<!-- aside -->
+	<aside><a href="#">重新测试</a></aside>
+	<!-- aside -->
+
+</section>
+<!-- result -->
+
+<script src="dest/js/angular-1.5.5.min.js"></script>
+<script src="dest/js/angular-route.min.js"></script>
+<script src="dest/js/comman.min.js"></script>
+
+</body>
+</html>

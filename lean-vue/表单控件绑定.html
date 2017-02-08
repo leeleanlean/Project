@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=no,maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no,email=no" />
+<title>Vue实例笔记代码整理</title>
+
+<link rel="stylesheet" href="css/lean.css">
+<link rel="stylesheet" href="css/learn.css">
+
+<script src="js/vue.js"></script>
+
+</head>
+<body>
+
+<!-- vue start -->
+<div class="vue clearfix" ng-app="app">
+
+	<!-- 左侧导航菜单 start -->
+	<nav class="col-2">
+		<ul>
+			<h1 class="logo">Vue 实例笔记</h1>
+			<li class="guide">一、初识Vue</li>
+			<li><a href="index.html">Vue 概述</a></li>
+			<li><a href="Hello Vue.js.html">Hello Vue.js</a></li>
+			<li><a href="双向绑定.html">双向绑定</a></li>
+			<li class="guide">二、基础绑定</li>
+			<li><a href="数据绑定语法.html">数据绑定语法</a></li>
+			<li><a href="绑定样式.html">v-bind:class绑定样式</a></li>
+			<li><a href="条件判断.html">v-if | show条件判断</a></li>
+			<li><a href="渲染列表.html">v-for渲染列表</a></li>
+			<li><a href="操作列表.html">v-for操作列表</a></li>
+			<li><a href="方法与事件处理器.html">v-on方法与事件处理器</a></li>
+			<li><a class="selected" href="表单控件绑定.html">表单控件绑定</a></li>
+			<li class="guide">二、官方插件</li>
+			<li><a href="vue-router路由.html">vue-router路由</a></li>
+			<li><a href="vue-resource.html">vue-resource $http</a></li>
+		</ul>
+	</nav>
+	<!-- 左侧导航菜单 end -->
+
+	<!-- 右侧内容 start -->
+	<div class="content col-8">
+
+		<fieldset class="example">
+			<legend>双向绑定input</legend>
+
+			<!-- Example Start -->
+			<div id="bandFrorm">
+				<div>
+					<input type="text" v-model="val1">
+					<br>
+					<span>{{val1}}</span>
+				</div>
+
+				<legend>双向绑定textarea</legend>
+
+				<div>
+					<textarea type="text" v-model="val2"></textarea>
+					<br>
+					<span>{{val2}}</span>
+				</div>
+
+				<legend>绑定checkbox</legend>
+
+				<div>
+					<input type="checkbox" value="checkbox1" v-model="checkbox">
+					<input type="checkbox" value="checkbox2" v-model="checkbox">
+					<input type="checkbox" value="checkbox3" v-model="checkbox">
+					<br>
+					<span>{{checkbox}}</span>
+					<div class="tips_red">
+						选中checkbox切换值：
+						<br>
+						v-model="toggle"
+						<br>
+						v-bind:true-value="a"
+						<br>
+						v-bind:false-value="b"
+					</div>
+				</div>
+
+				<legend>绑定radio</legend>
+
+				<div>
+					1<input type="radio" value="radio1" v-model="radio">
+					<br>
+					2<input type="radio" value="radio2" v-model="radio">
+					<div>{{radio}}</div>
+				</div>
+
+				<legend>绑定select</legend>
+
+				<div>
+					<select v-model="select">
+						<option value="AAA">A</option>
+						<option value="BBB">B</option>
+						<option value="CCC">C</option>
+						<option value="DDD">D</option>
+					</select>
+					<div>{{select}}</div>
+				</div>
+
+				<legend>其他参数</legend>
+
+				<div class="tips_red">
+				* lazy : 当值真正改变时候才触发，比如 失去焦点
+				<br>
+				* number : 如果想自动将用户的输入转为 Number 类型（如果原值的转换结果为 NaN 则返回原值）
+				<br>
+				* debounce ： 每次敲击之后延时同步输入框的值与数据
+				</div>
+			</div>
+
+			
+			<script>
+			new Vue({
+				el:"#bandFrorm",
+				data:{
+					val1:"val1",
+					val2:"val2",
+					checkbox:"checkbox",
+					radio:"",
+					checkbox:[],
+					select:""
+				},
+				methods:{
+					showDialog:function(){
+						alert("showDialog");
+					}
+				}
+			})
+			</script>
+			<!-- Example End -->
+
+		</fieldset>
+
+	</div>
+	<!-- 右侧内容 end -->
+</div>
+<!-- vue end -->
+
+</body>
+</html>

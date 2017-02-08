@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=no,maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no,email=no" />
+<title>Vue实例笔记代码整理</title>
+
+<link rel="stylesheet" href="css/lean.css">
+<link rel="stylesheet" href="css/learn.css">
+
+<script src="js/vue.js"></script>
+
+</head>
+<body>
+
+<!-- vue start -->
+<div class="vue clearfix" ng-app="app">
+
+	<!-- 左侧导航菜单 start -->
+	<nav class="col-2">
+		<ul>
+			<h1 class="logo">Vue 实例笔记</h1>
+			<li class="guide">一、初识Vue</li>
+			<li><a href="index.html">Vue 概述</a></li>
+			<li><a href="Hello Vue.js.html">Hello Vue.js</a></li>
+			<li><a href="双向绑定.html">双向绑定</a></li>
+			<li class="guide">二、基础绑定</li>
+			<li><a class="selected" href="数据绑定语法.html">数据绑定语法</a></li>
+			<li><a href="绑定样式.html">v-bind:class绑定样式</a></li>
+			<li><a href="条件判断.html">v-if | show条件判断</a></li>
+			<li><a href="渲染列表.html">v-for渲染列表</a></li>
+			<li><a href="操作列表.html">v-for操作列表</a></li>
+			<li><a href="方法与事件处理器.html">v-on方法与事件处理器</a></li>
+			<li><a href="表单控件绑定.html">表单控件绑定</a></li>
+			<li class="guide">二、官方插件</li>
+			<li><a href="vue-router路由.html">vue-router路由</a></li>
+			<li><a href="vue-resource.html">vue-resource $http</a></li>
+		</ul>
+	</nav>
+	<!-- 左侧导航菜单 end -->
+
+	<!-- 右侧内容 start -->
+	<div class="content col-8">
+
+		<fieldset class="example">
+		
+			<!-- Example Start -->
+			<legend>绑定缩写方式</legend>
+			<div id="short">
+				<!-- 完整语法 -->
+				<p>v-bind完整语法：<span>{{short1}}</span></p>
+				<!-- 缩写 -->
+				<p>v-bind缩写语法：<span>{{short2}}</span></p>
+				<!-- 完整语法 -->
+				<p>v-bind完整语法：<span>{{short3}}</span></p>
+				<!-- 缩写 -->
+				<p>v-bind缩写语法：<span>{{short4}}</span></p>
+
+				<!-- v-on完整语法 -->
+				<p>v-on完整语法：<span>{{short5}}</span></p>
+				<!-- v-on缩写 -->
+				<p>v-on缩写语法：<span>{{short6}}</span></p>
+			</div>
+			<script>
+			new Vue({
+				el:"#short",
+				data:{
+					short1:"div v-bind:href='url'",
+					short2:"div :href='url'",
+					short3:"div v-bind:disabled='someDynamicCondition'",
+					short4:"div :disabled='someDynamicCondition'",
+					short5:"div v-on:click='doSomething'",
+					short6:"div @click='doSomething'"
+				}
+			})
+			</script>
+
+			<legend>文本</legend>
+			<div>
+				<div id="text">{{text}}</div>
+				<script>
+				new Vue({
+					el:"#text",
+					data:{
+						text:"Hello Vue.js"
+					}
+				})
+				</script>
+				<div class="tips_red">
+					* 绑定text使用：[[msg]]
+					<br>
+					* 如果只绑定一次，数据变化后不会再引起更新使用：[[* msg]]
+					<br>
+					* 所有的[[]] 替换为 {{}}
+				</div>
+			</div>
+
+			<legend>HTML</legend>
+			<div>
+				<div id="html" v-html="html"></div>
+				<script>
+				new Vue({
+					el:"#html",
+					data:{
+						html:"<p>i'm html</p>"
+					}
+				})
+				</script>
+				<div class="tips_red">
+					* 绑定html使用三个大括号：[[[msg]]]
+					<br>
+					* 所有的[[]] 替换为 {{}}
+				</div>
+			</div>
+
+			<legend>绑定到标签属性中</legend>
+			<div>
+				<div id="attr" v-bind:data-id="id">此标签属性data-id=20161010</div>
+				<script>
+				new Vue({
+					el:"#attr",
+					data:{
+						id:20161010
+					}
+				})
+				</script>
+			</div>
+
+			<legend>绑定表达式</legend>
+			<div>
+				<div id="expression">
+					<p>数据number+1 = {{number+1}}</p>
+					<p>数据number-1 = {{number-1}}</p>
+					<p>数据number*1 = {{number*1}}</p>
+					<p>数据number/1 = {{number/1}}</p>
+					<p>{{number>=10 ? "number大于等于10":"number小于10"}}</p>
+				</div>
+				<script>
+				new Vue({
+					el:"#expression",
+					data:{
+						number:10
+					}
+				})
+				</script>
+				<div class="tips_red">
+					* Vue.js 在数据绑定内支持全功能的 JavaScript 表达式。
+					<br>
+					* 每个绑定只能包含单个表达式。
+				</div>
+				
+			</div>
+
+			<legend>过滤器</legend>
+			<div>
+				<div id="filter">
+					<ul>
+						<li v-for="(list,index) in list">{{index}} - {{list.age | filterNumber}}</li>
+					</ul>
+				</div>
+				<script>
+				Vue.filter('filterNumber',function(value) {
+					var resultVal = "";
+					if(value>=60){
+						return "及格分"
+					}else{
+						return "不及格"
+					}
+				});
+				new Vue({
+					el:"#filter",
+					data:{
+						list:[
+							{
+								age:10
+							},
+							{
+								age:45
+							},
+							{
+								age:65
+							},
+							{
+								age:90
+							}
+						]
+					}
+				})
+				</script>
+				<div class="tips_red">
+					* 管道符过滤器：[[array | filterA | filterB]]
+					<br>
+					* {{array | filterA 'arg1' arg2}}
+					<br>
+					过滤器函数始终以表达式的值作为第一个参数。带引号的参数视为字符串，而不带引号的参数按表达式计算。这里，字符串 'arg1' 将传给过滤器作为第二个参数，表达式 arg2 的值在计算出来之后作为第三个参数。
+				</div>
+				
+			</div>
+
+			<legend>指令</legend>
+			<div>
+				<p>指令 (Directives) 是特殊的带有前缀 v- 的特性，指令的值限定为绑定表达式。</p>
+			</div>
+
+			<!-- Example End -->
+		</fieldset>
+
+	</div>
+	<!-- 右侧内容 end -->
+</div>
+<!-- vue end -->
+
+</body>
+</html>

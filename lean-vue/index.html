@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=no,maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no,email=no" />
+<title>Vue实例笔记代码整理</title>
+
+<link rel="stylesheet" href="css/lean.css">
+<link rel="stylesheet" href="css/learn.css">
+
+<script src="js/vue.js"></script>
+
+</head>
+<body>
+
+<!-- vue start -->
+<div class="vue clearfix" ng-app="app">
+
+	<!-- 左侧导航菜单 start -->
+	<nav class="col-2">
+		<ul>
+			<h1 class="logo">Vue 实例笔记</h1>
+			<li class="guide">一、初识Vue</li>
+			<li><a class="selected" href="index.html">Vue 概述</a></li>
+			<li><a href="Hello Vue.js.html">Hello Vue.js</a></li>
+			<li><a href="双向绑定.html">双向绑定</a></li>
+			<li class="guide">二、基础绑定</li>
+			<li><a href="数据绑定语法.html">数据绑定语法</a></li>
+			<li><a href="绑定样式.html">v-bind:class绑定样式</a></li>
+			<li><a href="条件判断.html">v-if | show条件判断</a></li>
+			<li><a href="渲染列表.html">v-for渲染列表</a></li>
+			<li><a href="操作列表.html">v-for操作列表</a></li>
+			<li><a href="方法与事件处理器.html">v-on方法与事件处理器</a></li>
+			<li><a href="表单控件绑定.html">表单控件绑定</a></li>
+			<li class="guide">二、官方插件</li>
+			<li><a href="vue-router路由.html">vue-router路由</a></li>
+			<li><a href="vue-resource.html">vue-resource $http</a></li>
+		</ul>
+	</nav>
+	<!-- 左侧导航菜单 end -->
+
+	<!-- 右侧内容 start -->
+	<div class="content col-8">
+
+		<fieldset class="example">
+			<legend>Vue 概述</legend>
+			<div>
+				<p>vue.js 是用来构建web应用接口的一个库。</p>
+				<p>Vue.js 不支持 IE8 及其以下版本，因为 Vue.js 使用了 IE8 不能实现的 ECMAScript 5 特性。</p>
+				<p>Vue.js 重点集中在MVVM模式的ViewModel层，它连接视图和数据绑定模型通过两种方式。实际的DOM操作和输出格式被抽象的方式到指令（Directives）和过滤器（Filters）</p>
+				<p>vue不是一个全面的框架,它被设计成简单的和灵活的。你可以用它快速原型,或混合和匹配与其他库定义前端堆栈。</p>
+			</div>
+			<legend>vue安装</legend>
+			<div class="download"><a href="js/vue.js" target="_blank">开发版本</a><a href="js/vue.min.js" target="_blank">生产版本</a></div>
+			<legend>概念概述</legend>
+			<div>
+				<h3 class="title">ViewModel：</h3>
+				<p>一个对象,同步模型和视图. 在Vue.js中,ViewModels是实例化的Vue的构造器或者是它的子类</p>
+				<p>var vm = new Vue({ /* options */ })</p>
+				<p>这是主要的对象,你会与作为开发人员在使用Vue.js交互。更多细节请参阅</p>
+				<h3 class="title">View：</h3>
+				<p>用户看到的实际HTML / DOM</p>
+				<p>vm.$el</p>
+				<h3 class="title">Model：</h3>
+				<p>vm.$data</p>
+				<p>在Vue.js中，模型只是简单的Javascript对象,数据对象,能够操控他们的属性和视图模型，观察他们的从而能获取通知后更改。</p>
+				<h3 class="title">Directives：</h3>
+				<p><input type="text" value="<div v-text='message'></div>"></p>
+				<p>这里的div元素有一个v-text的指令，值是message.意思是告诉Vue.js 保持这个div节点的内容与viewMode中的message属性同步指令可以封装任意DOM操作。例如v-attr 操作一个属性元素,v-repeat克隆基于数组的一个元素，v-on附加事件监听</p>
+				<h3 class="title">Mustache Bindings：</h3>
+				<p>您还可以使用mustache-style绑定,在文本和属性。他们翻译成v-text v-attr指令。例如:</p>
+				<p><input type="text" value="<div id='person-{{id}}'>Hello {{name}}!</div>"></p>
+				<h3 class="title">Filters：</h3>
+				<p>在更新视图之前可以用函数来处理这个原始的数据。他们正在用一个“管道”指令或绑定:</p>
+				<p><input type="text" value="<div>{{message | capitalize}}</div>"></p>
+			</div>
+		</fieldset>
+
+	</div>
+	<!-- 右侧内容 end -->
+</div>
+<!-- vue end -->
+
+</body>
+</html>

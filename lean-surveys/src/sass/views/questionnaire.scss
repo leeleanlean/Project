@@ -1,0 +1,52 @@
+// questionnaire
+.questionnaire{
+	padding-top:2.5rem;
+
+	// progress
+	.progress{
+		height:3px;
+		background-color:#e7e7e7;
+		.progress-bar{
+			height:3px;
+			background-color:#375089;
+		}
+	}
+
+	// article
+	article{
+		background-color:#fff;
+		h3{
+			padding:0 1.5rem;
+			height:6.5rem;
+			font-size:1.6rem;
+			line-height:6.5rem;
+			border-bottom:1px solid #e7e7e7;
+		}
+		form{
+			padding:0 1.5rem;
+			border-bottom: 1px solid #e5e5e5;
+			.form-list{
+				height:50px;
+				line-height:50px;
+				color:#666;
+				border-bottom:1px solid #e7e7e7;
+				&:last-child{
+					border-bottom:none;
+				}
+				.col-1{
+					padding:0 0.3rem 0 0;
+				}
+			}
+		}
+	}
+
+	// aside
+	aside{
+		margin-top:1.5rem;
+		padding:0 1.5rem 2rem 1.5rem;
+		color:#999;
+		span{
+			color:#375089;
+		}
+	}
+}

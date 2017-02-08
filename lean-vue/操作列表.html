@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=no,maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no,email=no" />
+<title>Vue实例笔记代码整理</title>
+
+<link rel="stylesheet" href="css/lean.css">
+<link rel="stylesheet" href="css/learn.css">
+
+<script src="js/vue.js"></script>
+
+</head>
+<body>
+
+<!-- vue start -->
+<div class="vue clearfix" ng-app="app">
+
+	<!-- 左侧导航菜单 start -->
+	<nav class="col-2">
+		<ul>
+			<h1 class="logo">Vue 实例笔记</h1>
+			<li class="guide">一、初识Vue</li>
+			<li><a href="index.html">Vue 概述</a></li>
+			<li><a href="Hello Vue.js.html">Hello Vue.js</a></li>
+			<li><a href="双向绑定.html">双向绑定</a></li>
+			<li class="guide">二、基础绑定</li>
+			<li><a href="数据绑定语法.html">数据绑定语法</a></li>
+			<li><a href="绑定样式.html">v-bind:class绑定样式</a></li>
+			<li><a href="条件判断.html">v-if | show条件判断</a></li>
+			<li><a href="渲染列表.html">v-for渲染列表</a></li>
+			<li><a class="selected" href="操作列表.html">v-for操作列表</a></li>
+			<li><a href="方法与事件处理器.html">v-on方法与事件处理器</a></li>
+			<li><a href="表单控件绑定.html">表单控件绑定</a></li>
+			<li class="guide">二、官方插件</li>
+			<li><a href="vue-router路由.html">vue-router路由</a></li>
+			<li><a href="vue-resource.html">vue-resource $http</a></li>
+		</ul>
+	</nav>
+	<!-- 左侧导航菜单 end -->
+
+	<!-- 右侧内容 start -->
+	<div class="content col-8">
+
+		<fieldset class="example">
+			<legend>操作列表</legend>
+
+			<!-- Example Start -->
+			<div>
+				<div id="hello">
+					<input type="text" v-model="newVal" @keyUp.enter="addList">
+					<button v-on:click="addList">Add</button>
+					<br>
+					<br>
+					<ul>
+						<li v-for="list in list"><i>{{$index+1}}、{{list.text}}</i><span class="deleteList" v-on:click="removeList(index)">X</span></li>
+					</ul>
+				</div>
+				<script>
+				new Vue({
+					el:"#hello",
+					data:{
+						newVal:"",
+						list:[
+							{
+								text:"this's text"
+							},
+							{
+								text:"this's others text"
+							},
+						]
+					},
+					methods:{
+						addList:function(){
+							var text = this.newVal.trim();
+							if(text){
+								this.list.push({"text":text})
+								this.newVal = "";
+							}
+						},
+						removeList:function(index){
+							this.list.splice(index,1);
+						}
+					}
+				})
+				</script>
+				<style>
+				#hello ul li{
+					line-height: 2.5rem;
+				}
+				#hello ul li i{
+					display: inline-block;
+					width: 220px;
+				}
+				.deleteList{
+					cursor: pointer;
+					color: #e74e3d;
+				}
+				</style>
+
+				<div class="tips_red">
+					循环列表 ： v-for="(list,index) in list"
+				</div>
+			</div>
+			<!-- Example End -->
+		</fieldset>
+
+	</div>
+	<!-- 右侧内容 end -->
+</div>
+<!-- vue end -->
+
+</body>
+</html>

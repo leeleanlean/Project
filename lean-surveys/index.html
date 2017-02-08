@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<meta name="full-screen" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>问卷调查</title>
+<link rel="stylesheet" href="dest/css/plugins/lean.css">
+<link rel="stylesheet" href="dest/css/views/comman.min.css">
+</head>
+<body>
+
+<!-- notices -->
+<section class="notices" ng-controller="notices">
+	<h4>尊敬的客户：</h4>
+	<article>
+		<p>1.以下问题可在您选择合适的产品前，协助评估您的风险承受能力、理财方式及投资目标。下文将投资者的风险承受能力大小由低到高依次划分为：<span>保守型、谨慎型、稳健型、积极型、激进型</span>。如果您放弃接受该问卷调查，您的风险等级将默认为<span>“保守型”</span>。</p>
+		<p>2.您需认知、了解并同意，如您提供不准确及或不完整的资料，及或不提供特定资料，则可能对您投资风险承受能力的评估带来影响。</p>
+		<p>3.风险提示：投资需承担各类风险（包括不限于市场风险、信用风险、流动性风险等），可能遭受资金损失。</p>
+	</article>
+	<footer class="col clearfix text-center">
+		<a href="#" class="col-5 col-lg-5">放弃填写</a>
+		<a href="#questionnaire" class="col-7 col-lg-7">继续填写问卷</a>
+	</footer>
+</section>
+<!-- notices -->
+
+<script src="dest/js/angular-1.5.5.min.js"></script>
+<script src="dest/js/angular-route.min.js"></script>
+<script src="dest/js/comman.min.js"></script>
+
+</body>
+</html>
