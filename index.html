@@ -3,59 +3,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
-<meta name="full-screen" content="yes">
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<title>leeLean</title>
-<style>
-*{ margin: 0; padding: 0;}
-body{ background-color: #eee;}
-
-.menu a{
-	display: block;
-	height: 59px;
-	line-height: 59px;
-	padding: 0 10px;
-	border-bottom: 1px solid #e8e8e8;
-	color: #888;
-	text-decoration: none;
-	background-color: #fff;
-	font-family: "Microsoft Yahei";
-	font-size: 14px;
-}
-.menu a:hover{
-	color: #d44950;
-	border-left:4px solid #d44950;
-}
-</style>
+<title>Project -leelean</title>
+<link rel="stylesheet" href="css/lean.css">
 </head>
 <body>
 
-<ul class="menu">
-	<li><a href="leanUi" target="_blank">【前端整理】LeanUI - css整理</a></li>
-	<li><a href="angular" target="_blank">【前端整理】Angular - 笔记整理</a></li>
-	<li><a href="f2e" target="_blank">【前端整理】- web前端网址导航</a></li>
-	<li><a href="lantian/template.html" target="_blank">【移动端】- 蓝天印象</a></li>
-	<li><a href="woyuepai/activity.html" target="_blank">【移动端】- 我约拍</a></li>
-	<li><a href="app" target="_blank">【移动端】- 爱回收</a></li>
-	<li><a href="oneBuy" target="_blank">【移动端】- 一元云购</a></li>
-	<li><a href="jianYueZZ" target="_blank">【web端】- 郑州简约婚纱艺术摄影</a></li>
-	<li><a href="xzZhenYa" target="_blank">【web端】- 西藏振亚旅行社</a></li>
-	<li><a href="qisusite" target="_blank">【web端】- 奇速网站建设</a></li>
-	<li><a href="qisu" target="_blank">【web端】- 奇速网络</a></li>
-	<li><a href="model" target="_blank">【web端】- 模特8090</a></li>
-	<li><a href="rryinxiang" target="_blank">【web端】- 人人印象</a></li>
-	<li><a href="molipopo" target="_blank">【web端】- 魔力泡泡游泳馆</a></li>
-	<li><a href="bigLi" target="_blank">【web端】- 李老大招商加盟</a></li>
-	<li><a href="junqumenzhen" target="_blank">【web端】- 浙江省军区门诊部</a></li>
-	<li><a href="yingzhijie" target="_blank">【web端】- 英之杰早教中心</a></li>
-	<li><a href="oneBuyWeb" target="_blank">【web端】- 一元云购</a></li>
-	<li><a href="itJp" target="_blank">【web端】- itJp</a></li>
-	<li><a href="aiLin" target="_blank">【web端】- 艾琳婚礼策划</a></li>
-	<li><a href="dlddld" target="_blank">【web端】- 点连点影楼后期</a></li>
-	<li><a href="yongxing" target="_blank">【web端】- 永兴联合装饰有限公司</a></li>
+<ul class="nav" id="navBox">
+	
 </ul>
 
+<script>
+
+// 设置导航
+!function(){
+
+	// 配置导航
+	var json = [
+		{name:"angular学习笔记", url:"lean-angular"},
+		{name:"lean-UI", url:"lean-Ui"},
+		{name:"蓝天相册冲印", url:"lean-lantian"},
+		{name:"我约拍移动端", url:"lean-woyuepai"},
+		{name:"爱回收", url:"lean-aihuishou"},
+		{name:"艾琳婚礼策划", url:"lean-aiLin"},
+		{name:"李老大早餐加盟", url:"lean-lilaoda"},
+		{name:"点连点影像", url:"lean-dlddld"},
+		{name:"好前端网址导航", url:"lean-f2e"},
+		{name:"IT竞聘", url:"lean-itJp"},
+		{name:"简约婚纱艺术摄影", url:"lean-jianYue"},
+		{name:"军区医院门诊部", url:"lean-junqumenzhen"},
+		{name:"模特网", url:"lean-model"},
+		{name:"魔力泡泡儿童游泳", url:"lean-molipopo"},
+		{name:"一元云购", url:"lean-yiyuanyungou"},
+		{name:"奇速网络科技一", url:"lean-qisu1"},
+		{name:"奇速网络科技二", url:"lean-qisu2"},
+		{name:"人人印象", url:"lean-rryinxiang"},
+		{name:"西藏振亚旅行社", url:"lean-xzZhenYa"},
+		{name:"英之杰早教中心", url:"lean-yingzhijie"},
+		{name:"永兴联合装饰公司", url:"lean-yongxing"},
+	];
+
+	// 获取导航元素
+	var navBox = document.getElementById("navBox");
+
+	// 遍历json，将设置的导航添加到导航元素里
+	for(var i=0; i<json.length; i++){
+		navBox.innerHTML += "<li><a href='"+ json[i].url + "/index.html" +"' target='_blank'>"+ json[i].name +"</a></li>";
+	}
+}();
+</script>
+	
 </body>
 </html>
