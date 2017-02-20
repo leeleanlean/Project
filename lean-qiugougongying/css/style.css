@@ -1,0 +1,94 @@
+.list {
+  padding-top: .5rem;
+}
+.list .content-block {
+  margin: .5rem 0;
+  padding: 0;
+}
+.list .content-block .list-block {
+  font-size: .75rem;
+  line-height: 1.3rem;
+}
+.list .content-block .list-block .item-subtitle {
+  font-size: .65rem;
+}
+.list .content-block .list-block .item-text {
+  font-size: .65rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
+}
+.list .buttons-tab .button {
+  height: 2.2rem;
+  line-height: 2.2rem;
+}
+.list .buttons-tab .button.active {
+  background-color: #0894ec;
+  color: #fff;
+}
+.detail .list-block {
+  background-color: #fff;
+  font-size: .65rem;
+}
+.detail .list-block .item-title {
+  font-size: .75rem;
+  margin: .3rem 0 .5rem 0;
+}
+.detail .list-block p {
+  margin: .1rem 0;
+  line-height: 1rem;
+}
+.detail .list-block img {
+  border-radius: 50%;
+}
+.detail .detail-content {
+  padding: .5rem .75rem;
+  font-size: .7rem;
+}
+.detail .detail-content p {
+  margin: .7rem 0;
+  line-height: 1.2rem;
+}
+.user .list-block {
+  background-color: #fff;
+  font-size: .75rem;
+}
+.user .list-block p {
+  margin: .1rem 0;
+  font-size: .65rem;
+  line-height: 1rem;
+}
+.user .list-block img {
+  border-radius: 50%;
+}
+.user .list-block .item-content {
+  padding-left: 0;
+}
+.user .media-list .item-content {
+  padding-left: .75rem;
+}
+.edit .list-block,
+.issue .list-block {
+  font-size: .75rem;
+}
+.edit .list-block select,
+.issue .list-block select,
+.edit .list-block input[type=text],
+.issue .list-block input[type=text] {
+  font-size: .75rem;
+  text-align: right;
+}
+.edit .list-block .item-content,
+.issue .list-block .item-content {
+  padding-left: 0;
+}
+.edit .edit-btn,
+.issue .edit-btn {
+  margin: .5rem 0;
+  border-radius: 0;
+  height: 2.3rem;
+  line-height: 2.3rem;
+  font-size: .75rem;
+}
+.list-block {
+  margin: .5rem 0;
+}

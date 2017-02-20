@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>发布需求</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<link rel="stylesheet" href="css/sm.min.css">
+<link rel="stylesheet" href="css/sm-extend.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+body{ font-size: .65rem; }
+</style>
+
+</head>
+<body>
+<!-- page-group -->
+<div class="page-group">
+    <!-- page -->
+    <div class="page">
+
+        <!-- tab-bar -->
+        <nav class="bar bar-tab">
+            <a class="tab-item external" href="list.html">
+                <span class="icon icon-message active"></span>
+                <span class="tab-label">信息</span>
+            </a>
+            <a class="tab-item external" href="issue.html">
+                <span class="icon icon-edit"></span>
+                <span class="tab-label">发布</span>
+            </a>
+            <a class="tab-item external" href="user.html">
+                <span class="icon icon-settings"></span>
+                <span class="tab-label">个人中心</span>
+            </a>
+        </nav>
+        <!-- tab-bar -->
+
+        <!-- content -->
+        <div class="content issue">
+
+            <div class="list-block">
+                <ul>
+
+                    <!-- 类型 -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-gender"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label">选择类型</div>
+                                <div class="item-input" dir="rtl">
+                                    <select>
+                                        <option>请选择类型</option>
+                                        <option>供应信息</option>
+                                        <option>求购信息</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 类型 -->
+
+                    <!-- 标题 -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-name"></i></div>
+                            <div class="item-inner">
+                                <label class="item-title label" for="title">信息标题</label>
+                                <div class="item-input">
+                                    <input type="text" id="title" placeholder="请填写标题">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 标题 -->
+
+                    <!-- 地区 -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-gender"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label">选择地区</div>
+                                <div class="item-input" dir="rtl">
+                                    <select>
+                                        <option>请选择地区</option>
+                                        <option>上海</option>
+                                        <option>北京</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 地区 -->
+
+                    <!-- 价格 -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-name"></i></div>
+                            <div class="item-inner">
+                                <label class="item-title label" for="price">价格</label>
+                                <div class="item-input">
+                                    <input type="text" id="price" placeholder="请填写价格">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 价格 -->
+
+                    <!-- 单位 -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-gender"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label">单位</div>
+                                <div class="item-input" dir="rtl">
+                                    <select>
+                                        <option>请选择单位</option>
+                                        <option>个</option>
+                                        <option>袋</option>
+                                        <option>斤</option>
+                                        <option>吨</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 单位 -->
+
+                    <!-- 需求量 -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-name"></i></div>
+                            <div class="item-inner">
+                                <label class="item-title label" for="demand">需求量</label>
+                                <div class="item-input">
+                                    <input type="text" id="demand" placeholder="请填写需求量">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 需求量 -->
+
+                    <!-- 联系人 -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-name"></i></div>
+                            <div class="item-inner">
+                                <label class="item-title label" for="contact">联系人</label>
+                                <div class="item-input">
+                                    <input type="text" id="contact" placeholder="请填写联系人">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 联系人 -->
+
+                    <!-- 电话 -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-name"></i></div>
+                            <div class="item-inner">
+                                <label class="item-title label" for="mobilePhone">电话</label>
+                                <div class="item-input">
+                                    <input type="text" id="mobilePhone" placeholder="请填写电话">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 电话 -->
+
+                </ul>
+
+                <!-- 发布按钮 -->
+                <a href="#" class="button button-fill edit-btn">发布信息</a>
+                <!-- 发布按钮 -->
+
+            </div>
+
+        </div>
+        <!-- content -->
+    </div>
+    <!-- page -->
+
+</div>
+<!-- page-group -->
+
+<script type='text/javascript' src='js/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='js/sm-extend.min.js' charset='utf-8'></script>
+
+</body>
+</html>
