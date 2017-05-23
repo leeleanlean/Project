@@ -1,0 +1,51 @@
+body{ max-width: 1200px; margin: 0 auto; background-color: #ddd; font-family: "Microsoft Yahei"; font-size: 14px; color: #333; }
+
+a:hover{ color: #e74e3d; }
+
+fieldset{ border: none; }
+fieldset legend{ display: block; width: 100%; margin: 15px 0 30px 0; border-bottom: 1px solid #ddd; }
+
+.m-t20{ margin-top: 20px; }
+.m-b20{ margin-bottom: 20px; }
+.tipsRed{ color: #e74e3d; }
+.sourceCode{ display: block; width: 100%; margin: 15px 0 25px 0; padding: 5px 10px; border: 1px solid #e5e5e5; border-radius: 3px; background-color: #f7f7f7; color: #e74e3d; line-height: 28px; }
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{ background-color: #fff; border:1px solid #e9e9e9; box-shadow: 0 0 0; color: #888; }
+
+.vue .content{ padding: 15px 45px 30px 45px; line-height: 1.6;}
+.vue .content p{ line-height: 20px; margin-bottom: 13px; padding: 5px 0; padding-left: 15px; border: 1px solid #fff; border-left: 2px solid #ddd; transition: all .3s ease 0s }
+.vue .content p:hover{ border: 1px solid #e74e3d; border-left: 2px solid #e74e3d; }
+.vue .content .title{ font-size: 16px; height: 20px; line-height: 20px; margin: 30px 0 20px 0; font-weight: bolder; }
+.vue .content input[type="text"]{ border: 1px solid #ddd; background: none; padding: 5px 10px; color: #333; }
+.vue .content input[type="checkbox"]{ width: 15px; height: 15px; border: 1px solid #ddd; vertical-align: middle; }
+.vue .content input[type="radio"]{ width: 15px; height: 15px; border: 1px solid #ddd; vertical-align: middle; }
+.vue .content button{ border: none; background: #e74e3d; padding: 8px 15px; color: #fff; }
+.vue .content button:hover{ opacity: 0.9; cursor: pointer; }
+.vue .content p input[type="text"]{ border: none; background: none; width: 100%; color: #333; }
+.vue .content textarea{ height: 150px; width: 100%; padding: 20px 35px; border: 1px solid #ddd; color: #333; }
+
+.vue .download a{ display: inline-block; background: #e74e3d; color: #fff; margin-right: 15px; padding: 8px 25px; border-radius: 3px; }
+
+.vue .col-8{ border-left: 4px solid #ddd; min-height: 1080px; }
+.vue nav .logo{ font-size: 22px; padding-left: 17px; margin: 0; line-height: 60px;}
+.vue nav .guide{ background-color: #e74e3d; height: 36px; line-height: 36px; margin: 6px 0; padding-left: 27px; color: #fff; margin-left: -10px; }
+.vue nav a{ display: block; height: 38px; line-height: 38px; padding: 0 17px 0 20px; color: #777; text-decoration: none; font-size: 13px; border-bottom: 1px solid #e9e9e9; }
+.vue nav a:hover,.vue nav a.selected{ background-color: #fff; color: #d44950; text-decoration: underline; }
+.vue{ background-color: #fff; min-height: 100%; }
+.vue .cloumn{ margin-top: 10px; padding-bottom: 10px; line-height: 26px; border-bottom: 1px dotted #e9e9e9; }
+.vue .tips_red{ margin-top: 20px; border:1px solid #e5e5e5; border-radius: 4px; padding: 6px 13px; font-size: 14px; line-height: 28px; color: #e74e3d; background-color: #f7f7f7; }
+.vue fieldset legend{ font-size: 22px; line-height: 32px; padding: 16px 0; }
+.reward_mask .con{ position: fixed; left: 50%; top: 60px; width: 70%; margin-left: -35%; color: #aaa; z-index: 999; }
+.reward_mask .bg{ position: fixed; left: 0; top: 0; width:100%; height: 100%; background-color: #19212c; opacity: 0.8; z-index: 99; }
+.reward_mask img{ max-width: 100%; margin:15px auto 0 auto; }
+.reward .caret{ position: absolute; top:-21px; left: 50%; margin-left: -4px; border-top: 8px dashed #19212c; border-right: 8px solid transparent; border-left: 8px solid transparent; }
+
+#uyan_frame{ margin: 80px 0 0 10px; }
+.showNav{ opacity: 0.9; position: fixed; bottom: 30px; right: 0; width: 110px; height: 40px; line-height: 40px; color: #fff; text-align: center; border-radius: 20px 0 0 20px; background-color: #e74e3d;}
+.showNav:hover{ text-decoration: none;}
+.showNav:visited{  color: #fff;}
+
+@media screen and (max-width: 1000px) {
+	.vue .col-2{ display: block; width: 100%; }
+	.vue .col-8{ min-height: 360px; border: none; width: 100%; padding: 25px 20px; }
+}

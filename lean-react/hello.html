@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=no,maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no,email=no" />
+<title>React实例笔记代码整理</title>
+
+<link rel="stylesheet" href="css/lean.css">
+<link rel="stylesheet" href="css/learn.css">
+
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script src="js/babel.min.js"></script>
+
+</head>
+<body>
+
+<!-- vue start -->
+<div class="vue clearfix" ng-app="app">
+
+	<!-- 左侧导航菜单 start -->
+	<nav class="col-2">
+		<ul>
+			<h1 class="logo">React 实例笔记</h1>
+			<li class="guide">一、初识React</li>
+			<li><a href="React.html">React 概述</a></li>
+			<li><a class="selected" href="Hello.html">Hello React</a></li>
+			<li><a href="ReactJSX.html">React JSX</a></li>
+			<li><a href="Component.html">React 组件</a></li>
+		</ul>
+	</nav>
+	<!-- 左侧导航菜单 end -->
+
+	<!-- 右侧内容 start -->
+	<div class="content col-8">
+
+		<fieldset class="example">
+			<legend>React 第一个实例</legend>
+
+			<div class="m-b20">运行结果：</div>
+
+			<div id="example"></div>
+			<script type="text/babel">
+			  ReactDOM.render(
+			    <h1>Hello, world!</h1>,
+			    document.getElementById('example')
+			  );
+			</script>
+		</fieldset>
+
+	</div>
+	<!-- 右侧内容 end -->
+</div>
+<!-- vue end -->
+
+</body>
+</html>

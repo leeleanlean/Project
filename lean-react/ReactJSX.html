@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=no,maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no,email=no" />
+<title>React实例笔记代码整理</title>
+
+<link rel="stylesheet" href="css/lean.css">
+<link rel="stylesheet" href="css/learn.css">
+
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script src="js/babel.min.js"></script>
+
+</head>
+<body>
+
+<!-- vue start -->
+<div class="vue clearfix" ng-app="app">
+
+	<!-- 左侧导航菜单 start -->
+	<nav class="col-2">
+		<ul>
+			<h1 class="logo">React 实例笔记</h1>
+			<li class="guide">一、初识React</li>
+			<li><a href="React.html">React 概述</a></li>
+			<li><a href="Hello.html">Hello React</a></li>
+			<li><a class="selected" href="ReactJSX.html">React JSX</a></li>
+			<li><a href="Component.html">React 组件</a></li>
+		</ul>
+	</nav>
+	<!-- 左侧导航菜单 end -->
+
+	<!-- 右侧内容 start -->
+	<div class="content col-8">
+
+		<fieldset class="example">
+			<legend>JSX 优点</legend>
+			<div>
+				<p>JSX 执行更快，因为它在编译为 JavaScript 代码后进行了优化。</p>
+				<p>它是类型安全的，在编译过程中就能发现错误。</p>
+				<p>使用 JSX 编写模板更加简单快速。</p>
+			</div>
+			<legend>JavaScript 表达式</legend>
+			<div>
+				<div id="example"></div>
+				<script type="text/babel">
+				ReactDOM.render(
+				    <div>
+				    	运行结果：
+				    	<p>{1+1}</p>
+				    	<p>{1+1==2?'结果等于2':'结果不等于2'}</p>
+				    </div>,
+				    document.getElementById('example')
+				);
+				</script>
+			</div>
+			<legend>样式</legend>
+			<div>
+				<div id="style"></div>
+				<script type="text/babel">
+				var myStyle = {
+					fontSize: 20,
+					color: '#FF0000'
+				};
+				ReactDOM.render(
+				    <div>
+				    	运行结果：
+				    	<div style = {myStyle}>测试样式</div>
+				    </div>,
+				    document.getElementById('style')
+				);
+				</script>
+			</div>
+			<legend>注释</legend>
+			<div>
+				<div id="annotation"></div>
+				<script type="text/babel">
+				var myStyle = {
+					fontSize: 20,
+					color: '#FF0000'
+				};
+				ReactDOM.render(
+				    <div>
+				    	运行结果：
+				    	<div>测试注释代码</div>
+				    	{/*<div>测试注释样式</div>*/}
+				    </div>,
+				    document.getElementById('annotation')
+				);
+				</script>
+
+				<br>
+
+				<p>1、在标签内部的注释需要花括号</p>
+				<p>2、在标签外的的注释不能使用花括号</p>
+
+			</div>
+			<legend>数组</legend>
+			<div>
+				<div id="array"></div>
+				<script type="text/babel">
+				var myArr = [
+					<div>11111</div>,
+					<div>22222</div>,
+					<div>33333</div>
+				];
+				ReactDOM.render(
+				    <div>
+				    	运行结果：
+				    	<div>{myArr}</div>
+				    </div>,
+				    document.getElementById('array')
+				);
+				</script>
+			</div>
+			<legend>渲染HTML标签 和 React 组件</legend>
+			<div>
+				<div id="html"></div>
+				<script type="text/babel">
+				var myHtml = <div class="html">我是html标签</div>;
+				ReactDOM.render(
+				    myHtml,
+				    document.getElementById('html')
+				);
+				</script>
+
+				<div id="react"></div>
+				<script type="text/babel">
+				var MyComponents = React.createClass({
+					render:function(){
+						return <h1>我是React组件</h1>
+					}
+				});
+				ReactDOM.render(
+					<MyComponents />,
+					document.getElementById('react')
+				);
+				</script>
+				
+				<br>
+
+				<p>要渲染 HTML 标签，只需在 JSX 里使用小写字母的标签名。</p>
+				<p>要渲染 React 组件，只需创建一个大写字母开头的本地变量。</p>
+			</div>
+		</fieldset>
+
+	</div>
+	<!-- 右侧内容 end -->
+</div>
+<!-- vue end -->
+
+</body>
+</html>

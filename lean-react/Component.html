@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=no,maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no,email=no" />
+<title>React实例笔记代码整理</title>
+
+<link rel="stylesheet" href="css/lean.css">
+<link rel="stylesheet" href="css/learn.css">
+
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script src="js/babel.min.js"></script>
+
+</head>
+<body>
+
+<!-- vue start -->
+<div class="vue clearfix" ng-app="app">
+
+	<!-- 左侧导航菜单 start -->
+	<nav class="col-2">
+		<ul>
+			<h1 class="logo">React 实例笔记</h1>
+			<li class="guide">一、初识React</li>
+			<li><a href="React.html">React 概述</a></li>
+			<li><a href="Hello.html">Hello React</a></li>
+			<li><a href="ReactJSX.html">React JSX</a></li>
+			<li><a class="selected" href="Component.html">React 组件</a></li>
+		</ul>
+	</nav>
+	<!-- 左侧导航菜单 end -->
+
+	<!-- 右侧内容 start -->
+	<div class="content col-8">
+
+		<fieldset class="example">
+			<legend>HelloMessage 组件</legend>
+			<div>
+				<div id="example"></div>
+				<script type="text/babel">
+					var HelloMessage = React.createClass({
+						render:function(){
+							return <div>Hello Message!!!</div>
+						}
+					});
+
+					ReactDOM.render(
+						<HelloMessage />,
+						document.getElementById('example')
+					);
+
+				</script>
+
+				<br>
+
+				<p>React.createClass 方法用于生成一个组件类 HelloMessage。</p>
+
+			</div>
+
+			<legend>带参数的组件</legend>
+			<div>
+				<div id="props"></div>
+				<script type="text/babel">
+					var HelloMessage = React.createClass({
+						render:function(){
+							return <div>Hello {this.props.name} - {this.props.age} - {this.props.className} - {this.props.htmlFor}</div>
+						}
+					});
+
+					ReactDOM.render(
+						<HelloMessage name='leelean' age='26' className='myClassName' htmlFor='myHtmlFor' />,
+						document.getElementById('props')
+					);
+
+				</script>
+
+				<br>
+
+				<p>注意，在添加属性时， class 属性需要写成 className ，for 属性需要写成 htmlFor ，这是因为 class 和 for 是 JavaScript 的保留字。</p>
+
+			</div>
+
+			<legend>复合组件</legend>
+			<div>
+				
+				<div id="combination"></div>
+				<script type="text/babel">
+
+				var Information = React.createClass({
+					render :　function(){
+						return(
+							<div>
+								<div>组合结果为：</div>
+								<Name name={this.props.name} /> - <Age age={this.props.age} />
+							</div>
+						);
+					}
+				});
+
+				var Name = React.createClass({
+					render :　function(){
+						return(
+							<span>{this.props.name}</span>
+						);
+					}
+				});
+
+				var Age = React.createClass({
+					render :　function(){
+						return(
+							<span>{this.props.age}</span>
+						);
+					}
+				});
+
+				ReactDOM.render(
+					<Information name="leelean" age="26" />,
+					document.getElementById("combination")
+				);
+				
+				</script>
+
+			</div>
+		</fieldset>
+
+	</div>
+	<!-- 右侧内容 end -->
+</div>
+<!-- vue end -->
+
+</body>
+</html>
